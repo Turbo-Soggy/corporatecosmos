@@ -64,7 +64,7 @@ export default function CommandPalette({ companies, onSelect }) {
       {/* Trigger pill (top-right). */}
       <button
         onClick={() => setOpen(true)}
-        className="pointer-events-auto absolute right-6 top-6 flex items-center gap-2 rounded-full border border-white/10 bg-surface/60 px-3.5 py-2 text-sm text-ink-muted backdrop-blur-xl outline-none transition hover:text-ink focus-visible:ring-2 focus-visible:ring-accent"
+        className="pointer-events-auto absolute right-40 top-6 flex items-center gap-2 rounded-full border border-white/10 bg-surface/60 px-3.5 py-2 text-sm text-ink-muted backdrop-blur-xl outline-none transition hover:text-ink focus-visible:ring-2 focus-visible:ring-accent"
         aria-label="Open company search"
       >
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">

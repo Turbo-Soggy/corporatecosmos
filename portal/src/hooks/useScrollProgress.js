@@ -8,12 +8,19 @@ gsap.registerPlugin(ScrollTrigger);
 //  - triggerRef: attach to the tall scroll spacer.
 //  - progressRef: a live { current: 0..1 } read INSIDE useFrame (no re-renders).
 //  - progress: throttled React state for the DOM HUD.
-export function useScrollProgress() {
+//
+// `ready` MUST be true only once the spacer div is actually in the DOM. On first
+// paint the app shows the loading splash (no spacer), so creating the trigger then
+// would silently bail and — with a static dep array — never retry after data loads.
+// Gating on `ready` re-runs the effect exactly when the spacer mounts (and tears
+// the trigger down + rebuilds it when we leave/re-enter the cosmos view).
+export function useScrollProgress(ready) {
   const triggerRef = useRef(null);
   const progressRef = useRef(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    if (!ready) return;
     const el = triggerRef.current;
     if (!el) return;
 
@@ -34,8 +41,12 @@ export function useScrollProgress() {
       },
     });
 
+    // The spacer mounts in the same commit that flips `ready`; refresh so the
+    // trigger measures the now-tall document instead of the splash's height.
+    ScrollTrigger.refresh();
+
     return () => st.kill();
-  }, []);
+  }, [ready]);
 
   return { triggerRef, progressRef, progress };
 }
