@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  background: #020617; /* canvas */
+  color: #e6edf7; /* ink */
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.25);
+}
+
+@layer components {
+  /* Single source of truth for glass panels — consistent radius / blur /
+     border / elevation, with an inset top-edge highlight for premium depth. */
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-surface/60 shadow-glass backdrop-blur-xl;
+  }
+  /* Deeper blur, more transparent — glassier per spec, still legible thanks to
+     blur-2xl + the gradient scrim layered in the drawer markup. */
+  .glass-strong {
+    @apply border-white/10 bg-surface/55 shadow-glass backdrop-blur-2xl;
+  }
+  /* Monospaced data label — uppercase micro-type used across the HUD. */
+  .label-mono {
+    @apply font-mono text-[10px] uppercase tracking-[0.28em] text-ink-faint;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Thin premium scrollbar for HUD panels */
+.cosmos-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.cosmos-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 999px;
+}
+
+/* Respect user motion preference for all DOM-layer transitions. The 3D scene
+   reads the same media query in JS to drop idle orbit / camera drift. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
