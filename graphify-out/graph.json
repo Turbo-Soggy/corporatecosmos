@@ -13,7 +13,7 @@
       },
       "_origin": "ast",
       "id": "mcp",
-      "community": 13,
+      "community": 14,
       "norm_label": ".mcp.json"
     },
     {
@@ -26,7 +26,7 @@
       },
       "_origin": "ast",
       "id": "mcp_mcp_server_supabase",
-      "community": 13,
+      "community": 14,
       "norm_label": "supabase"
     },
     {
@@ -190,10 +190,30 @@
       "norm_label": "gsap"
     },
     {
-      "label": "postprocessing",
+      "label": "mammoth",
       "file_type": "code",
       "source_file": "portal/package.json",
       "source_location": "L18",
+      "_origin": "ast",
+      "id": "portal_package_dependencies_mammoth",
+      "community": 0,
+      "norm_label": "mammoth"
+    },
+    {
+      "label": "pdfjs-dist",
+      "file_type": "code",
+      "source_file": "portal/package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "portal_package_dependencies_pdfjs_dist",
+      "community": 0,
+      "norm_label": "pdfjs-dist"
+    },
+    {
+      "label": "postprocessing",
+      "file_type": "code",
+      "source_file": "portal/package.json",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "portal_package_dependencies_postprocessing",
       "community": 0,
@@ -203,7 +223,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L19",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "portal_package_dependencies_react",
       "community": 0,
@@ -213,7 +233,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L20",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "portal_package_dependencies_react_dom",
       "community": 0,
@@ -223,7 +243,7 @@
       "label": "recharts",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "portal_package_dependencies_recharts",
       "community": 0,
@@ -233,7 +253,7 @@
       "label": "remotion",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "portal_package_dependencies_remotion",
       "community": 0,
@@ -243,7 +263,7 @@
       "label": "three",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L23",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "portal_package_dependencies_three",
       "community": 0,
@@ -253,7 +273,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L25",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "portal_package_devdependencies",
       "community": 0,
@@ -263,7 +283,7 @@
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L26",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "portal_package_devdependencies_vitejs_plugin_react",
       "community": 0,
@@ -273,7 +293,7 @@
       "label": "autoprefixer",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L27",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "portal_package_devdependencies_autoprefixer",
       "community": 0,
@@ -283,7 +303,7 @@
       "label": "postcss",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "portal_package_devdependencies_postcss",
       "community": 0,
@@ -293,7 +313,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L29",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "portal_package_devdependencies_tailwindcss",
       "community": 0,
@@ -303,7 +323,7 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "portal/package.json",
-      "source_location": "L30",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "portal_package_devdependencies_vite",
       "community": 0,
@@ -316,7 +336,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "portal_postcss_config",
-      "community": 14,
+      "community": 15,
       "norm_label": "postcss.config.js"
     },
     {
@@ -326,37 +346,37 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app",
-      "community": 7,
+      "community": 6,
       "norm_label": "app.jsx"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L18",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "src_app_app",
-      "community": 7,
+      "community": 6,
       "norm_label": "app()"
     },
     {
       "label": "Splash()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L187",
+      "source_location": "L177",
       "_origin": "ast",
       "id": "src_app_splash",
-      "community": 7,
+      "community": 6,
       "norm_label": "splash()"
     },
     {
       "label": "ConfigError()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L191",
+      "source_location": "L185",
       "_origin": "ast",
       "id": "src_app_configerror",
-      "community": 7,
+      "community": 6,
       "norm_label": "configerror()"
     },
     {
@@ -366,7 +386,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_camerarig",
-      "community": 3,
+      "community": 18,
       "norm_label": "camerarig.jsx"
     },
     {
@@ -376,7 +396,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_camerarig_desiredpos",
-      "community": 3,
+      "community": 18,
       "norm_label": "desiredpos"
     },
     {
@@ -386,7 +406,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_camerarig_desiredlook",
-      "community": 3,
+      "community": 18,
       "norm_label": "desiredlook"
     },
     {
@@ -396,37 +416,17 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "components_camerarig_nodepos",
-      "community": 3,
+      "community": 18,
       "norm_label": "nodepos"
-    },
-    {
-      "label": "followPos",
-      "file_type": "code",
-      "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "components_camerarig_followpos",
-      "community": 3,
-      "norm_label": "followpos"
-    },
-    {
-      "label": "FOLLOW_OFFSET",
-      "file_type": "code",
-      "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "components_camerarig_follow_offset",
-      "community": 3,
-      "norm_label": "follow_offset"
     },
     {
       "label": "CameraRig()",
       "file_type": "code",
       "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "components_camerarig_camerarig",
-      "community": 3,
+      "community": 18,
       "norm_label": "camerarig()"
     },
     {
@@ -436,7 +436,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_companynodes",
-      "community": 3,
+      "community": 1,
       "norm_label": "companynodes.jsx"
     },
     {
@@ -446,57 +446,37 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_companynodes_node_geometry",
-      "community": 3,
+      "community": 1,
       "norm_label": "node_geometry"
-    },
-    {
-      "label": "HIT_GEOMETRY",
-      "file_type": "code",
-      "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "components_companynodes_hit_geometry",
-      "community": 3,
-      "norm_label": "hit_geometry"
-    },
-    {
-      "label": "BLAZE_COLOR",
-      "file_type": "code",
-      "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "components_companynodes_blaze_color",
-      "community": 3,
-      "norm_label": "blaze_color"
     },
     {
       "label": "tmpColor",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L23",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_companynodes_tmpcolor",
-      "community": 3,
+      "community": 1,
       "norm_label": "tmpcolor"
     },
     {
       "label": "LogoNode()",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L25",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "components_companynodes_logonode",
-      "community": 3,
+      "community": 1,
       "norm_label": "logonode()"
     },
     {
       "label": "CompanyNodes()",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L73",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "components_companynodes_companynodes",
-      "community": 3,
+      "community": 1,
       "norm_label": "companynodes()"
     },
     {
@@ -506,7 +486,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_constellationgrid",
-      "community": 1,
+      "community": 8,
       "norm_label": "constellationgrid.jsx"
     },
     {
@@ -516,7 +496,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "components_constellationgrid_circle",
-      "community": 1,
+      "community": 8,
       "norm_label": "circle()"
     },
     {
@@ -526,7 +506,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "components_constellationgrid_geofrom",
-      "community": 1,
+      "community": 8,
       "norm_label": "geofrom()"
     },
     {
@@ -536,7 +516,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "components_constellationgrid_phaseweights",
-      "community": 1,
+      "community": 8,
       "norm_label": "phaseweights()"
     },
     {
@@ -546,7 +526,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "components_constellationgrid_buildlayers",
-      "community": 1,
+      "community": 8,
       "norm_label": "buildlayers()"
     },
     {
@@ -556,8 +536,28 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "components_constellationgrid_constellationgrid",
-      "community": 1,
+      "community": 8,
       "norm_label": "constellationgrid()"
+    },
+    {
+      "label": "ConstellationLinks.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/ConstellationLinks.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_constellationlinks",
+      "community": 18,
+      "norm_label": "constellationlinks.jsx"
+    },
+    {
+      "label": "ConstellationLinks()",
+      "file_type": "code",
+      "source_file": "portal/src/components/ConstellationLinks.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_constellationlinks_constellationlinks",
+      "community": 18,
+      "norm_label": "constellationlinks()"
     },
     {
       "label": "CosmosCanvas.jsx",
@@ -566,28 +566,58 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_cosmoscanvas",
-      "community": 3,
+      "community": 18,
       "norm_label": "cosmoscanvas.jsx"
     },
     {
       "label": "AnimatedGalaxy()",
       "file_type": "code",
       "source_file": "portal/src/components/CosmosCanvas.jsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "components_cosmoscanvas_animatedgalaxy",
-      "community": 3,
+      "community": 18,
       "norm_label": "animatedgalaxy()"
     },
     {
       "label": "CosmosCanvas()",
       "file_type": "code",
       "source_file": "portal/src/components/CosmosCanvas.jsx",
-      "source_location": "L28",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "components_cosmoscanvas_cosmoscanvas",
-      "community": 3,
+      "community": 18,
       "norm_label": "cosmoscanvas()"
+    },
+    {
+      "label": "NodeHoverCard.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_nodehovercard",
+      "community": 18,
+      "norm_label": "nodehovercard.jsx"
+    },
+    {
+      "label": "HoverCard()",
+      "file_type": "code",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "components_nodehovercard_hovercard",
+      "community": 18,
+      "norm_label": "hovercard()"
+    },
+    {
+      "label": "NodeHoverCard()",
+      "file_type": "code",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "components_nodehovercard_nodehovercard",
+      "community": 18,
+      "norm_label": "nodehovercard()"
     },
     {
       "label": "NodeLabels.jsx",
@@ -596,7 +626,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_nodelabels",
-      "community": 3,
+      "community": 18,
       "norm_label": "nodelabels.jsx"
     },
     {
@@ -606,48 +636,18 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "components_nodelabels_nodelabel",
-      "community": 3,
+      "community": 18,
       "norm_label": "nodelabel()"
     },
     {
       "label": "NodeLabels()",
       "file_type": "code",
       "source_file": "portal/src/components/NodeLabels.jsx",
-      "source_location": "L35",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "components_nodelabels_nodelabels",
-      "community": 3,
+      "community": 18,
       "norm_label": "nodelabels()"
-    },
-    {
-      "label": "CompanyComparison.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "dashboard_companycomparison",
-      "community": 4,
-      "norm_label": "companycomparison.jsx"
-    },
-    {
-      "label": "summary()",
-      "file_type": "code",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "dashboard_companycomparison_summary",
-      "community": 4,
-      "norm_label": "summary()"
-    },
-    {
-      "label": "CompanyComparison()",
-      "file_type": "code",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "dashboard_companycomparison_companycomparison",
-      "community": 4,
-      "norm_label": "companycomparison()"
     },
     {
       "label": "CompanyLeaderboard.jsx",
@@ -673,7 +673,7 @@
       "label": "PROFIT_CLASS",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/CompanyLeaderboard.jsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "dashboard_companyleaderboard_profit_class",
       "community": 2,
@@ -683,7 +683,7 @@
       "label": "CompanyLeaderboard()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/CompanyLeaderboard.jsx",
-      "source_location": "L19",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "dashboard_companyleaderboard_companyleaderboard",
       "community": 2,
@@ -703,7 +703,7 @@
       "label": "SECTOR_ORDER",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L12",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "dashboard_dashboardview_sector_order",
       "community": 2,
@@ -713,7 +713,7 @@
       "label": "median()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L14",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "dashboard_dashboardview_median",
       "community": 2,
@@ -723,7 +723,7 @@
       "label": "DashboardView()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "dashboard_dashboardview_dashboardview",
       "community": 2,
@@ -866,7 +866,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_clustercard",
-      "community": 1,
+      "community": 8,
       "norm_label": "clustercard.jsx"
     },
     {
@@ -876,7 +876,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hud_clustercard_clustercard",
-      "community": 1,
+      "community": 8,
       "norm_label": "clustercard()"
     },
     {
@@ -886,7 +886,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_commandpalette",
-      "community": 1,
+      "community": 10,
       "norm_label": "commandpalette.jsx"
     },
     {
@@ -896,7 +896,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hud_commandpalette_commandpalette",
-      "community": 1,
+      "community": 10,
       "norm_label": "commandpalette()"
     },
     {
@@ -906,7 +906,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_companypanel",
-      "community": 9,
+      "community": 10,
       "norm_label": "companypanel.jsx"
     },
     {
@@ -916,7 +916,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hud_companypanel_field_groups",
-      "community": 9,
+      "community": 10,
       "norm_label": "field_groups"
     },
     {
@@ -926,7 +926,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "hud_companypanel_fieldvalue",
-      "community": 9,
+      "community": 10,
       "norm_label": "fieldvalue()"
     },
     {
@@ -936,7 +936,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "hud_companypanel_companypanel",
-      "community": 9,
+      "community": 10,
       "norm_label": "companypanel()"
     },
     {
@@ -946,37 +946,37 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_hudoverlay",
-      "community": 1,
+      "community": 10,
       "norm_label": "hudoverlay.jsx"
     },
     {
       "label": "GridIcon()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L8",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "hud_hudoverlay_gridicon",
-      "community": 1,
+      "community": 10,
       "norm_label": "gridicon()"
     },
     {
       "label": "GlobeIcon()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L19",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "hud_hudoverlay_globeicon",
-      "community": 1,
+      "community": 10,
       "norm_label": "globeicon()"
     },
     {
       "label": "HudOverlay()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L31",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "hud_hudoverlay_hudoverlay",
-      "community": 1,
+      "community": 10,
       "norm_label": "hudoverlay()"
     },
     {
@@ -986,7 +986,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_icon",
-      "community": 9,
+      "community": 10,
       "norm_label": "icon.jsx"
     },
     {
@@ -996,7 +996,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hud_icon_base",
-      "community": 9,
+      "community": 10,
       "norm_label": "base"
     },
     {
@@ -1006,7 +1006,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "hud_icon_xicon",
-      "community": 9,
+      "community": 10,
       "norm_label": "xicon()"
     },
     {
@@ -1016,28 +1016,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "hud_icon_arrowupright",
-      "community": 9,
+      "community": 10,
       "norm_label": "arrowupright()"
-    },
-    {
-      "label": "NodeTooltip.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "hud_nodetooltip",
-      "community": 4,
-      "norm_label": "nodetooltip.jsx"
-    },
-    {
-      "label": "NodeTooltip()",
-      "file_type": "code",
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "hud_nodetooltip_nodetooltip",
-      "community": 4,
-      "norm_label": "nodetooltip()"
     },
     {
       "label": "PhaseIndicator.jsx",
@@ -1046,7 +1026,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_phaseindicator",
-      "community": 1,
+      "community": 8,
       "norm_label": "phaseindicator.jsx"
     },
     {
@@ -1056,7 +1036,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hud_phaseindicator_phaseindicator",
-      "community": 1,
+      "community": 8,
       "norm_label": "phaseindicator()"
     },
     {
@@ -1080,213 +1060,63 @@
       "norm_label": "searchspotlight()"
     },
     {
-      "label": "BodyTransitionComposition.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_bodytransitioncomposition",
-      "community": 7,
-      "norm_label": "bodytransitioncomposition.jsx"
-    },
-    {
-      "label": "CLAMP",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "intro_bodytransitioncomposition_clamp",
-      "community": 7,
-      "norm_label": "clamp"
-    },
-    {
-      "label": "BodyTransitionComposition()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "intro_bodytransitioncomposition_bodytransitioncomposition",
-      "community": 7,
-      "norm_label": "bodytransitioncomposition()"
-    },
-    {
-      "label": "BodyTransitionPlayer.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_bodytransitionplayer",
-      "community": 7,
-      "norm_label": "bodytransitionplayer.jsx"
-    },
-    {
-      "label": "BodyTransitionPlayer()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "intro_bodytransitionplayer_bodytransitionplayer",
-      "community": 7,
-      "norm_label": "bodytransitionplayer()"
-    },
-    {
-      "label": "ComparisonComposition.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_comparisoncomposition",
-      "community": 4,
-      "norm_label": "comparisoncomposition.jsx"
-    },
-    {
-      "label": "CLAMP",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "intro_comparisoncomposition_clamp",
-      "community": 4,
-      "norm_label": "clamp"
-    },
-    {
-      "label": "CompanySide()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "intro_comparisoncomposition_companyside",
-      "community": 4,
-      "norm_label": "companyside()"
-    },
-    {
-      "label": "ComparisonComposition()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L34",
-      "_origin": "ast",
-      "id": "intro_comparisoncomposition_comparisoncomposition",
-      "community": 4,
-      "norm_label": "comparisoncomposition()"
-    },
-    {
-      "label": "DashboardStoryComposition.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_dashboardstorycomposition",
-      "community": 7,
-      "norm_label": "dashboardstorycomposition.jsx"
-    },
-    {
-      "label": "CLAMP",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "intro_dashboardstorycomposition_clamp",
-      "community": 7,
-      "norm_label": "clamp"
-    },
-    {
-      "label": "STEPS",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "intro_dashboardstorycomposition_steps",
-      "community": 7,
-      "norm_label": "steps"
-    },
-    {
-      "label": "StoryCard()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "intro_dashboardstorycomposition_storycard",
-      "community": 7,
-      "norm_label": "storycard()"
-    },
-    {
-      "label": "DashboardStoryComposition()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "intro_dashboardstorycomposition_dashboardstorycomposition",
-      "community": 7,
-      "norm_label": "dashboardstorycomposition()"
-    },
-    {
-      "label": "DashboardStoryPlayer.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_dashboardstoryplayer",
-      "community": 7,
-      "norm_label": "dashboardstoryplayer.jsx"
-    },
-    {
-      "label": "DashboardStoryPlayer()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "intro_dashboardstoryplayer_dashboardstoryplayer",
-      "community": 7,
-      "norm_label": "dashboardstoryplayer()"
-    },
-    {
       "label": "IntroComposition.jsx",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L1",
       "_origin": "ast",
       "id": "intro_introcomposition",
-      "community": 4,
+      "community": 3,
       "norm_label": "introcomposition.jsx"
     },
     {
       "label": "CLAMP",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L5",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "intro_introcomposition_clamp",
-      "community": 4,
+      "community": 3,
       "norm_label": "clamp"
+    },
+    {
+      "label": "COLORS",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/IntroComposition.jsx",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "intro_introcomposition_colors",
+      "community": 3,
+      "norm_label": "colors"
     },
     {
       "label": "rng()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L7",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "intro_introcomposition_rng",
-      "community": 4,
+      "community": 3,
       "norm_label": "rng()"
     },
     {
       "label": "buildParticles()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L17",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "intro_introcomposition_buildparticles",
-      "community": 4,
+      "community": 3,
       "norm_label": "buildparticles()"
     },
     {
       "label": "IntroComposition()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L45",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "intro_introcomposition_introcomposition",
-      "community": 4,
+      "community": 3,
       "norm_label": "introcomposition()"
     },
     {
@@ -1296,7 +1126,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "intro_introplayer",
-      "community": 4,
+      "community": 3,
       "norm_label": "introplayer.jsx"
     },
     {
@@ -1306,128 +1136,108 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "intro_introplayer_introplayer",
-      "community": 4,
+      "community": 3,
       "norm_label": "introplayer()"
     },
     {
-      "label": "PhaseTransitionComposition.jsx",
+      "label": "AlignedStars.jsx",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_file": "portal/src/components/resume/AlignedStars.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "intro_phasetransitioncomposition",
-      "community": 7,
-      "norm_label": "phasetransitioncomposition.jsx"
+      "id": "resume_alignedstars",
+      "community": 10,
+      "norm_label": "alignedstars.jsx"
     },
     {
-      "label": "CLAMP",
+      "label": "AlignedStars()",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
-      "source_location": "L3",
+      "source_file": "portal/src/components/resume/AlignedStars.jsx",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "intro_phasetransitioncomposition_clamp",
-      "community": 7,
-      "norm_label": "clamp"
+      "id": "resume_alignedstars_alignedstars",
+      "community": 10,
+      "norm_label": "alignedstars()"
     },
     {
-      "label": "PhaseTransitionComposition()",
+      "label": "FlightControls.jsx",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "intro_phasetransitioncomposition_phasetransitioncomposition",
-      "community": 7,
-      "norm_label": "phasetransitioncomposition()"
-    },
-    {
-      "label": "PhaseTransitionPlayer.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "intro_phasetransitionplayer",
-      "community": 7,
-      "norm_label": "phasetransitionplayer.jsx"
+      "id": "resume_flightcontrols",
+      "community": 10,
+      "norm_label": "flightcontrols.jsx"
     },
     {
-      "label": "PhaseTransitionPlayer()",
+      "label": "FlightControls()",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
-      "source_location": "L4",
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "intro_phasetransitionplayer_phasetransitionplayer",
-      "community": 7,
-      "norm_label": "phasetransitionplayer()"
+      "id": "resume_flightcontrols_flightcontrols",
+      "community": 10,
+      "norm_label": "flightcontrols()"
     },
     {
-      "label": "PortalTransitionComposition.jsx",
+      "label": "UploadDock.jsx",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "intro_portaltransitioncomposition",
-      "community": 7,
-      "norm_label": "portaltransitioncomposition.jsx"
+      "id": "resume_uploaddock",
+      "community": 4,
+      "norm_label": "uploaddock.jsx"
     },
     {
-      "label": "CLAMP",
+      "label": "TrajectoryIcon()",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
-      "source_location": "L3",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "intro_portaltransitioncomposition_clamp",
-      "community": 7,
-      "norm_label": "clamp"
+      "id": "resume_uploaddock_trajectoryicon",
+      "community": 4,
+      "norm_label": "trajectoryicon()"
     },
     {
-      "label": "PortalTransitionComposition()",
+      "label": "STAGE_LABEL",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
-      "source_location": "L5",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "intro_portaltransitioncomposition_portaltransitioncomposition",
-      "community": 7,
-      "norm_label": "portaltransitioncomposition()"
+      "id": "resume_uploaddock_stage_label",
+      "community": 4,
+      "norm_label": "stage_label"
     },
     {
-      "label": "PortalTransitionPlayer.jsx",
+      "label": "UploadDock()",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "resume_uploaddock_uploaddock",
+      "community": 4,
+      "norm_label": "uploaddock()"
+    },
+    {
+      "label": "useFlightTour.js",
+      "file_type": "code",
+      "source_file": "portal/src/hooks/useFlightTour.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "intro_portaltransitionplayer",
-      "community": 7,
-      "norm_label": "portaltransitionplayer.jsx"
+      "id": "hooks_useflighttour",
+      "community": 6,
+      "norm_label": "useflighttour.js"
     },
     {
-      "label": "PortalTransitionPlayer()",
+      "label": "useFlightTour()",
       "file_type": "code",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L4",
+      "source_file": "portal/src/hooks/useFlightTour.js",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "intro_portaltransitionplayer_portaltransitionplayer",
-      "community": 7,
-      "norm_label": "portaltransitionplayer()"
-    },
-    {
-      "label": "RemotionOverlayPlayer.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "intro_remotionoverlayplayer",
-      "community": 7,
-      "norm_label": "remotionoverlayplayer.jsx"
-    },
-    {
-      "label": "RemotionOverlayPlayer()",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "community": 7,
-      "norm_label": "remotionoverlayplayer()"
+      "id": "hooks_useflighttour_useflighttour",
+      "community": 6,
+      "norm_label": "useflighttour()"
     },
     {
       "label": "useScrollProgress.js",
@@ -1436,7 +1246,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hooks_usescrollprogress",
-      "community": 7,
+      "community": 6,
       "norm_label": "usescrollprogress.js"
     },
     {
@@ -1446,7 +1256,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "hooks_usescrollprogress_usescrollprogress",
-      "community": 7,
+      "community": 6,
       "norm_label": "usescrollprogress()"
     },
     {
@@ -1456,58 +1266,98 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_currency",
-      "community": 17,
+      "community": 7,
       "norm_label": "currency.js"
     },
     {
-      "label": "RULES",
+      "label": "USD_PER",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L1",
+      "source_location": "L12",
       "_origin": "ast",
-      "id": "lib_currency_rules",
-      "community": 17,
-      "norm_label": "rules"
+      "id": "lib_currency_usd_per",
+      "community": 7,
+      "norm_label": "usd_per"
     },
     {
-      "label": "explicitCurrencyCode()",
+      "label": "detectCurrency()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L14",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "lib_currency_explicitcurrencycode",
-      "community": 17,
-      "norm_label": "explicitcurrencycode()"
+      "id": "lib_currency_detectcurrency",
+      "community": 7,
+      "norm_label": "detectcurrency()"
     },
     {
-      "label": "currencyCode()",
+      "label": "WORD_SCALE",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L23",
+      "source_location": "L35",
       "_origin": "ast",
-      "id": "lib_currency_currencycode",
-      "community": 17,
-      "norm_label": "currencycode()"
+      "id": "lib_currency_word_scale",
+      "community": 7,
+      "norm_label": "word_scale"
     },
     {
-      "label": "formatCurrencyCompact()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/currency.js",
-      "source_location": "L32",
-      "_origin": "ast",
-      "id": "lib_currency_formatcurrencycompact",
-      "community": 17,
-      "norm_label": "formatcurrencycompact()"
-    },
-    {
-      "label": "rankWithinCurrency()",
+      "label": "SUFFIX",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "lib_currency_rankwithincurrency",
-      "community": 17,
-      "norm_label": "rankwithincurrency()"
+      "id": "lib_currency_suffix",
+      "community": 7,
+      "norm_label": "suffix"
+    },
+    {
+      "label": "isNonValue()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "lib_currency_isnonvalue",
+      "community": 7,
+      "norm_label": "isnonvalue()"
+    },
+    {
+      "label": "usdValue()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "lib_currency_usdvalue",
+      "community": 7,
+      "norm_label": "usdvalue()"
+    },
+    {
+      "label": "trim()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "lib_currency_trim",
+      "community": 7,
+      "norm_label": "trim()"
+    },
+    {
+      "label": "formatUsd()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "lib_currency_formatusd",
+      "community": 7,
+      "norm_label": "formatusd()"
+    },
+    {
+      "label": "formatMoney()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "lib_currency_formatmoney",
+      "community": 7,
+      "norm_label": "formatmoney()"
     },
     {
       "label": "formatCompanyData.js",
@@ -1516,137 +1366,27 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_formatcompanydata",
-      "community": 17,
+      "community": 5,
       "norm_label": "formatcompanydata.js"
-    },
-    {
-      "label": "MONEY_FIELDS",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_money_fields",
-      "community": 17,
-      "norm_label": "money_fields"
-    },
-    {
-      "label": "compact",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_compact",
-      "community": 17,
-      "norm_label": "compact"
-    },
-    {
-      "label": "METRIC_SPECS",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_metric_specs",
-      "community": 17,
-      "norm_label": "metric_specs"
-    },
-    {
-      "label": "isMissing()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_ismissing",
-      "community": 17,
-      "norm_label": "ismissing()"
     },
     {
       "label": "ratioMetric()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L23",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "lib_formatcompanydata_ratiometric",
-      "community": 17,
+      "community": 5,
       "norm_label": "ratiometric()"
-    },
-    {
-      "label": "median()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_median",
-      "community": 17,
-      "norm_label": "median()"
-    },
-    {
-      "label": "locationCurrency()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_locationcurrency",
-      "community": 17,
-      "norm_label": "locationcurrency()"
-    },
-    {
-      "label": "inferCompanyCurrency()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_infercompanycurrency",
-      "community": 17,
-      "norm_label": "infercompanycurrency()"
-    },
-    {
-      "label": "formatKnownMoney()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_formatknownmoney",
-      "community": 17,
-      "norm_label": "formatknownmoney()"
-    },
-    {
-      "label": "estimatedDisplay()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L62",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_estimateddisplay",
-      "community": 17,
-      "norm_label": "estimateddisplay()"
-    },
-    {
-      "label": "fallbackEstimate()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_fallbackestimate",
-      "community": 17,
-      "norm_label": "fallbackestimate()"
-    },
-    {
-      "label": "peerEstimate()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L81",
-      "_origin": "ast",
-      "id": "lib_formatcompanydata_peerestimate",
-      "community": 17,
-      "norm_label": "peerestimate()"
     },
     {
       "label": "formatCompanyData()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L102",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "lib_formatcompanydata_formatcompanydata",
-      "community": 17,
+      "community": 5,
       "norm_label": "formatcompanydata()"
     },
     {
@@ -1656,7 +1396,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_formatdisplay",
-      "community": 5,
+      "community": 7,
       "norm_label": "formatdisplay.js"
     },
     {
@@ -1666,7 +1406,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "lib_formatdisplay_currency_fields",
-      "community": 5,
+      "community": 7,
       "norm_label": "currency_fields"
     },
     {
@@ -1676,7 +1416,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "lib_formatdisplay_percent_fields",
-      "community": 5,
+      "community": 7,
       "norm_label": "percent_fields"
     },
     {
@@ -1686,157 +1426,107 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "lib_formatdisplay_count_fields",
-      "community": 5,
+      "community": 7,
       "norm_label": "count_fields"
-    },
-    {
-      "label": "GENERIC_NUMBER_FIELDS",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "lib_formatdisplay_generic_number_fields",
-      "community": 5,
-      "norm_label": "generic_number_fields"
     },
     {
       "label": "DISPLAY_FIELDS",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L40",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "lib_formatdisplay_display_fields",
       "community": 5,
       "norm_label": "display_fields"
     },
     {
-      "label": "inGroup",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "lib_formatdisplay_ingroup",
-      "community": 5,
-      "norm_label": "ingroup"
-    },
-    {
       "label": "compact",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L44",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "lib_formatdisplay_compact",
-      "community": 5,
+      "community": 7,
       "norm_label": "compact"
     },
     {
       "label": "isNil()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L46",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "lib_formatdisplay_isnil",
-      "community": 5,
+      "community": 7,
       "norm_label": "isnil()"
     },
     {
       "label": "isNA()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L47",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "lib_formatdisplay_isna",
-      "community": 5,
+      "community": 7,
       "norm_label": "isna()"
     },
     {
       "label": "isPureNumber()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L48",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "lib_formatdisplay_ispurenumber",
-      "community": 5,
+      "community": 7,
       "norm_label": "ispurenumber()"
     },
     {
       "label": "round1()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L49",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "lib_formatdisplay_round1",
-      "community": 5,
+      "community": 7,
       "norm_label": "round1()"
-    },
-    {
-      "label": "inrNative()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L53",
-      "_origin": "ast",
-      "id": "lib_formatdisplay_inrnative",
-      "community": 5,
-      "norm_label": "inrnative()"
-    },
-    {
-      "label": "cleanExistingMoney()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L64",
-      "_origin": "ast",
-      "id": "lib_formatdisplay_cleanexistingmoney",
-      "community": 5,
-      "norm_label": "cleanexistingmoney()"
-    },
-    {
-      "label": "formatCurrency()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "lib_formatdisplay_formatcurrency",
-      "community": 5,
-      "norm_label": "formatcurrency()"
     },
     {
       "label": "formatPercent()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L95",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatpercent",
-      "community": 5,
+      "community": 7,
       "norm_label": "formatpercent()"
     },
     {
       "label": "formatCount()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L112",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatcount",
-      "community": 5,
+      "community": 7,
       "norm_label": "formatcount()"
     },
     {
       "label": "formatValue()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L122",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatvalue",
-      "community": 5,
+      "community": 7,
       "norm_label": "formatvalue()"
     },
     {
       "label": "toTags()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L132",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "lib_formatdisplay_totags",
-      "community": 9,
+      "community": 10,
       "norm_label": "totags()"
     },
     {
@@ -1846,57 +1536,57 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_layouts",
-      "community": 17,
+      "community": 6,
       "norm_label": "layouts.js"
     },
     {
       "label": "REGION_KEYWORDS",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L12",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "lib_layouts_region_keywords",
-      "community": 17,
+      "community": 6,
       "norm_label": "region_keywords"
     },
     {
       "label": "REGION_ORDER",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L20",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "lib_layouts_region_order",
-      "community": 17,
+      "community": 6,
       "norm_label": "region_order"
     },
     {
       "label": "regionOf()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L22",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "lib_layouts_regionof",
-      "community": 17,
+      "community": 6,
       "norm_label": "regionof()"
     },
     {
       "label": "mulberry()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L29",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "lib_layouts_mulberry",
-      "community": 17,
+      "community": 6,
       "norm_label": "mulberry()"
     },
     {
       "label": "buildLayouts()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L39",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "lib_layouts_buildlayouts",
-      "community": 17,
+      "community": 6,
       "norm_label": "buildlayouts()"
     },
     {
@@ -1906,7 +1596,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_logotexture",
-      "community": 3,
+      "community": 1,
       "norm_label": "logotexture.js"
     },
     {
@@ -1916,7 +1606,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "lib_logotexture_domainfromurl",
-      "community": 3,
+      "community": 1,
       "norm_label": "domainfromurl()"
     },
     {
@@ -1926,7 +1616,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "lib_logotexture_makelettertexture",
-      "community": 3,
+      "community": 1,
       "norm_label": "makelettertexture()"
     },
     {
@@ -1936,7 +1626,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "lib_logotexture_disposelogocache",
-      "community": 3,
+      "community": 1,
       "norm_label": "disposelogocache()"
     },
     {
@@ -1946,7 +1636,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "lib_logotexture_uselogotexture",
-      "community": 3,
+      "community": 1,
       "norm_label": "uselogotexture()"
     },
     {
@@ -1956,7 +1646,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_motion",
-      "community": 3,
+      "community": 18,
       "norm_label": "motion.js"
     },
     {
@@ -1966,7 +1656,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_parsemetric",
-      "community": 17,
+      "community": 5,
       "norm_label": "parsemetric.js"
     },
     {
@@ -1976,7 +1666,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "lib_parsemetric_suffix",
-      "community": 17,
+      "community": 5,
       "norm_label": "suffix"
     },
     {
@@ -1986,7 +1676,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "lib_parsemetric_word_scale",
-      "community": 17,
+      "community": 5,
       "norm_label": "word_scale"
     },
     {
@@ -1996,7 +1686,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "lib_parsemetric_wordscale",
-      "community": 17,
+      "community": 5,
       "norm_label": "wordscale()"
     },
     {
@@ -2006,7 +1696,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "lib_parsemetric_parseformattedmetric",
-      "community": 17,
+      "community": 5,
       "norm_label": "parseformattedmetric()"
     },
     {
@@ -2016,7 +1706,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "lib_parsemetric_firstfinite",
-      "community": 17,
+      "community": 5,
       "norm_label": "firstfinite()"
     },
     {
@@ -2026,7 +1716,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "lib_parsemetric_normalize",
-      "community": 17,
+      "community": 6,
       "norm_label": "normalize()"
     },
     {
@@ -2036,7 +1726,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_phases",
-      "community": 1,
+      "community": 8,
       "norm_label": "phases.js"
     },
     {
@@ -2046,7 +1736,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "lib_phases_phases",
-      "community": 1,
+      "community": 8,
       "norm_label": "phases"
     },
     {
@@ -2056,7 +1746,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "lib_phases_smoothstep",
-      "community": 1,
+      "community": 8,
       "norm_label": "smoothstep()"
     },
     {
@@ -2066,7 +1756,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "lib_phases_phaseindexfor",
-      "community": 1,
+      "community": 8,
       "norm_label": "phaseindexfor()"
     },
     {
@@ -2076,7 +1766,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "lib_phases_layoutblend",
-      "community": 1,
+      "community": 8,
       "norm_label": "layoutblend()"
     },
     {
@@ -2086,7 +1776,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_profitability",
-      "community": 17,
+      "community": 2,
       "norm_label": "profitability.js"
     },
     {
@@ -2096,8 +1786,208 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "lib_profitability_profitstate",
-      "community": 17,
+      "community": 2,
       "norm_label": "profitstate()"
+    },
+    {
+      "label": "resumeMatch.js",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_resumematch",
+      "community": 4,
+      "norm_label": "resumematch.js"
+    },
+    {
+      "label": "SKILL_LEXICON",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "lib_resumematch_skill_lexicon",
+      "community": 4,
+      "norm_label": "skill_lexicon"
+    },
+    {
+      "label": "SKILL_WORDS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "lib_resumematch_skill_words",
+      "community": 4,
+      "norm_label": "skill_words"
+    },
+    {
+      "label": "SHORT_OK",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "lib_resumematch_short_ok",
+      "community": 4,
+      "norm_label": "short_ok"
+    },
+    {
+      "label": "STOPWORDS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "lib_resumematch_stopwords",
+      "community": 4,
+      "norm_label": "stopwords"
+    },
+    {
+      "label": "SECTOR_KEYS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "lib_resumematch_sector_keys",
+      "community": 4,
+      "norm_label": "sector_keys"
+    },
+    {
+      "label": "CORPUS_FIELDS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "lib_resumematch_corpus_fields",
+      "community": 4,
+      "norm_label": "corpus_fields"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "lib_resumematch_normalize",
+      "community": 4,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "tokenize()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "lib_resumematch_tokenize",
+      "community": 4,
+      "norm_label": "tokenize()"
+    },
+    {
+      "label": "hasTerm()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "lib_resumematch_hasterm",
+      "community": 4,
+      "norm_label": "hasterm()"
+    },
+    {
+      "label": "titleish()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "lib_resumematch_titleish",
+      "community": 4,
+      "norm_label": "titleish()"
+    },
+    {
+      "label": "buildProfile()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "lib_resumematch_buildprofile",
+      "community": 4,
+      "norm_label": "buildprofile()"
+    },
+    {
+      "label": "buildCorpus()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "lib_resumematch_buildcorpus",
+      "community": 4,
+      "norm_label": "buildcorpus()"
+    },
+    {
+      "label": "scoreCompanies()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "lib_resumematch_scorecompanies",
+      "community": 4,
+      "norm_label": "scorecompanies()"
+    },
+    {
+      "label": "analyzeResume()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "lib_resumematch_analyzeresume",
+      "community": 4,
+      "norm_label": "analyzeresume()"
+    },
+    {
+      "label": "resumeParse.js",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_resumeparse",
+      "community": 12,
+      "norm_label": "resumeparse.js"
+    },
+    {
+      "label": "extractPdf()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "lib_resumeparse_extractpdf",
+      "community": 12,
+      "norm_label": "extractpdf()"
+    },
+    {
+      "label": "extractDocx()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "lib_resumeparse_extractdocx",
+      "community": 12,
+      "norm_label": "extractdocx()"
+    },
+    {
+      "label": "kindOf()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "lib_resumeparse_kindof",
+      "community": 12,
+      "norm_label": "kindof()"
+    },
+    {
+      "label": "extractResumeText()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "lib_resumeparse_extractresumetext",
+      "community": 12,
+      "norm_label": "extractresumetext()"
     },
     {
       "label": "search.js",
@@ -2136,7 +2026,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_sectors",
-      "community": 4,
+      "community": 3,
       "norm_label": "sectors.js"
     },
     {
@@ -2146,7 +2036,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "lib_sectors_sector_colors",
-      "community": 4,
+      "community": 3,
       "norm_label": "sector_colors"
     },
     {
@@ -2156,7 +2046,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "lib_sectors_rules",
-      "community": 4,
+      "community": 3,
       "norm_label": "rules"
     },
     {
@@ -2166,7 +2056,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "lib_sectors_derivesector",
-      "community": 4,
+      "community": 3,
       "norm_label": "derivesector()"
     },
     {
@@ -2176,7 +2066,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "lib_sectors_sectorcolor",
-      "community": 4,
+      "community": 10,
       "norm_label": "sectorcolor()"
     },
     {
@@ -2186,7 +2076,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_supabaseclient",
-      "community": 17,
+      "community": 5,
       "norm_label": "supabaseclient.js"
     },
     {
@@ -2196,7 +2086,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "lib_supabaseclient_isconfigured",
-      "community": 17,
+      "community": 5,
       "norm_label": "isconfigured"
     },
     {
@@ -2206,7 +2096,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_usecompanies",
-      "community": 17,
+      "community": 5,
       "norm_label": "usecompanies.js"
     },
     {
@@ -2216,7 +2106,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "lib_usecompanies_usecompanies",
-      "community": 7,
+      "community": 6,
       "norm_label": "usecompanies()"
     },
     {
@@ -2226,7 +2116,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main",
-      "community": 7,
+      "community": 6,
       "norm_label": "main.jsx"
     },
     {
@@ -2236,7 +2126,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "portal_tailwind_config",
-      "community": 15,
+      "community": 16,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -2246,28 +2136,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "portal_vite_config",
-      "community": 16,
+      "community": 17,
       "norm_label": "vite.config.js"
-    },
-    {
-      "label": "AGENTS.md",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "agents",
-      "community": 11,
-      "norm_label": "agents.md"
-    },
-    {
-      "label": "graphify",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "agents_graphify",
-      "community": 11,
-      "norm_label": "graphify"
     },
     {
       "label": "CLAUDE.md",
@@ -2276,7 +2146,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude",
-      "community": 12,
+      "community": 13,
       "norm_label": "claude.md"
     },
     {
@@ -2286,7 +2156,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude_graphify",
-      "community": 12,
+      "community": 13,
       "norm_label": "graphify"
     },
     {
@@ -2296,7 +2166,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "portal_readme",
-      "community": 10,
+      "community": 11,
       "norm_label": "readme.md"
     },
     {
@@ -2306,7 +2176,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "portal_readme_the_corporate_cosmos",
-      "community": 10,
+      "community": 11,
       "norm_label": "the corporate cosmos"
     },
     {
@@ -2316,7 +2186,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "portal_readme_architecture_in_one_breath",
-      "community": 10,
+      "community": 11,
       "norm_label": "architecture in one breath"
     },
     {
@@ -2326,7 +2196,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "portal_readme_scroll_journey",
-      "community": 10,
+      "community": 11,
       "norm_label": "scroll journey"
     },
     {
@@ -2336,7 +2206,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "portal_readme_run",
-      "community": 10,
+      "community": 11,
       "norm_label": "run"
     },
     {
@@ -2346,7 +2216,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "portal_readme_file_map",
-      "community": 10,
+      "community": 11,
       "norm_label": "file map"
     },
     {
@@ -2356,7 +2226,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes",
-      "community": 6,
+      "community": 9,
       "norm_label": "01-cosmos-logo-nodes.md"
     },
     {
@@ -2366,7 +2236,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_plan_01_cosmos_nodes_instancedmesh_118_logo_textured_meshes",
-      "community": 6,
+      "community": 9,
       "norm_label": "plan 01 \u2014 cosmos nodes: instancedmesh \u2192 118 logo-textured meshes"
     },
     {
@@ -2376,7 +2246,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_0_discovery_confirmed_do_not_re_derive",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 0 \u2014 discovery (confirmed, do not re-derive)"
     },
     {
@@ -2386,7 +2256,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_confirmed_facts_checked_against_supabase_company_json_current_source",
-      "community": 6,
+      "community": 9,
       "norm_label": "confirmed facts (checked against supabase `company_json` + current source)"
     },
     {
@@ -2396,7 +2266,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_decisions_locked_by_user_this_session",
-      "community": 6,
+      "community": 9,
       "norm_label": "decisions locked (by user, this session)"
     },
     {
@@ -2406,7 +2276,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_allowed_apis_verified_present_package_json",
-      "community": 6,
+      "community": 9,
       "norm_label": "allowed apis (verified present \u2014 `package.json`)"
     },
     {
@@ -2416,7 +2286,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_anti_patterns_to_avoid_will_break_this_refactor",
-      "community": 6,
+      "community": 9,
       "norm_label": "anti-patterns to avoid (will break this refactor)"
     },
     {
@@ -2426,7 +2296,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_performance_budget_the_user_explicitly_asked_for_this",
-      "community": 6,
+      "community": 9,
       "norm_label": "performance budget (the user explicitly asked for this)"
     },
     {
@@ -2436,7 +2306,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_1_thread_logo_url_derived_domain_into_node_metadata",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 1 \u2014 thread `logo_url` + derived `domain` into node metadata"
     },
     {
@@ -2446,7 +2316,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_2_texture_loading_fallback_utility_new_file",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 2 \u2014 texture loading / fallback utility (new file)"
     },
     {
@@ -2456,7 +2326,7 @@
       "source_location": "L285",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_3_refactor_companynodes_into_a_map_loop_of_individual_meshes",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 3 \u2014 refactor `companynodes` into a map-loop of individual meshes"
     },
     {
@@ -2466,7 +2336,7 @@
       "source_location": "L461",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_4_material_declaration_already_inline_in_phase_3_environment",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 4 \u2014 material declaration (already inline in phase 3) + environment"
     },
     {
@@ -2476,7 +2346,7 @@
       "source_location": "L474",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_5_bloom_tuning_check_light_touch",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 5 \u2014 bloom tuning check (light touch)"
     },
     {
@@ -2486,7 +2356,7 @@
       "source_location": "L486",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_phase_6_final_verification",
-      "community": 6,
+      "community": 9,
       "norm_label": "phase 6 \u2014 final verification"
     },
     {
@@ -2496,7 +2366,7 @@
       "source_location": "L508",
       "_origin": "ast",
       "id": "plans_01_cosmos_logo_nodes_known_trade_offs_accepted",
-      "community": 6,
+      "community": 9,
       "norm_label": "known trade-offs (accepted)"
     }
   ],
@@ -2525,7 +2395,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package",
@@ -2629,7 +2499,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
-      "target": "portal_package_dependencies_postprocessing"
+      "target": "portal_package_dependencies_mammoth"
     },
     {
       "relation": "contains",
@@ -2639,13 +2509,33 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
-      "target": "portal_package_dependencies_react"
+      "target": "portal_package_dependencies_pdfjs_dist"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
       "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portal_package_dependencies",
+      "target": "portal_package_dependencies_postprocessing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portal_package_dependencies",
+      "target": "portal_package_dependencies_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/package.json",
+      "source_location": "L22",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
@@ -2685,7 +2575,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
@@ -2695,7 +2585,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
@@ -2725,7 +2615,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_dependencies",
@@ -2735,7 +2625,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_devdependencies",
@@ -2745,7 +2635,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L28",
+      "source_location": "L30",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_devdependencies",
@@ -2755,7 +2645,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_devdependencies",
@@ -2765,7 +2655,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_devdependencies",
@@ -2775,7 +2665,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/package.json",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portal_package_devdependencies",
@@ -2786,7 +2676,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2797,7 +2687,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2808,7 +2698,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L8",
+      "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2819,11 +2709,33 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L8",
+      "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
       "target": "dashboard_dashboardview_dashboardview"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "hooks_useflighttour"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "hooks_useflighttour_useflighttour"
     },
     {
       "relation": "imports_from",
@@ -2852,7 +2764,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2863,7 +2775,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2874,51 +2786,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "intro_bodytransitionplayer"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "intro_bodytransitionplayer_bodytransitionplayer"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_dashboardstoryplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_dashboardstoryplayer_dashboardstoryplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -2929,55 +2797,11 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
       "target": "intro_introplayer_introplayer"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_phasetransitionplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_phasetransitionplayer_phasetransitionplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_portaltransitionplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "intro_portaltransitionplayer_portaltransitionplayer",
-      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3006,55 +2830,11 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "lib_phases",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "lib_phases_phaseindexfor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "lib_phases_phases",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L10",
+      "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
-      "target": "lib_sectors"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app",
-      "target": "lib_sectors_sectorcolor"
+      "target": "lib_resumematch"
     },
     {
       "relation": "imports_from",
@@ -3082,7 +2862,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L12",
+      "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -3092,7 +2872,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L145",
+      "source_location": "L186",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -3102,7 +2882,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L137",
+      "source_location": "L178",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
@@ -3125,7 +2905,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "portal/src/App.jsx",
-      "source_location": "L31",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_useflighttour_useflighttour"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L53",
       "weight": 1.0,
       "source": "src_app_app",
       "target": "hooks_usescrollprogress_usescrollprogress"
@@ -3136,29 +2927,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "portal/src/App.jsx",
-      "source_location": "L120",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "lib_phases_phaseindexfor"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L99",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "lib_sectors_sectorcolor"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/App.jsx",
-      "source_location": "L13",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "src_app_app",
       "target": "lib_usecompanies_usecompanies"
@@ -3208,26 +2977,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_camerarig",
-      "target": "components_camerarig_follow_offset"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_camerarig",
-      "target": "components_camerarig_followpos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/CameraRig.jsx",
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3271,17 +3020,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_companynodes",
-      "target": "components_companynodes_blaze_color"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L70",
+      "source_location": "L69",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_companynodes",
@@ -3291,17 +3030,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_companynodes",
-      "target": "components_companynodes_hit_geometry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_companynodes",
@@ -3321,7 +3050,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L22",
+      "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_companynodes",
@@ -3453,7 +3182,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_companynodes_logonode",
@@ -3611,8 +3340,40 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_file": "portal/src/components/ConstellationLinks.jsx",
       "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_constellationlinks",
+      "target": "components_constellationlinks_constellationlinks"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_cosmoscanvas",
+      "target": "components_constellationlinks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_cosmoscanvas",
+      "target": "components_constellationlinks_constellationlinks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_cosmoscanvas",
@@ -3622,11 +3383,33 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/CosmosCanvas.jsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_cosmoscanvas",
       "target": "components_cosmoscanvas_cosmoscanvas"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_cosmoscanvas",
+      "target": "components_nodehovercard"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CosmosCanvas.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_cosmoscanvas",
+      "target": "components_nodehovercard_nodehovercard"
     },
     {
       "relation": "imports_from",
@@ -3653,6 +3436,59 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_nodehovercard",
+      "target": "components_nodehovercard_hovercard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_nodehovercard",
+      "target": "components_nodehovercard_nodehovercard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_nodehovercard",
+      "target": "lib_sectors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_nodehovercard",
+      "target": "lib_sectors_sectorcolor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/NodeHoverCard.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_nodehovercard_hovercard",
+      "target": "lib_sectors_sectorcolor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/NodeLabels.jsx",
       "source_location": "L9",
       "weight": 1.0,
@@ -3669,125 +3505,6 @@
       "confidence_score": 1.0,
       "source": "components_nodelabels",
       "target": "components_nodelabels_nodelabels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "dashboard_companycomparison_companycomparison",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "dashboard_companycomparison_summary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "intro_comparisoncomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "intro_comparisoncomposition_comparisoncomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "intro_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "lib_sectors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison",
-      "target": "lib_sectors_sectorcolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "dashboard_dashboardview",
-      "target": "dashboard_companycomparison",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "dashboard_companycomparison_summary",
-      "target": "lib_sectors_sectorcolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "dashboard_dashboardview",
-      "target": "dashboard_companycomparison_companycomparison",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3966,9 +3683,9 @@
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboard_dashboardview",
-      "target": "lib_currency"
+      "target": "lib_currency",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3977,20 +3694,9 @@
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dashboard_dashboardview",
-      "target": "lib_currency_currencycode"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_dashboardview",
-      "target": "lib_currency_formatcurrencycompact"
+      "target": "lib_currency_formatusd",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4345,7 +4051,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L19",
+      "source_location": "L22",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "hud_hudoverlay",
@@ -4355,7 +4061,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L8",
+      "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "hud_hudoverlay",
@@ -4365,33 +4071,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L31",
+      "source_location": "L34",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "hud_hudoverlay",
       "target": "hud_hudoverlay_hudoverlay"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_hudoverlay",
-      "target": "hud_nodetooltip"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_hudoverlay",
-      "target": "hud_nodetooltip_nodetooltip"
     },
     {
       "relation": "imports_from",
@@ -4438,6 +4122,72 @@
       "target": "hud_searchspotlight_searchspotlight"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_alignedstars"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_alignedstars_alignedstars"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_flightcontrols"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_flightcontrols_flightcontrols"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_uploaddock"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "resume_uploaddock_uploaddock"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/hud/Icon.jsx",
@@ -4466,49 +4216,6 @@
       "confidence_score": 1.0,
       "source": "hud_icon",
       "target": "hud_icon_xicon"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_nodetooltip",
-      "target": "hud_nodetooltip_nodetooltip"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_nodetooltip",
-      "target": "lib_sectors"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_nodetooltip",
-      "target": "lib_sectors_sectorcolor"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/components/hud/NodeTooltip.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "hud_nodetooltip_nodetooltip",
-      "target": "lib_sectors_sectorcolor"
     },
     {
       "relation": "contains",
@@ -4599,204 +4306,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_bodytransitioncomposition",
-      "target": "intro_bodytransitioncomposition_bodytransitioncomposition"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_bodytransitioncomposition",
-      "target": "intro_bodytransitioncomposition_clamp"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_bodytransitionplayer",
-      "target": "intro_bodytransitioncomposition"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_bodytransitionplayer",
-      "target": "intro_bodytransitioncomposition_bodytransitioncomposition"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_bodytransitionplayer",
-      "target": "intro_bodytransitionplayer_bodytransitionplayer"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_bodytransitionplayer",
-      "target": "intro_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_bodytransitionplayer",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "intro_comparisoncomposition",
-      "target": "intro_comparisoncomposition_clamp",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "intro_comparisoncomposition",
-      "target": "intro_comparisoncomposition_companyside",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "intro_comparisoncomposition",
-      "target": "intro_comparisoncomposition_comparisoncomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "intro_dashboardstorycomposition",
-      "target": "intro_dashboardstorycomposition_clamp",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "intro_dashboardstorycomposition",
-      "target": "intro_dashboardstorycomposition_dashboardstorycomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "intro_dashboardstorycomposition",
-      "target": "intro_dashboardstorycomposition_steps",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "intro_dashboardstorycomposition",
-      "target": "intro_dashboardstorycomposition_storycard",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "intro_dashboardstoryplayer",
-      "target": "intro_dashboardstorycomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "intro_dashboardstoryplayer",
-      "target": "intro_dashboardstorycomposition_dashboardstorycomposition",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "intro_dashboardstoryplayer",
-      "target": "intro_dashboardstoryplayer_dashboardstoryplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_dashboardstoryplayer",
-      "target": "intro_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_dashboardstoryplayer",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L31",
       "weight": 1.0,
@@ -4813,6 +4322,16 @@
       "confidence_score": 1.0,
       "source": "intro_introcomposition",
       "target": "intro_introcomposition_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/IntroComposition.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_introcomposition",
+      "target": "intro_introcomposition_colors"
     },
     {
       "relation": "contains",
@@ -4911,162 +4430,141 @@
       "target": "intro_introplayer_introplayer"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "intro_phasetransitioncomposition",
-      "target": "intro_phasetransitioncomposition_clamp",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "intro_phasetransitioncomposition",
-      "target": "intro_phasetransitioncomposition_phasetransitioncomposition",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
-      "source_location": "L1",
+      "source_file": "portal/src/components/resume/AlignedStars.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_phasetransitionplayer",
-      "target": "intro_phasetransitioncomposition",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_alignedstars",
+      "target": "lib_sectors"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
-      "source_location": "L1",
+      "source_file": "portal/src/components/resume/AlignedStars.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_phasetransitionplayer",
-      "target": "intro_phasetransitioncomposition_phasetransitioncomposition",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_alignedstars",
+      "target": "lib_sectors_sectorcolor"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
-      "source_location": "L4",
+      "source_file": "portal/src/components/resume/AlignedStars.jsx",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "intro_phasetransitionplayer",
-      "target": "intro_phasetransitionplayer_phasetransitionplayer",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_alignedstars",
+      "target": "resume_alignedstars_alignedstars"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
       "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_phasetransitionplayer",
-      "target": "intro_remotionoverlayplayer",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_flightcontrols",
+      "target": "lib_sectors"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
       "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_phasetransitionplayer",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_flightcontrols",
+      "target": "lib_sectors_sectorcolor"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
-      "source_location": "L3",
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "intro_portaltransitioncomposition",
-      "target": "intro_portaltransitioncomposition_clamp",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_flightcontrols",
+      "target": "resume_flightcontrols_flightcontrols"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
-      "source_location": "L5",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/components/resume/FlightControls.jsx",
+      "source_location": "L17",
       "weight": 1.0,
-      "source": "intro_portaltransitioncomposition",
-      "target": "intro_portaltransitioncomposition_portaltransitioncomposition",
-      "confidence_score": 1.0
+      "source": "resume_flightcontrols_flightcontrols",
+      "target": "lib_sectors_sectorcolor"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L1",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_portaltransitionplayer",
-      "target": "intro_portaltransitioncomposition",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_uploaddock",
+      "target": "lib_resumematch"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L1",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "intro_portaltransitionplayer",
-      "target": "intro_portaltransitioncomposition_portaltransitioncomposition",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_uploaddock",
+      "target": "lib_resumematch_analyzeresume"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L4",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L18",
       "weight": 1.0,
-      "source": "intro_portaltransitionplayer",
-      "target": "intro_portaltransitionplayer_portaltransitionplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_portaltransitionplayer",
-      "target": "intro_remotionoverlayplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "intro_portaltransitionplayer",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_uploaddock",
+      "target": "resume_uploaddock_stage_label"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
-      "source_location": "L5",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "intro_remotionoverlayplayer",
-      "target": "intro_remotionoverlayplayer_remotionoverlayplayer",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "resume_uploaddock",
+      "target": "resume_uploaddock_trajectoryicon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/resume/UploadDock.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "resume_uploaddock",
+      "target": "resume_uploaddock_uploaddock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/hooks/useFlightTour.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hooks_useflighttour",
+      "target": "hooks_useflighttour_useflighttour"
     },
     {
       "relation": "contains",
@@ -5082,202 +4580,212 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L14",
+      "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_currencycode"
+      "target": "lib_currency_detectcurrency",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L14",
+      "source_location": "L102",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_explicitcurrencycode"
+      "target": "lib_currency_formatmoney",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L23",
+      "source_location": "L89",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_formatcurrencycompact"
+      "target": "lib_currency_formatusd",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L34",
+      "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_rankwithincurrency"
+      "target": "lib_currency_isnonvalue",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L1",
+      "source_location": "L43",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_rules"
+      "target": "lib_currency_suffix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_trim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_usd_per",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_usdvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_word_scale",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
-      "target": "lib_currency"
+      "target": "lib_currency",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L4",
+      "source_file": "portal/src/lib/formatDisplay.js",
+      "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_layouts",
-      "target": "lib_currency"
+      "source": "lib_formatdisplay",
+      "target": "lib_currency",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L26",
+      "source_location": "L60",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_currency_currencycode",
-      "target": "lib_currency_explicitcurrencycode"
+      "source": "lib_currency_usdvalue",
+      "target": "lib_currency_detectcurrency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "lib_currency_usdvalue",
+      "target": "lib_currency_isnonvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "lib_currency_formatmoney",
+      "target": "lib_currency_usdvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "lib_currency_usdvalue",
+      "target": "lib_currency_trim",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
-      "target": "lib_currency_explicitcurrencycode"
+      "target": "lib_currency_usdvalue",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L50",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L94",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_infercompanycurrency",
-      "target": "lib_currency_explicitcurrencycode"
+      "source": "lib_currency_formatusd",
+      "target": "lib_currency_trim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "lib_currency_formatmoney",
+      "target": "lib_currency_formatusd",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L4",
+      "source_file": "portal/src/lib/formatDisplay.js",
+      "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_layouts",
-      "target": "lib_currency_currencycode"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_currency_formatcurrencycompact"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_estimateddisplay",
-      "target": "lib_currency_formatcurrencycompact"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L59",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_formatknownmoney",
-      "target": "lib_currency_formatcurrencycompact"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_layouts",
-      "target": "lib_currency_rankwithincurrency"
+      "source": "lib_formatdisplay",
+      "target": "lib_currency_formatmoney",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L62",
+      "source_file": "portal/src/lib/formatDisplay.js",
+      "source_location": "L77",
       "weight": 1.0,
-      "source": "lib_layouts_buildlayouts",
-      "target": "lib_currency_rankwithincurrency"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_compact"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_estimateddisplay"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_fallbackestimate"
+      "source": "lib_formatdisplay_formatvalue",
+      "target": "lib_currency_formatmoney"
     },
     {
       "relation": "contains",
@@ -5288,86 +4796,6 @@
       "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
       "target": "lib_formatcompanydata_formatcompanydata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_formatknownmoney"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_infercompanycurrency"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_ismissing"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_locationcurrency"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_median"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_metric_specs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_money_fields"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L81",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_formatcompanydata_peerestimate"
     },
     {
       "relation": "contains",
@@ -5439,28 +4867,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_profitability"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata",
-      "target": "lib_profitability_profitstate"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5494,99 +4900,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L157",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_formatcompanydata",
-      "target": "lib_formatcompanydata_ismissing"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L18",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_formatcompanydata_ratiometric",
       "target": "lib_parsemetric_parseformattedmetric"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_peerestimate",
-      "target": "lib_formatcompanydata_median"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L53",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_infercompanycurrency",
-      "target": "lib_formatcompanydata_locationcurrency"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_formatknownmoney",
-      "target": "lib_formatdisplay_formatvalue"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L144",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_formatcompanydata",
-      "target": "lib_formatcompanydata_estimateddisplay"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L99",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_peerestimate",
-      "target": "lib_formatcompanydata_fallbackestimate"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L140",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatcompanydata_formatcompanydata",
-      "target": "lib_formatcompanydata_peerestimate"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L150",
-      "weight": 1.0,
-      "source": "lib_formatcompanydata_formatcompanydata",
-      "target": "lib_profitability_profitstate"
     },
     {
       "relation": "imports",
@@ -5598,16 +4916,6 @@
       "confidence_score": 1.0,
       "source": "lib_usecompanies",
       "target": "lib_formatcompanydata_formatcompanydata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay",
-      "target": "lib_formatdisplay_cleanexistingmoney"
     },
     {
       "relation": "contains",
@@ -5663,16 +4971,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L81",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay",
-      "target": "lib_formatdisplay_formatcurrency"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L93",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5688,36 +4986,6 @@
       "confidence_score": 1.0,
       "source": "lib_formatdisplay",
       "target": "lib_formatdisplay_formatvalue"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay",
-      "target": "lib_formatdisplay_generic_number_fields"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay",
-      "target": "lib_formatdisplay_ingroup"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay",
-      "target": "lib_formatdisplay_inrnative"
     },
     {
       "relation": "contains",
@@ -5795,17 +5063,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L82",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatcurrency",
-      "target": "lib_formatdisplay_isnil"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L94",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5839,17 +5096,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L84",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatcurrency",
-      "target": "lib_formatdisplay_isna"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L96",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5865,17 +5111,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_formatdisplay_formatcount",
-      "target": "lib_formatdisplay_ispurenumber"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatcurrency",
       "target": "lib_formatdisplay_ispurenumber"
     },
     {
@@ -5899,50 +5134,6 @@
       "confidence_score": 1.0,
       "source": "lib_formatdisplay_formatpercent",
       "target": "lib_formatdisplay_round1"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_inrnative",
-      "target": "lib_formatdisplay_round1"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatcurrency",
-      "target": "lib_formatdisplay_inrnative"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatcurrency",
-      "target": "lib_formatdisplay_cleanexistingmoney"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L121",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_formatdisplay_formatvalue",
-      "target": "lib_formatdisplay_formatcurrency"
     },
     {
       "relation": "calls",
@@ -6268,6 +5459,307 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L251",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_analyzeresume"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_buildcorpus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_buildprofile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_corpus_fields"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_hasterm"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_normalize"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L186",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_scorecompanies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_sector_keys"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_short_ok"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_skill_lexicon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_skill_words"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_stopwords"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_titleish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_resumematch_tokenize"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_sectors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch",
+      "target": "lib_sectors_sector_colors"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_buildprofile",
+      "target": "lib_resumematch_normalize"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_buildprofile",
+      "target": "lib_resumematch_tokenize"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_buildprofile",
+      "target": "lib_resumematch_hasterm"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L252",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_analyzeresume",
+      "target": "lib_resumematch_buildprofile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_scorecompanies",
+      "target": "lib_resumematch_buildcorpus"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeMatch.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumematch_analyzeresume",
+      "target": "lib_resumematch_scorecompanies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse",
+      "target": "lib_resumeparse_extractdocx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse",
+      "target": "lib_resumeparse_extractpdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse",
+      "target": "lib_resumeparse_extractresumetext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse",
+      "target": "lib_resumeparse_kindof"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse_extractresumetext",
+      "target": "lib_resumeparse_extractpdf"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse_extractresumetext",
+      "target": "lib_resumeparse_extractdocx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/resumeParse.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_resumeparse_extractresumetext",
+      "target": "lib_resumeparse_kindof"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/search.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -6377,16 +5869,6 @@
       "confidence_score": 1.0,
       "source": "lib_usecompanies",
       "target": "lib_usecompanies_usecompanies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents",
-      "target": "agents_graphify"
     },
     {
       "relation": "contains",

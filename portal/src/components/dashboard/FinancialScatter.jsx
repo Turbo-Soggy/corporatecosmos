@@ -10,8 +10,8 @@ import {
   Tooltip,
 } from 'recharts';
 
-// Valuation (log X, mixed-currency magnitude) × YoY growth (Y), dot sized by
-// headcount, colored by sector. Click a dot to fly the 3D camera to that node.
+// Valuation (log X, USD) × YoY growth (Y), dot sized by headcount, colored by
+// sector. Click a dot to fly the 3D camera to that node.
 const GRID = 'rgba(255,255,255,0.06)';
 const TICK = { fill: '#64748B', fontSize: 11, fontFamily: '"JetBrains Mono", monospace' };
 
@@ -59,7 +59,7 @@ export default function FinancialScatter({ data, currency, onSelectCompany }) {
               scale="log"
               domain={['auto', 'auto']}
               tick={TICK}
-              tickFormatter={(v) => compact.format(v)}
+              tickFormatter={(v) => `$${compact.format(v)}`}
               stroke={GRID}
               label={{ value: 'VALUATION →', position: 'insideBottom', offset: -12, fill: '#64748B', fontSize: 10, letterSpacing: '0.2em' }}
             />

@@ -1,5 +1,6 @@
 import { deriveSector } from './sectors';
 import { parseFormattedMetric } from './parseMetric';
+import { usdValue } from './currency';
 import { formatValue, DISPLAY_FIELDS } from './formatDisplay';
 import { explicitCurrencyCode, formatCurrencyCompact } from './currency';
 import { profitState } from './profitability';
@@ -25,7 +26,6 @@ function ratioMetric(raw) {
   if (!Number.isFinite(n)) return NaN;
   return n > 1.5 ? n / 100 : n;
 }
-
 function median(values) {
   const sorted = values.filter(Number.isFinite).sort((a, b) => a - b);
   if (!sorted.length) return NaN;

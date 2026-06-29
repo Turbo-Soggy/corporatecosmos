@@ -4,6 +4,8 @@ import { buildLayouts } from './lib/layouts';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import { PHASES, phaseIndexFor } from './lib/phases';
 import { sectorColor } from './lib/sectors';
+import { useFlightTour } from './hooks/useFlightTour';
+import { TOUR_N } from './lib/resumeMatch';
 import CosmosCanvas from './components/CosmosCanvas';
 import HudOverlay from './components/hud/HudOverlay';
 import IntroPlayer from './components/intro/IntroPlayer';
@@ -13,7 +15,9 @@ import PortalTransitionPlayer from './components/intro/PortalTransitionPlayer';
 import DashboardStoryPlayer from './components/intro/DashboardStoryPlayer';
 import DashboardView from './components/dashboard/DashboardView';
 
-const SCROLL_VH = 400;
+const RESUME_BLAZE = '#5eead4'; // teal tint for the personal constellation
+
+const SCROLL_VH = 400; // height of the scroll driver -> length of the journey
 
 export default function App() {
   const { companies, loading, error } = useCompanies();
@@ -35,6 +39,22 @@ export default function App() {
   const lastPhaseRef = useRef(0);
   const storyIdRef = useRef(0);
   const storyPlayedRef = useRef(false);
+
+  // Résumé match: parsed { profile, ranked, fileName } | null, plus the upload modal.
+  const [resume, setResume] = useState(null);
+  const [uploadOpen, setUploadOpen] = useState(false);
+
+  const matchSet = useMemo(
+    () => (resume ? new Set(resume.ranked.filter((r) => r.compatible).map((r) => r.index)) : null),
+    [resume]
+  );
+  const linkOrder = useMemo(
+    () =>
+      resume
+        ? resume.ranked.filter((r) => r.compatible).slice(0, TOUR_N).map((r) => r.index)
+        : [],
+    [resume]
+  );
 
   const layouts = useMemo(() => (companies.length ? buildLayouts(companies) : null), [companies]);
   const introColors = useMemo(
@@ -62,6 +82,10 @@ export default function App() {
   }
 
   const onHover = useCallback((index, x = 0, y = 0) => setHover({ index, x, y }), []);
+
+  // Direct A -> B traversal. Re-selecting the active node is a no-op (no state
+  // change => the camera keeps its smooth lerp instead of restarting). The HUD
+  // panel stays mounted throughout and just swaps which company it shows.
   const onSelect = useCallback((index) => {
     if (index != null && index !== selectedRef.current) {
       transitionIdRef.current += 1;
@@ -77,6 +101,13 @@ export default function App() {
   const replayDashboardStory = useCallback(() => {
     storyIdRef.current += 1;
     setDashboardStory({ id: storyIdRef.current });
+  }, []);
+
+  const tour = useFlightTour(onSelect, linkOrder);
+
+  const clearResume = useCallback(() => {
+    setResume(null);
+    setSelected(null);
   }, []);
 
   const startPortal = useCallback((target, index = null) => {
@@ -171,14 +202,47 @@ export default function App() {
       <>
         {view === 'cosmos' && (
           <>
-            <CosmosCanvas layouts={layouts} progressRef={progressRef} sharedPositions={sharedPositions.current} hovered={hover.index} selected={selected} query={query} onHover={onHover} onSelect={onSelect} introActive={introState !== 'done'} />
+            <CosmosCanvas
+              layouts={layouts}
+              progressRef={progressRef}
+              sharedPositions={sharedPositions.current}
+              hovered={hover.index}
+              selected={selected}
+              query={query}
+              matchSet={matchSet}
+              blazeHex={resume ? RESUME_BLAZE : null}
+              linkOrder={linkOrder}
+              onHover={onHover}
+              onSelect={onSelect}
+              introActive={introState !== 'done'}
+            />
+            {/* Invisible scroll driver — gives the page its height so GSAP can scrub. */}
             <div ref={triggerRef} style={{ height: `${SCROLL_VH}vh` }} className="relative z-0 pointer-events-none" />
           </>
         )}
         {view === 'dashboard' && (
           <DashboardView companies={companies} layouts={layouts} onSelectCompany={onSwitchToCosmos} onReplayStory={replayDashboardStory} />
         )}
-        <HudOverlay progress={progress} layouts={layouts} companies={companies} hover={hover} selected={selected} query={query} onQuery={setQuery} onSelect={onSelect} onCloseSelected={() => onSelect(null)} view={view} onSwitchToDashboard={onSwitchToDashboard} onSwitchToCosmos={onSwitchToCosmos} />
+        <HudOverlay
+          progress={progress}
+          layouts={layouts}
+          companies={companies}
+          hover={hover}
+          selected={selected}
+          query={query}
+          onQuery={setQuery}
+          onSelect={onSelect}
+          onCloseSelected={() => onSelect(null)}
+          view={view}
+          onSwitchToDashboard={onSwitchToDashboard}
+          onSwitchToCosmos={onSwitchToCosmos}
+          resume={resume}
+          uploadOpen={uploadOpen}
+          onUploadOpen={setUploadOpen}
+          onResume={setResume}
+          onClearResume={clearResume}
+          tour={tour}
+        />
       </>
     );
   }

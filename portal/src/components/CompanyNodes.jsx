@@ -19,7 +19,6 @@ const ACTIVE_EMISSIVE = 2.6;   // hover/selected glow
 // brighter and shift toward yellow.
 const SEARCH_DIM = 0.1;
 const SEARCH_BLAZE = 2.8;
-const BLAZE_COLOR = new THREE.Color('#fde047');
 const tmpColor = new THREE.Color();
 
 function LogoNode({ index, meta, sectorHex, register, onHover, onSelect }) {
@@ -44,6 +43,7 @@ function LogoNode({ index, meta, sectorHex, register, onHover, onSelect }) {
       ref={meshRef}
       geometry={HIT_GEOMETRY}
       dispose={null}               // do NOT auto-dispose the shared geometry
+      frustumCulled={false}
       onPointerOver={(e) => { e.stopPropagation(); onHover(index, e.clientX, e.clientY); }}
       onPointerOut={(e) => { e.stopPropagation(); onHover(null); }}
       onPointerDown={(e) => { e.stopPropagation(); onSelect(index); }}
@@ -77,6 +77,8 @@ export default function CompanyNodes({
   hovered,
   selected,
   query,
+  matchSet,
+  blazeHex,
   onHover,
   onSelect,
   introActive,
@@ -108,8 +110,14 @@ export default function CompanyNodes({
     () => layouts.meta.map((m) => new THREE.Color(sectorColor(m.sector))),
     [layouts]
   );
-  // null === no active query (all neutral); else a Set of matching indices.
-  const matches = useMemo(() => matchIndices(layouts.meta, query), [layouts, query]);
+  // Highlight set drives the dim/blaze treatment. A résumé match (`matchSet`)
+  // takes precedence over the live search query; null === neutral (all at rest).
+  const matches = useMemo(
+    () => matchSet ?? matchIndices(layouts.meta, query),
+    [matchSet, layouts, query]
+  );
+  // Blaze tint: teal for a résumé constellation, the default yellow for search.
+  const blazeColor = useMemo(() => new THREE.Color(blazeHex || '#fde047'), [blazeHex]);
 
   useEffect(() => () => disposeLogoCache(), []); // free shared textures on scene unmount
 
@@ -200,7 +208,7 @@ export default function CompanyNodes({
         node.material.emissiveIntensity = emiss;
 
         if (s > 0.001) {
-          node.material.emissive.copy(tmpColor.copy(baseColors[i]).lerp(BLAZE_COLOR, s));
+          node.material.emissive.copy(tmpColor.copy(baseColors[i]).lerp(blazeColor, s));
         } else {
           node.material.emissive.copy(baseColors[i]);
         }
