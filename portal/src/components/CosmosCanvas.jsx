@@ -5,7 +5,9 @@ import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import CompanyNodes from './CompanyNodes';
 import CameraRig from './CameraRig';
 import NodeLabels from './NodeLabels';
+import NodeHoverCard from './NodeHoverCard';
 import ConstellationGrid from './ConstellationGrid';
+import ConstellationLinks from './ConstellationLinks';
 
 function AnimatedGalaxy() {
   const groupRef = useRef();
@@ -32,6 +34,9 @@ export default function CosmosCanvas({
   hovered,
   selected,
   query,
+  matchSet,
+  blazeHex,
+  linkOrder,
   onHover,
   onSelect,
 }) {
@@ -56,6 +61,11 @@ export default function CosmosCanvas({
         <Environment preset="city" />
         <AnimatedGalaxy />
         <ConstellationGrid progressRef={progressRef} layouts={layouts} />
+        <ConstellationLinks
+          sharedPositions={sharedPositions}
+          order={linkOrder}
+          active={Boolean(matchSet)}
+        />
 
         <CameraRig progressRef={progressRef} sharedPositions={sharedPositions} selected={selected} />
         <CompanyNodes
@@ -65,10 +75,17 @@ export default function CosmosCanvas({
           hovered={hovered}
           selected={selected}
           query={query}
+          matchSet={matchSet}
+          blazeHex={blazeHex}
           onHover={onHover}
           onSelect={onSelect}
         />
         <NodeLabels
+          layouts={layouts}
+          sharedPositions={sharedPositions}
+          selected={selected}
+        />
+        <NodeHoverCard
           layouts={layouts}
           sharedPositions={sharedPositions}
           hovered={hovered}

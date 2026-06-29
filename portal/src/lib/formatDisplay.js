@@ -1,12 +1,12 @@
 // Display-side formatting. Policy (confirmed with product):
-//  - Currency: PRESERVE the source currency & scale, just clean it up. Fix the
-//    "?"->₹ mojibake, strip trailing prose, normalize scale words. Indian values
-//    keep NATIVE crore/lakh. No FX conversion — we never invent numbers.
+//  - Currency: CONVERT every value to USD (real FX, preserving economic value)
+//    and render one standardized compact form. All currency logic lives in
+//    currency.js; this file just delegates.
 //  - Ratios (0..1) -> percentage. Already-percent strings pass through.
-//  - Bare raw numbers are the only thing we actively format; anything already
-//    carrying a currency symbol / scale word / "%" passes through unchanged
-//    (never double-formatted).
+//  - Counts: bare numbers -> compact; formatted strings pass through.
 // Edge cases are handled explicitly in each helper (null, '', NA, 0, negative).
+
+import { formatMoney } from './currency';
 
 const CURRENCY_FIELDS = new Set([
   'annual_revenue',
@@ -38,56 +38,12 @@ const COUNT_FIELDS = new Set([
 export const DISPLAY_FIELDS = [...CURRENCY_FIELDS, ...PERCENT_FIELDS, ...COUNT_FIELDS];
 
 const EMPTY = '—';
-const inGroup = new Intl.NumberFormat('en-IN'); // 2,800 grouping
 const compact = new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 });
 
 const isNil = (v) => v == null || String(v).trim() === '';
 const isNA = (s) => /^(na|n\/a|none|tbd|not applicable)$/i.test(s);
 const isPureNumber = (s) => /^-?\d+(\.\d+)?$/.test(s);
 const round1 = (n) => Math.round(n * 10) / 10;
-
-// ₹ in native Indian notation (crore / lakh), used only for BARE numbers where
-// we assume INR (the portal's home currency).
-function inrNative(n) {
-  if (n === 0) return '₹0';
-  const sign = n < 0 ? '-' : '';
-  const abs = Math.abs(n);
-  if (abs >= 1e7) return `${sign}₹${inGroup.format(round1(abs / 1e7))} Cr`;
-  if (abs >= 1e5) return `${sign}₹${inGroup.format(round1(abs / 1e5))} L`;
-  return `${sign}₹${inGroup.format(abs)}`;
-}
-
-// Tidy a value that ALREADY has a currency/scale — shorten western scale words,
-// keep crore/lakh native, and drop trailing prose after the money token.
-function cleanExistingMoney(s) {
-  const token = s.match(
-    /^\s*(₹|rs\.?|inr|\$|us\$|usd|aud|a\$|€|eur|£|gbp)?\s*[\d.,]+\s*(?:-\s*[\d.,]+)?\s*(trillion|billion|million|thousand|crore|cr|lakh|lac|bn|mn|[kmbt])?/i
-  );
-  if (!token) return s.trim(); // qualitative — pass through
-  let out = token[0].trim().replace(/\s+/g, ' ');
-  out = out
-    .replace(/\btrillion\b/i, 'T')
-    .replace(/\bbillion\b/i, 'B')
-    .replace(/\bmillion\b/i, 'M')
-    .replace(/\bthousand\b/i, 'K')
-    .replace(/\bcrore\b/i, 'Cr')
-    .replace(/\blakh\b|\blac\b/i, 'L');
-  // Attach western suffixes ("29.3 B" -> "29.3B"); keep Indian " Cr"/" L" spaced.
-  out = out.replace(/(\d)\s+([BMKT])\b/, '$1$2');
-  return out;
-}
-
-/** Currency display: preserve native currency/scale, clean only. */
-export function formatCurrency(raw) {
-  if (isNil(raw)) return EMPTY;
-  let s = String(raw).trim();
-  if (isNA(s)) return EMPTY;
-  s = s.replace(/\?(?=\s*\d)/g, '₹'); // de-mojibake leading ₹
-
-  const bare = s.replace(/,/g, '');
-  if (isPureNumber(bare)) return inrNative(parseFloat(bare)); // assume ₹
-  return cleanExistingMoney(s);
-}
 
 /** Ratio display: 0.2 -> "20%". Already-% strings pass through. */
 export function formatPercent(raw) {
@@ -118,7 +74,7 @@ export function formatCount(raw) {
 
 /** Dispatch by field name. Non-numeric fields are not handled here. */
 export function formatValue(key, raw) {
-  if (CURRENCY_FIELDS.has(key)) return formatCurrency(raw);
+  if (CURRENCY_FIELDS.has(key)) return formatMoney(raw);
   if (PERCENT_FIELDS.has(key)) return formatPercent(raw);
   if (COUNT_FIELDS.has(key)) return formatCount(raw);
   return isNil(raw) ? EMPTY : String(raw);

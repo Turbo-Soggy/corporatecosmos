@@ -1,9 +1,11 @@
 import PhaseIndicator from './PhaseIndicator';
 import ClusterCard from './ClusterCard';
-import NodeTooltip from './NodeTooltip';
 import CompanyPanel from './CompanyPanel';
 import CommandPalette from './CommandPalette';
 import SearchSpotlight from './SearchSpotlight';
+import UploadDock from '../resume/UploadDock';
+import AlignedStars from '../resume/AlignedStars';
+import FlightControls from '../resume/FlightControls';
 
 function GridIcon() {
   return (
@@ -32,7 +34,6 @@ export default function HudOverlay({
   progress,
   layouts,
   companies,
-  hover,
   selected,
   query,
   onQuery,
@@ -41,10 +42,16 @@ export default function HudOverlay({
   view,
   onSwitchToDashboard,
   onSwitchToCosmos,
+  resume,
+  uploadOpen,
+  onUploadOpen,
+  onResume,
+  onClearResume,
+  tour,
 }) {
-  const hoverMeta = hover.index != null ? layouts.meta[hover.index] : null;
   const selectedCompany = selected != null ? companies[selected] : null;
   const inCosmos = view === 'cosmos';
+  const resumeActive = Boolean(resume);
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10">
@@ -60,16 +67,36 @@ export default function HudOverlay({
 
       {inCosmos && (
         <>
-          <PhaseIndicator progress={progress} />
+          {/* The phase title + scroll hint step aside while the résumé drawer is open. */}
+          {!resumeActive && <PhaseIndicator progress={progress} />}
           <SearchSpotlight query={query} onQuery={onQuery} layouts={layouts} onSelect={onSelect} />
           <CommandPalette companies={companies} onSelect={onSelect} />
           <ClusterCard progress={progress} layouts={layouts} />
 
-          <div className="label-mono pointer-events-none absolute bottom-6 left-6">
-            Scroll to traverse · ⌘K to search · Click a node to inspect
-          </div>
+          {!resumeActive && (
+            <div className="label-mono pointer-events-none absolute bottom-6 left-6">
+              Scroll to traverse · ⌘K to search · Click a node to inspect
+            </div>
+          )}
 
-          <NodeTooltip meta={hoverMeta} x={hover.x} y={hover.y} />
+          {/* Résumé → constellation experience. */}
+          <UploadDock
+            open={uploadOpen}
+            setOpen={onUploadOpen}
+            hasResult={resumeActive}
+            companies={companies}
+            onResult={onResume}
+          />
+          <AlignedStars
+            resume={resume}
+            selected={selected}
+            onSelect={onSelect}
+            onStartTour={tour.start}
+            onReplace={() => onUploadOpen(true)}
+            onClear={onClearResume}
+          />
+          <FlightControls tour={tour} resume={resume} />
+
           <CompanyPanel company={selectedCompany} onClose={onCloseSelected} />
         </>
       )}

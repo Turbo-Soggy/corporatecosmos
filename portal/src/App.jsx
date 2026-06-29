@@ -2,22 +2,44 @@ import { useMemo, useRef, useState, useCallback } from 'react';
 import { useCompanies } from './lib/useCompanies';
 import { buildLayouts } from './lib/layouts';
 import { useScrollProgress } from './hooks/useScrollProgress';
+import { useFlightTour } from './hooks/useFlightTour';
+import { TOUR_N } from './lib/resumeMatch';
 import CosmosCanvas from './components/CosmosCanvas';
 import HudOverlay from './components/hud/HudOverlay';
 import IntroPlayer from './components/intro/IntroPlayer';
 import DashboardView from './components/dashboard/DashboardView';
+
+const RESUME_BLAZE = '#5eead4'; // teal tint for the personal constellation
 
 const SCROLL_VH = 400; // height of the scroll driver -> length of the journey
 
 export default function App() {
   const { companies, loading, error } = useCompanies();
 
-  const [hover, setHover] = useState({ index: null, x: 0, y: 0 });
+  const [hover, setHover] = useState(null); // hovered node index | null
   const [selected, setSelected] = useState(null);
   const [query, setQuery] = useState(''); // live search → dim/blaze in CompanyNodes
   const [view, setView] = useState('cosmos'); // 'cosmos' | 'dashboard'
   // Cold-open state machine: the Remotion intro plays once, fades, then unmounts.
   const [introState, setIntroState] = useState('playing'); // 'playing' | 'fading' | 'done'
+
+  // Résumé match: parsed { profile, ranked, fileName } | null, plus the upload modal.
+  const [resume, setResume] = useState(null);
+  const [uploadOpen, setUploadOpen] = useState(false);
+
+  // The compatible companies "ignite" as the constellation; the top few become
+  // the ordered launch-sequence flight path.
+  const matchSet = useMemo(
+    () => (resume ? new Set(resume.ranked.filter((r) => r.compatible).map((r) => r.index)) : null),
+    [resume]
+  );
+  const linkOrder = useMemo(
+    () =>
+      resume
+        ? resume.ranked.filter((r) => r.compatible).slice(0, TOUR_N).map((r) => r.index)
+        : [],
+    [resume]
+  );
 
   // Precompute the three spatial layouts ONCE from parsed full_json.
   const layouts = useMemo(
@@ -38,8 +60,8 @@ export default function App() {
     sharedPositions.current = new Float32Array(layouts.count * 3);
   }
 
-  const onHover = useCallback((index, x = 0, y = 0) => {
-    setHover({ index, x, y });
+  const onHover = useCallback((index) => {
+    setHover(index);
   }, []);
 
   // Direct A -> B traversal. Re-selecting the active node is a no-op (no state
@@ -47,6 +69,16 @@ export default function App() {
   // panel stays mounted throughout and just swaps which company it shows.
   const onSelect = useCallback((index) => {
     setSelected((prev) => (prev === index ? prev : index));
+  }, []);
+
+  // Launch sequence: steps `selected` through the matched flight path (CameraRig
+  // flies to each). Clearing the résumé also drops the selection + (via the order
+  // change) cancels any running tour.
+  const tour = useFlightTour(onSelect, linkOrder);
+
+  const clearResume = useCallback(() => {
+    setResume(null);
+    setSelected(null);
   }, []);
 
   const onIntroEnded = useCallback(() => {
@@ -100,9 +132,12 @@ export default function App() {
               layouts={layouts}
               progressRef={progressRef}
               sharedPositions={sharedPositions.current}
-              hovered={hover.index}
+              hovered={hover}
               selected={selected}
               query={query}
+              matchSet={matchSet}
+              blazeHex={resume ? RESUME_BLAZE : null}
+              linkOrder={linkOrder}
               onHover={onHover}
               onSelect={onSelect}
             />
@@ -119,7 +154,6 @@ export default function App() {
           progress={progress}
           layouts={layouts}
           companies={companies}
-          hover={hover}
           selected={selected}
           query={query}
           onQuery={setQuery}
@@ -128,6 +162,12 @@ export default function App() {
           view={view}
           onSwitchToDashboard={onSwitchToDashboard}
           onSwitchToCosmos={onSwitchToCosmos}
+          resume={resume}
+          uploadOpen={uploadOpen}
+          onUploadOpen={setUploadOpen}
+          onResume={setResume}
+          onClearResume={clearResume}
+          tour={tour}
         />
       </>
     );

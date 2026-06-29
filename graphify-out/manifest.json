@@ -1,0 +1,287 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1782360415.8368125,
+    "ast_hash": "24142ae5759a3094aade4d2238aea575",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1782360415.837823,
+    "ast_hash": "7bf81dca0376bde3a32244b82bc7cbc0",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1782315071.2020538,
+    "ast_hash": "e467c92b4fdbd2fad4e950ab09cb9bea",
+    "semantic_hash": ""
+  },
+  ".mcp.json": {
+    "mtime": 1782360415.837823,
+    "ast_hash": "e7fe152485c75e875f544401625ccdf5",
+    "semantic_hash": ""
+  },
+  "portal/.claude/launch.json": {
+    "mtime": 1782360415.8937974,
+    "ast_hash": "0f94447eda56bfee075d5738c77b55a6",
+    "semantic_hash": ""
+  },
+  "portal/package.json": {
+    "mtime": 1782361291.0914185,
+    "ast_hash": "e271fdabcfd808ddfcedb8e5a65a04ca",
+    "semantic_hash": ""
+  },
+  "portal/postcss.config.js": {
+    "mtime": 1782360415.905991,
+    "ast_hash": "33fad9c02cb0ec6d6030369ef6347d57",
+    "semantic_hash": ""
+  },
+  "portal/src/App.jsx": {
+    "mtime": 1782363509.399828,
+    "ast_hash": "041967ac6f3eb0728c56c6599eea6ac8",
+    "semantic_hash": ""
+  },
+  "portal/src/components/CameraRig.jsx": {
+    "mtime": 1782360415.9104052,
+    "ast_hash": "12ef5258f1f64f5be4125ad749ecc75a",
+    "semantic_hash": ""
+  },
+  "portal/src/components/CompanyNodes.jsx": {
+    "mtime": 1782363411.177505,
+    "ast_hash": "8dfbdae537bb68aff24415daeeda116d",
+    "semantic_hash": ""
+  },
+  "portal/src/components/ConstellationGrid.jsx": {
+    "mtime": 1782360415.9133961,
+    "ast_hash": "541bfae3f20fddec9b5074310f2de5e2",
+    "semantic_hash": ""
+  },
+  "portal/src/components/ConstellationLinks.jsx": {
+    "mtime": 1782361781.822331,
+    "ast_hash": "c1110d5c087353e6032e086b28023b3a",
+    "semantic_hash": ""
+  },
+  "portal/src/components/CosmosCanvas.jsx": {
+    "mtime": 1782363432.946182,
+    "ast_hash": "b9d63779b3dfac9be9660fa6b01bd124",
+    "semantic_hash": ""
+  },
+  "portal/src/components/NodeLabels.jsx": {
+    "mtime": 1782363422.1737378,
+    "ast_hash": "f456599c94474bdaa9714fe36f728cac",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/CompanyLeaderboard.jsx": {
+    "mtime": 1782360415.918429,
+    "ast_hash": "105051fac369061dd489a82117edada3",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/DashboardView.jsx": {
+    "mtime": 1782491329.9289222,
+    "ast_hash": "644b876d4186a53215c9b0ef0efddea1",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/FinancialScatter.jsx": {
+    "mtime": 1782491351.8162415,
+    "ast_hash": "3591b9e444d55d032358d4f9b182f2e0",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/KpiBar.jsx": {
+    "mtime": 1782360415.922411,
+    "ast_hash": "21767711ffa3d65b9fc773022c2a4256",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/RegionBar.jsx": {
+    "mtime": 1782360415.9234085,
+    "ast_hash": "c166dd60315187ac9df8350b3a47c3d6",
+    "semantic_hash": ""
+  },
+  "portal/src/components/dashboard/SectorDonut.jsx": {
+    "mtime": 1782360415.924422,
+    "ast_hash": "d4d0b84e486737e598ee1ffc2969f2a1",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/ClusterCard.jsx": {
+    "mtime": 1782360415.9254248,
+    "ast_hash": "fdb426a334edb03838c7ffa03e690c4b",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/CommandPalette.jsx": {
+    "mtime": 1782360415.9264028,
+    "ast_hash": "454a02807a5e3eaf147ba864bc03b6e1",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/CompanyPanel.jsx": {
+    "mtime": 1782360415.928423,
+    "ast_hash": "4b0c6faf26582fa4a39c0ac364b851c3",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/HudOverlay.jsx": {
+    "mtime": 1782363464.6598,
+    "ast_hash": "cf785416e69264f2ae76a820ea3226f9",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/Icon.jsx": {
+    "mtime": 1782360415.9294062,
+    "ast_hash": "e77f85e1f7f9ee31acb27b3b655cdb30",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/PhaseIndicator.jsx": {
+    "mtime": 1782360415.931418,
+    "ast_hash": "280a21b7c9d51fca3be8f51c5fdc8dcf",
+    "semantic_hash": ""
+  },
+  "portal/src/components/hud/SearchSpotlight.jsx": {
+    "mtime": 1782360415.9326482,
+    "ast_hash": "6f691b54a0004055917ece0f0eea129c",
+    "semantic_hash": ""
+  },
+  "portal/src/components/intro/IntroComposition.jsx": {
+    "mtime": 1782360415.9336483,
+    "ast_hash": "2b50db955200edd7bf5830b689d002a0",
+    "semantic_hash": ""
+  },
+  "portal/src/components/intro/IntroPlayer.jsx": {
+    "mtime": 1782360415.9346592,
+    "ast_hash": "5daf1e41d8eb96da9b22af5c9697a200",
+    "semantic_hash": ""
+  },
+  "portal/src/components/resume/AlignedStars.jsx": {
+    "mtime": 1782361875.9743085,
+    "ast_hash": "6e92e9776399821033c88c41812a00be",
+    "semantic_hash": ""
+  },
+  "portal/src/components/resume/FlightControls.jsx": {
+    "mtime": 1782361898.4502718,
+    "ast_hash": "689af86449a9ac3a0b3e6e35979814c8",
+    "semantic_hash": ""
+  },
+  "portal/src/components/resume/UploadDock.jsx": {
+    "mtime": 1782362104.1071846,
+    "ast_hash": "3432af6a993e37038b574d58d8a8330a",
+    "semantic_hash": ""
+  },
+  "portal/src/hooks/useFlightTour.js": {
+    "mtime": 1782361766.3863528,
+    "ast_hash": "a910aa4f191b31725aae71bdb02458bf",
+    "semantic_hash": ""
+  },
+  "portal/src/hooks/useScrollProgress.js": {
+    "mtime": 1782360415.9356625,
+    "ast_hash": "1db651826fae47e35b2155aeb7b1b0cf",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/formatCompanyData.js": {
+    "mtime": 1782368042.801896,
+    "ast_hash": "ff15ade4207a36255c064de62d77a32b",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/formatDisplay.js": {
+    "mtime": 1782491300.840818,
+    "ast_hash": "ad7a47c67e4980dc0e6b6457b4661286",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/layouts.js": {
+    "mtime": 1782360415.9386463,
+    "ast_hash": "e978e9c4e64f75a1643cb53cb70954ba",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/logoTexture.js": {
+    "mtime": 1782360415.9396758,
+    "ast_hash": "8e71a4699232119a76af4a4d79f5f5b0",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/motion.js": {
+    "mtime": 1782360415.9396758,
+    "ast_hash": "89e95d171a382d3874e78e4f1f27773d",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/parseMetric.js": {
+    "mtime": 1782360415.940657,
+    "ast_hash": "f4eeca9f51bd15826d477e120ba8c56d",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/phases.js": {
+    "mtime": 1782360415.940657,
+    "ast_hash": "b3fbeff3e4df26549ac860f79b534f32",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/profitability.js": {
+    "mtime": 1782360415.9416447,
+    "ast_hash": "5cbce1054d5d64b9ec8b63b1eabcb18e",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/resumeMatch.js": {
+    "mtime": 1782361578.5184379,
+    "ast_hash": "4fb8d64ac952e4e480a9a161e3ef3bd8",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/resumeParse.js": {
+    "mtime": 1782361336.7245958,
+    "ast_hash": "82b829916cbca93be3516c026945f930",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/search.js": {
+    "mtime": 1782360415.9426465,
+    "ast_hash": "d75dfbac053f4a1555e911ba97b37b14",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/sectors.js": {
+    "mtime": 1782360415.9426465,
+    "ast_hash": "ffc5da57e019e54c505501fb25dbdcd6",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/supabaseClient.js": {
+    "mtime": 1782360415.9426465,
+    "ast_hash": "f1015e00637fd44cd8c13b79a51d5c05",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/useCompanies.js": {
+    "mtime": 1782360415.9436462,
+    "ast_hash": "fffdff86ea0e46909746bc79744f5e8b",
+    "semantic_hash": ""
+  },
+  "portal/src/main.jsx": {
+    "mtime": 1782360415.9446504,
+    "ast_hash": "ed9b0d8c8d9c324ec0b5f65c1d60768a",
+    "semantic_hash": ""
+  },
+  "portal/tailwind.config.js": {
+    "mtime": 1782360415.9446504,
+    "ast_hash": "32f39c805fd26baf87628562564986ce",
+    "semantic_hash": ""
+  },
+  "portal/vite.config.js": {
+    "mtime": 1782360415.9456458,
+    "ast_hash": "c74283cbda3c572539d7f3ca29266398",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1782360415.8388233,
+    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "semantic_hash": ""
+  },
+  "portal/README.md": {
+    "mtime": 1782360415.897805,
+    "ast_hash": "91dd132744bf4a77473acd723f4f5b93",
+    "semantic_hash": ""
+  },
+  "portal/index.html": {
+    "mtime": 1782360415.8988023,
+    "ast_hash": "9758bb77a484457c1d66e73aba1964b4",
+    "semantic_hash": ""
+  },
+  "portal/plans/01-cosmos-logo-nodes.md": {
+    "mtime": 1782360415.9049857,
+    "ast_hash": "ef0e83d63227d99ed3b5023fd13230b9",
+    "semantic_hash": ""
+  },
+  "portal/src/components/NodeHoverCard.jsx": {
+    "mtime": 1782363377.7647989,
+    "ast_hash": "06ee73600e0d68e899999393398ceab8",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/currency.js": {
+    "mtime": 1782367973.0445979,
+    "ast_hash": "8204e1de272dffd0bd74ca197077676b",
+    "semantic_hash": ""
+  }
+}

@@ -1,5 +1,6 @@
 import { deriveSector } from './sectors';
 import { parseFormattedMetric } from './parseMetric';
+import { usdValue } from './currency';
 import { formatValue, DISPLAY_FIELDS } from './formatDisplay';
 
 // Called EXACTLY ONCE, right after the Supabase fetch resolves. Produces the
@@ -23,9 +24,11 @@ function ratioMetric(raw) {
 export function formatCompanyData(companies) {
   return companies.map((c) => {
     const metrics = {
-      valuation: parseFormattedMetric(c.valuation),
-      revenue: parseFormattedMetric(c.annual_revenue),
-      capital: parseFormattedMetric(c.total_capital_raised),
+      // Currency metrics are normalized to absolute USD so node size, the
+      // financial axis, and dashboard aggregates compare like-for-like.
+      valuation: usdValue(c.valuation),
+      revenue: usdValue(c.annual_revenue),
+      capital: usdValue(c.total_capital_raised),
       growth: ratioMetric(c.yoy_growth_rate),
       offices: parseFormattedMetric(c.office_count),
       employees: parseFormattedMetric(c.employee_size),

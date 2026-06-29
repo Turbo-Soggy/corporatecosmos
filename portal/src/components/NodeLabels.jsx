@@ -32,24 +32,16 @@ function NodeLabel({ index, sharedPositions, meta, accent }) {
   );
 }
 
-export default function NodeLabels({ layouts, sharedPositions, hovered, selected }) {
+// Only the selected node carries an in-scene accent label; hover is handled by
+// the richer body-tracking NodeHoverCard.
+export default function NodeLabels({ layouts, sharedPositions, selected }) {
+  if (selected == null) return null;
   return (
-    <>
-      {selected != null && (
-        <NodeLabel
-          index={selected}
-          sharedPositions={sharedPositions}
-          meta={layouts.meta[selected]}
-          accent
-        />
-      )}
-      {hovered != null && hovered !== selected && (
-        <NodeLabel
-          index={hovered}
-          sharedPositions={sharedPositions}
-          meta={layouts.meta[hovered]}
-        />
-      )}
-    </>
+    <NodeLabel
+      index={selected}
+      sharedPositions={sharedPositions}
+      meta={layouts.meta[selected]}
+      accent
+    />
   );
 }

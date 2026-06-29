@@ -1,13 +1,13 @@
 import { useMemo } from 'react';
 import { SECTOR_COLORS, sectorColor } from '../../lib/sectors';
 import { profitState } from '../../lib/profitability';
+import { formatUsd } from '../../lib/currency';
 import KpiBar from './KpiBar';
 import SectorDonut from './SectorDonut';
 import FinancialScatter from './FinancialScatter';
 import RegionBar from './RegionBar';
 import CompanyLeaderboard from './CompanyLeaderboard';
 
-const compact = new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 });
 const SECTOR_ORDER = Object.keys(SECTOR_COLORS);
 
 function median(values) {
@@ -41,8 +41,8 @@ export default function DashboardView({ companies, layouts, onSelectCompany }) {
       { label: 'Sectors', value: String(sectorData.length) },
       {
         label: 'Median Valuation',
-        value: Number.isFinite(medianVal) ? `≈ ${compact.format(medianVal)}` : '—',
-        hint: 'mixed currencies',
+        value: Number.isFinite(medianVal) ? `≈ ${formatUsd(medianVal)}` : '—',
+        hint: 'converted to USD',
       },
       {
         label: 'Median YoY Growth',
