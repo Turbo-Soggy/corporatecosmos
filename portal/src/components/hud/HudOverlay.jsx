@@ -66,7 +66,9 @@ export default function HudOverlay({
           <ClusterCard progress={progress} layouts={layouts} />
 
           <div className="label-mono pointer-events-none absolute bottom-6 left-6">
-            Scroll to traverse · ⌘K to search · Click a node to inspect
+            {selected != null
+              ? 'Esc to exit focus · Click another body to switch'
+              : 'Scroll to traverse · ⌘K to search · Click a node to inspect'}
           </div>
 
           <NodeTooltip meta={hoverMeta} x={hover.x} y={hover.y} />

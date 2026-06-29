@@ -90,7 +90,7 @@ export default function ConstellationGrid({ progressRef, layouts }) {
 
   const finLabels = useMemo(
     () => [
-      { pos: [34, -3, Z_FIN], text: 'VALUATION →' },
+      { pos: [30, -3, Z_FIN], text: 'WITHIN-CURRENCY VALUATION →' },
       { pos: [4, 19.5, Z_FIN], text: '↑ YoY GROWTH' },
     ],
     []

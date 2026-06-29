@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { normalize } from './parseMetric';
 import { domainFromUrl } from './logoTexture';
+import { currencyCode, rankWithinCurrency } from './currency';
 
 // ---------------------------------------------------------------------------
 // Layout precompute. Runs ONCE (memoized) from parsed full_json. Produces three
@@ -52,10 +53,13 @@ export function buildLayouts(companies) {
         ? c.metrics.revenue
         : pick(c.metrics.capital)
   );
+  const valuationCurrencies = companies.map((c) => c.metricCurrencies?.valuation || currencyCode(c.valuation));
   const growth = companies.map((c) => c.metrics.growth);
   const offices = companies.map((c) => c.metrics.offices);
 
-  const valN = normalize(valuation); // 0..1
+  // Currency magnitudes are not comparable. The financial X axis is a
+  // within-currency percentile, never an implicit FX conversion.
+  const valN = rankWithinCurrency(valuation, valuationCurrencies);
   const growN = normalize(growth);
   const offN = normalize(offices);
 
@@ -108,8 +112,10 @@ export function buildLayouts(companies) {
     sector: c.sector,
     region: regions[i],
     valuation: valuation[i], // number, for sorting/scale
+    valuationCurrency: valuationCurrencies[i],
     valuationDisplay: c.display.valuation, // cleaned string, for HUD
     growthDisplay: c.display.yoy_growth_rate,
+    estimated: c.estimated,
     logoUrl: c.logo_url ?? null, // raw, may be multi-URL/SVG — resolved in logoTexture
     domain: domainFromUrl(c.website_url), // derived; null if unparseable (no `domain` field)
   }));

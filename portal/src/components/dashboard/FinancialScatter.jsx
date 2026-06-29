@@ -37,7 +37,7 @@ function PointTooltip({ active, payload }) {
   );
 }
 
-export default function FinancialScatter({ data, onSelectCompany }) {
+export default function FinancialScatter({ data, currency, onSelectCompany }) {
   const handleClick = (pt) => {
     const idx = pt?.companyIndex ?? pt?.payload?.companyIndex;
     if (idx != null) onSelectCompany(idx);
@@ -45,7 +45,9 @@ export default function FinancialScatter({ data, onSelectCompany }) {
 
   return (
     <div className="glass p-6">
-      <div className="label-mono text-accent/80">VALUATION × GROWTH</div>
+      <div className="label-mono text-accent/80">
+        {currency ? `${currency} VALUATION × GROWTH` : 'VALUATION × GROWTH'}
+      </div>
       <div className="mt-4 h-72">
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart margin={{ top: 10, right: 16, bottom: 24, left: 8 }}>
@@ -80,7 +82,9 @@ export default function FinancialScatter({ data, onSelectCompany }) {
           </ScatterChart>
         </ResponsiveContainer>
       </div>
-      <div className="mt-1 text-center text-xs text-ink-faint">Click a point to fly to it · dot size = headcount</div>
+      <div className="mt-1 text-center text-xs text-ink-faint">
+        {data.length} same-currency companies · click a point to fly · dot size = headcount
+      </div>
     </div>
   );
 }

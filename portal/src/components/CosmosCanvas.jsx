@@ -18,8 +18,8 @@ function AnimatedGalaxy() {
 
   return (
     <group ref={groupRef}>
-      <Stars radius={100} depth={50} count={6000} factor={6} saturation={0.5} fade speed={2} />
-      <Sparkles count={400} scale={40} size={3} speed={0.8} opacity={0.4} color="#88ccff" />
+      <Stars radius={100} depth={50} count={2600} factor={5} saturation={0.45} fade speed={1.2} />
+      <Sparkles count={140} scale={40} size={2.5} speed={0.5} opacity={0.35} color="#88ccff" />
     </group>
   );
 }
@@ -34,15 +34,15 @@ export default function CosmosCanvas({
   query,
   onHover,
   onSelect,
+  introActive,
 }) {
   return (
     <div className="fixed inset-0 z-[1] pointer-events-none">
       <Canvas
         className="pointer-events-auto"
         camera={{ position: [0, 10, 58], fov: 55, near: 0.1, far: 2000 }}
-        dpr={[1, 2]}
-        gl={{ antialias: true, powerPreference: 'high-performance' }}
-        onPointerMissed={() => onSelect(null)}
+        dpr={[1, 1.35]}
+        gl={{ antialias: false, powerPreference: 'high-performance' }}
         style={{ touchAction: 'auto' }}
       >
         <color attach="background" args={['#020617']} />
@@ -57,7 +57,7 @@ export default function CosmosCanvas({
         <AnimatedGalaxy />
         <ConstellationGrid progressRef={progressRef} layouts={layouts} />
 
-        <CameraRig progressRef={progressRef} sharedPositions={sharedPositions} selected={selected} />
+        <CameraRig progressRef={progressRef} sharedPositions={sharedPositions} selected={selected} introActive={introActive} />
         <CompanyNodes
           layouts={layouts}
           progressRef={progressRef}
@@ -67,6 +67,7 @@ export default function CosmosCanvas({
           query={query}
           onHover={onHover}
           onSelect={onSelect}
+          introActive={introActive}
         />
         <NodeLabels
           layouts={layouts}
@@ -76,13 +77,11 @@ export default function CosmosCanvas({
         />
 
         {/* The "Pro Max" glow — HDR instance colors bloom against the dark void. */}
-        <EffectComposer disableNormalPass>
+        <EffectComposer disableNormalPass multisampling={0}>
           <Bloom
-            intensity={0.85}
-            luminanceThreshold={0.8}
-            luminanceSmoothing={0.2}
-            mipmapBlur
-            radius={0.7}
+            intensity={0.65}
+            luminanceThreshold={0.9}
+            luminanceSmoothing={0.15}
           />
           <Vignette eskil={false} offset={0.2} darkness={0.85} />
         </EffectComposer>

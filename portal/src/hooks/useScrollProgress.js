@@ -20,7 +20,11 @@ export function useScrollProgress(ready) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    if (!ready) return;
+    if (!ready) {
+      progressRef.current = 0;
+      setProgress(0);
+      return;
+    }
     const el = triggerRef.current;
     if (!el) return;
 

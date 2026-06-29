@@ -70,6 +70,7 @@ function FieldValue({ kind, value }) {
 
 export default function CompanyPanel({ company, onClose }) {
   const open = Boolean(company);
+  const hasEstimates = Boolean(company && Object.keys(company.estimated || {}).length);
 
   return (
     <div
@@ -110,9 +111,19 @@ export default function CompanyPanel({ company, onClose }) {
               <p className="mt-5 text-sm leading-relaxed text-ink-muted">{company.overview_text}</p>
             )}
 
+            {hasEstimates && (
+              <div className="mt-4 rounded-lg border border-amber-300/20 bg-amber-300/[0.06] px-3 py-2 text-xs text-amber-100/70">
+                Values prefixed “Est.” are deterministic estimates from comparable companies, not source records.
+              </div>
+            )}
+
             <div className="mt-7 space-y-7">
               {FIELD_GROUPS.map((group, gi) => {
-                const present = group.fields.filter(([, key]) => company[key]);
+                const present = group.fields.filter(
+                  ([, key, kind]) =>
+                    company[key] ||
+                    (kind === 'num' && company.display?.[key] && company.display[key] !== '—')
+                );
                 if (present.length === 0) return null;
                 return (
                   <section
@@ -128,7 +139,7 @@ export default function CompanyPanel({ company, onClose }) {
                           <dd className="min-w-0 flex-1">
                             <FieldValue
                               kind={kind}
-                              value={kind === 'num' ? (company.display?.[key] ?? '—') : company[key]}
+                              value={kind === 'num' ? (company.display?.[key] ?? company[key] ?? '—') : company[key]}
                             />
                           </dd>
                         </div>

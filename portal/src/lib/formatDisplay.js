@@ -35,7 +35,9 @@ const COUNT_FIELDS = new Set([
   'runway_months',
 ]);
 
-export const DISPLAY_FIELDS = [...CURRENCY_FIELDS, ...PERCENT_FIELDS, ...COUNT_FIELDS];
+const GENERIC_NUMBER_FIELDS = new Set(['net_promoter_score']);
+
+export const DISPLAY_FIELDS = [...CURRENCY_FIELDS, ...PERCENT_FIELDS, ...COUNT_FIELDS, ...GENERIC_NUMBER_FIELDS];
 
 const EMPTY = '—';
 const inGroup = new Intl.NumberFormat('en-IN'); // 2,800 grouping
@@ -121,6 +123,7 @@ export function formatValue(key, raw) {
   if (CURRENCY_FIELDS.has(key)) return formatCurrency(raw);
   if (PERCENT_FIELDS.has(key)) return formatPercent(raw);
   if (COUNT_FIELDS.has(key)) return formatCount(raw);
+  if (GENERIC_NUMBER_FIELDS.has(key)) return formatCount(raw);
   return isNil(raw) ? EMPTY : String(raw);
 }
 

@@ -3,7 +3,7 @@
 
 export const PHASES = [
   { id: 0, code: '01', label: 'THE GALAXY', blurb: 'All 118 companies, one rotating cloud.' },
-  { id: 1, code: '02', label: 'FINANCIAL AXIS', blurb: 'Dispersed by valuation & YoY growth.' },
+  { id: 1, code: '02', label: 'FINANCIAL AXIS', blurb: 'Valuation percentile within source currency & YoY growth.' },
   { id: 2, code: '03', label: 'GEOGRAPHIC CLUSTERS', blurb: 'Grouped into regional pockets.' },
 ];
 

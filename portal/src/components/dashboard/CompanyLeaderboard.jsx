@@ -7,6 +7,7 @@ const COLUMNS = [
   { key: 'name', label: 'Company', numeric: false, align: 'left' },
   { key: 'sector', label: 'Sector', numeric: false, align: 'left' },
   { key: 'region', label: 'Region', numeric: false, align: 'left' },
+  { key: 'valuationCurrency', label: 'Currency', numeric: false, align: 'left' },
   { key: 'valuation', label: 'Valuation', numeric: true, align: 'right' },
   { key: 'growth', label: 'YoY', numeric: true, align: 'right' },
   { key: 'employees', label: 'Staff', numeric: true, align: 'right' },
@@ -16,8 +17,8 @@ const COLUMNS = [
 const PROFIT_CLASS = { profit: 'text-pos', loss: 'text-neg', unknown: 'text-ink-muted' };
 
 export default function CompanyLeaderboard({ data, onSelectCompany }) {
-  const [sortKey, setSortKey] = useState('valuation');
-  const [sortDir, setSortDir] = useState('desc');
+  const [sortKey, setSortKey] = useState('name');
+  const [sortDir, setSortDir] = useState('asc');
 
   const sorted = useMemo(() => {
     const col = COLUMNS.find((c) => c.key === sortKey);
@@ -31,6 +32,9 @@ export default function CompanyLeaderboard({ data, onSelectCompany }) {
         if (!an && !bn) return 0;
         if (!an) return 1; // blanks last, always
         if (!bn) return -1;
+        if (sortKey === 'valuation' && a.valuationCurrency !== b.valuationCurrency) {
+          return String(a.valuationCurrency || 'ZZZ').localeCompare(String(b.valuationCurrency || 'ZZZ'));
+        }
         return sortDir === 'asc' ? av - bv : bv - av;
       }
       const av = String(a[sortKey] ?? '').toLowerCase();
@@ -51,10 +55,10 @@ export default function CompanyLeaderboard({ data, onSelectCompany }) {
   return (
     <div className="glass overflow-hidden p-0">
       <div className="flex items-center justify-between px-6 pt-5">
-        <div className="label-mono text-accent/80">COMPANY LEADERBOARD</div>
+        <div className="label-mono text-accent/80">COMPANY DIRECTORY</div>
         <div className="label-mono text-ink-faint">{data.length} COMPANIES</div>
       </div>
-      <div className="cosmos-scroll mt-3 max-h-[70vh] overflow-y-auto">
+      <div className="cosmos-scroll mt-3 max-h-[70vh] overflow-auto">
         <table className="w-full border-collapse text-sm">
           <thead className="sticky top-0 z-10 bg-surface/95 backdrop-blur-xl">
             <tr className="border-b border-white/10">
@@ -87,6 +91,9 @@ export default function CompanyLeaderboard({ data, onSelectCompany }) {
                   </span>
                 </td>
                 <td className="whitespace-nowrap px-4 py-2.5 text-ink-muted">{row.region}</td>
+                <td className="whitespace-nowrap px-4 py-2.5 font-mono text-xs text-ink-faint">
+                  {row.valuationCurrency || '—'}
+                </td>
                 <td className="tnum whitespace-nowrap px-4 py-2.5 text-right text-ink">{row.valuationDisplay}</td>
                 <td className="tnum whitespace-nowrap px-4 py-2.5 text-right text-ink-muted">{row.growthDisplay}</td>
                 <td className="tnum whitespace-nowrap px-4 py-2.5 text-right text-ink-muted">{row.employeesDisplay}</td>

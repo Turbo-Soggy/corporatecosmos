@@ -9,7 +9,8 @@ import { useLogoTexture, disposeLogoCache } from '../lib/logoTexture';
 import { matchIndices } from '../lib/search';
 
 // One shared geometry, reused across all 118 meshes (per-node material carries the texture).
-const NODE_GEOMETRY = new THREE.SphereGeometry(0.55, 24, 24);
+const NODE_GEOMETRY = new THREE.SphereGeometry(0.55, 18, 18);
+const HIT_GEOMETRY = new THREE.SphereGeometry(1.05, 12, 12);
 
 const BASE_EMISSIVE = 1.5;     // category-color glow at rest
 const ACTIVE_EMISSIVE = 2.6;   // hover/selected glow
@@ -41,23 +42,25 @@ function LogoNode({ index, meta, sectorHex, register, onHover, onSelect }) {
   return (
     <mesh
       ref={meshRef}
-      geometry={NODE_GEOMETRY}
+      geometry={HIT_GEOMETRY}
       dispose={null}               // do NOT auto-dispose the shared geometry
-      frustumCulled={false}
-      onPointerMove={(e) => { e.stopPropagation(); onHover(index, e.clientX, e.clientY); }}
+      onPointerOver={(e) => { e.stopPropagation(); onHover(index, e.clientX, e.clientY); }}
       onPointerOut={(e) => { e.stopPropagation(); onHover(null); }}
-      onClick={(e) => { e.stopPropagation(); onSelect(index); }}
+      onPointerDown={(e) => { e.stopPropagation(); onSelect(index); }}
     >
-      <meshPhysicalMaterial
-        ref={matRef}
+      <meshBasicMaterial visible={false} />
+      <mesh geometry={NODE_GEOMETRY} dispose={null} raycast={() => null}>
+        <meshStandardMaterial
+          ref={matRef}
         map={texture}              // logo / favicon / procedural — resolved by the hook
         emissive={sectorHex}       // category color, not `color` (keeps the logo legible)
-        emissiveIntensity={BASE_EMISSIVE}
-        roughness={0.15}
-        metalness={0.8}
-        toneMapped={false}
-        envMapIntensity={0.6}
-      />
+          emissiveIntensity={BASE_EMISSIVE}
+          roughness={0.22}
+          metalness={0.7}
+          toneMapped={false}
+          envMapIntensity={0.45}
+        />
+      </mesh>
     </mesh>
   );
 }
@@ -76,6 +79,7 @@ export default function CompanyNodes({
   query,
   onHover,
   onSelect,
+  introActive,
 }) {
   const groupRef = useRef(null);
   const n = layouts.count;
@@ -114,7 +118,7 @@ export default function CompanyNodes({
   // before this parent passive effect), so nodes.current is fully populated here.
   useEffect(() => {
     const list = nodes.current.filter(Boolean);
-    if (reducedMotion) {
+    if (reducedMotion || introActive) {
       list.forEach((node) => { node.enterT = 1; });
       return;
     }
@@ -165,7 +169,8 @@ export default function CompanyNodes({
     const A = layouts[a];
     const B = layouts[b];
 
-    if (p < 0.3 && !reducedMotion) group.rotation.y += delta * 0.05;
+    if (introActive) group.rotation.y = 0;
+    else if (p < 0.3 && !reducedMotion) group.rotation.y += delta * 0.05;
     else group.rotation.y = THREE.MathUtils.damp(group.rotation.y, 0, 3, delta);
 
     const k = 1 - Math.exp(-delta * 4);
