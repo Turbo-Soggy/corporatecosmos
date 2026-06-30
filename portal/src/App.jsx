@@ -30,6 +30,7 @@ export default function App() {
   const [phaseTransition, setPhaseTransition] = useState(null);
   const [portalTransition, setPortalTransition] = useState(null);
   const [dashboardStory, setDashboardStory] = useState(null);
+  const [missionResult, setMissionResult] = useState(null);
 
   const selectedRef = useRef(null);
   const transitionIdRef = useRef(0);
@@ -48,12 +49,20 @@ export default function App() {
     () => (resume ? new Set(resume.ranked.filter((r) => r.compatible).map((r) => r.index)) : null),
     [resume]
   );
+  const missionMatchSet = useMemo(() => {
+    const highlighted = missionResult?.companies?.highlightedIndices || [];
+    return highlighted.length ? new Set(highlighted) : null;
+  }, [missionResult]);
   const linkOrder = useMemo(
     () =>
       resume
         ? resume.ranked.filter((r) => r.compatible).slice(0, TOUR_N).map((r) => r.index)
         : [],
     [resume]
+  );
+  const missionLinkOrder = useMemo(
+    () => missionResult?.cosmos?.linkOrder?.slice(0, 12) || [],
+    [missionResult]
   );
 
   const layouts = useMemo(() => (companies.length ? buildLayouts(companies) : null), [companies]);
@@ -122,6 +131,40 @@ export default function App() {
   const onSwitchToCosmos = useCallback((index) => {
     startPortal('cosmos', typeof index === 'number' ? index : null);
   }, [startPortal]);
+
+  const scrollToPhase = useCallback((phase) => {
+    const target = { galaxy: 0, financial: 0.5, geographic: 1 }[phase];
+    if (target == null) return;
+    requestAnimationFrame(() => {
+      const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      window.scrollTo({ top: maxScroll * target, behavior: 'smooth' });
+    });
+  }, []);
+
+  const onMissionComplete = useCallback((mission) => {
+    setMissionResult(mission);
+    const focusIndex = mission.cosmos?.focusCompanyIndex;
+    const highlighted = mission.companies?.highlightedIndices || [];
+    const phase = mission.cosmos?.phase;
+
+    if (mission.dashboard?.open) {
+      if (view !== 'dashboard') startPortal('dashboard');
+      return;
+    }
+
+    if (view !== 'cosmos') {
+      startPortal('cosmos', typeof focusIndex === 'number' ? focusIndex : highlighted[0] ?? null);
+      return;
+    }
+
+    if (typeof focusIndex === 'number') onSelect(focusIndex);
+    else if (highlighted.length === 1) onSelect(highlighted[0]);
+    if (phase) scrollToPhase(phase);
+  }, [onSelect, scrollToPhase, startPortal, view]);
+
+  const onMissionClear = useCallback(() => {
+    setMissionResult(null);
+  }, []);
 
   const onPortalMidpoint = useCallback(() => {
     const transition = portalTransitionRef.current;
@@ -209,9 +252,9 @@ export default function App() {
               hovered={hover.index}
               selected={selected}
               query={query}
-              matchSet={matchSet}
-              blazeHex={resume ? RESUME_BLAZE : null}
-              linkOrder={linkOrder}
+              matchSet={matchSet || missionMatchSet}
+              blazeHex={resume ? RESUME_BLAZE : missionMatchSet ? '#fbbf24' : null}
+              linkOrder={resume ? linkOrder : missionLinkOrder}
               onHover={onHover}
               onSelect={onSelect}
               introActive={introState !== 'done'}
@@ -221,7 +264,13 @@ export default function App() {
           </>
         )}
         {view === 'dashboard' && (
-          <DashboardView companies={companies} layouts={layouts} onSelectCompany={onSwitchToCosmos} onReplayStory={replayDashboardStory} />
+          <DashboardView
+            companies={companies}
+            layouts={layouts}
+            mission={missionResult}
+            onSelectCompany={onSwitchToCosmos}
+            onReplayStory={replayDashboardStory}
+          />
         )}
         <HudOverlay
           progress={progress}
@@ -242,6 +291,9 @@ export default function App() {
           onResume={setResume}
           onClearResume={clearResume}
           tour={tour}
+          mission={missionResult}
+          onMissionComplete={onMissionComplete}
+          onMissionClear={onMissionClear}
         />
       </>
     );

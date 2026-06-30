@@ -35,7 +35,7 @@
       "source_file": "portal/package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "portal_package",
+      "id": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "community": 0,
       "norm_label": "package.json"
     },
@@ -353,7 +353,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L16",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 6,
@@ -363,7 +363,7 @@
       "label": "Splash()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L177",
+      "source_location": "L303",
       "_origin": "ast",
       "id": "src_app_splash",
       "community": 6,
@@ -373,11 +373,581 @@
       "label": "ConfigError()",
       "file_type": "code",
       "source_file": "portal/src/App.jsx",
-      "source_location": "L185",
+      "source_location": "L307",
       "_origin": "ast",
       "id": "src_app_configerror",
       "community": 6,
       "norm_label": "configerror()"
+    },
+    {
+      "label": "animationDirectorAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_animationdirectoragent",
+      "community": 3,
+      "norm_label": "animationdirectoragent.js"
+    },
+    {
+      "label": "runAnimationDirectorAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "agents_animationdirectoragent_runanimationdirectoragent",
+      "community": 3,
+      "norm_label": "runanimationdirectoragent()"
+    },
+    {
+      "label": "dataIntegrityAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_dataintegrityagent",
+      "community": 3,
+      "norm_label": "dataintegrityagent.js"
+    },
+    {
+      "label": "FIELD_LABELS",
+      "file_type": "code",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "agents_dataintegrityagent_field_labels",
+      "community": 3,
+      "norm_label": "field_labels"
+    },
+    {
+      "label": "runDataIntegrityAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "agents_dataintegrityagent_rundataintegrityagent",
+      "community": 3,
+      "norm_label": "rundataintegrityagent()"
+    },
+    {
+      "label": "financialAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_financialagent",
+      "community": 3,
+      "norm_label": "financialagent.js"
+    },
+    {
+      "label": "currencyFor()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "agents_financialagent_currencyfor",
+      "community": 3,
+      "norm_label": "currencyfor()"
+    },
+    {
+      "label": "metricValue()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "agents_financialagent_metricvalue",
+      "community": 3,
+      "norm_label": "metricvalue()"
+    },
+    {
+      "label": "rankCandidates()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "agents_financialagent_rankcandidates",
+      "community": 3,
+      "norm_label": "rankcandidates()"
+    },
+    {
+      "label": "runFinancialAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "agents_financialagent_runfinancialagent",
+      "community": 3,
+      "norm_label": "runfinancialagent()"
+    },
+    {
+      "label": "findOutliers()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "agents_financialagent_findoutliers",
+      "community": 3,
+      "norm_label": "findoutliers()"
+    },
+    {
+      "label": "geographicAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_geographicagent",
+      "community": 3,
+      "norm_label": "geographicagent.js"
+    },
+    {
+      "label": "runGeographicAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "agents_geographicagent_rungeographicagent",
+      "community": 3,
+      "norm_label": "rungeographicagent()"
+    },
+    {
+      "label": "intentSchema.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_intentschema",
+      "community": 3,
+      "norm_label": "intentschema.js"
+    },
+    {
+      "label": "emptyIntent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "agents_intentschema_emptyintent",
+      "community": 3,
+      "norm_label": "emptyintent()"
+    },
+    {
+      "label": "normalizeIntent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "agents_intentschema_normalizeintent",
+      "community": 3,
+      "norm_label": "normalizeintent()"
+    },
+    {
+      "label": "parseIntentLocally()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "agents_intentschema_parseintentlocally",
+      "community": 3,
+      "norm_label": "parseintentlocally()"
+    },
+    {
+      "label": "missionActions.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_missionactions",
+      "community": 3,
+      "norm_label": "missionactions.js"
+    },
+    {
+      "label": "companyName()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_missionactions_companyname",
+      "community": 3,
+      "norm_label": "companyname()"
+    },
+    {
+      "label": "normalizeText()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agents_missionactions_normalizetext",
+      "community": 3,
+      "norm_label": "normalizetext()"
+    },
+    {
+      "label": "compactText()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "agents_missionactions_compacttext",
+      "community": 3,
+      "norm_label": "compacttext()"
+    },
+    {
+      "label": "companySearchText()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "agents_missionactions_companysearchtext",
+      "community": 3,
+      "norm_label": "companysearchtext()"
+    },
+    {
+      "label": "findCompanyIndices()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "agents_missionactions_findcompanyindices",
+      "community": 3,
+      "norm_label": "findcompanyindices()"
+    },
+    {
+      "label": "findCompaniesInCommand()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "agents_missionactions_findcompaniesincommand",
+      "community": 3,
+      "norm_label": "findcompaniesincommand()"
+    },
+    {
+      "label": "countryOf()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "agents_missionactions_countryof",
+      "community": 3,
+      "norm_label": "countryof()"
+    },
+    {
+      "label": "inferRegionFilter()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "agents_missionactions_inferregionfilter",
+      "community": 3,
+      "norm_label": "inferregionfilter()"
+    },
+    {
+      "label": "inferSectorFilter()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "agents_missionactions_infersectorfilter",
+      "community": 3,
+      "norm_label": "infersectorfilter()"
+    },
+    {
+      "label": "inferMetric()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "agents_missionactions_infermetric",
+      "community": 3,
+      "norm_label": "infermetric()"
+    },
+    {
+      "label": "metricDisplay()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "agents_missionactions_metricdisplay",
+      "community": 3,
+      "norm_label": "metricdisplay()"
+    },
+    {
+      "label": "formatMetric()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "agents_missionactions_formatmetric",
+      "community": 3,
+      "norm_label": "formatmetric()"
+    },
+    {
+      "label": "selectedOrFirst()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "agents_missionactions_selectedorfirst",
+      "community": 3,
+      "norm_label": "selectedorfirst()"
+    },
+    {
+      "label": "uniqueIndices()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "agents_missionactions_uniqueindices",
+      "community": 3,
+      "norm_label": "uniqueindices()"
+    },
+    {
+      "label": "missionTypes.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_missiontypes",
+      "community": 3,
+      "norm_label": "missiontypes.js"
+    },
+    {
+      "label": "INTENTS",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_missiontypes_intents",
+      "community": 3,
+      "norm_label": "intents"
+    },
+    {
+      "label": "AGENT_LABELS",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "agents_missiontypes_agent_labels",
+      "community": 3,
+      "norm_label": "agent_labels"
+    },
+    {
+      "label": "createAgentResult()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "agents_missiontypes_createagentresult",
+      "community": 3,
+      "norm_label": "createagentresult()"
+    },
+    {
+      "label": "narrativeAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_narrativeagent",
+      "community": 3,
+      "norm_label": "narrativeagent.js"
+    },
+    {
+      "label": "fallbackBrief()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agents_narrativeagent_fallbackbrief",
+      "community": 3,
+      "norm_label": "fallbackbrief()"
+    },
+    {
+      "label": "generateMissionBrief()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "agents_narrativeagent_generatemissionbrief",
+      "community": 3,
+      "norm_label": "generatemissionbrief()"
+    },
+    {
+      "label": "ollamaClient.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_ollamaclient",
+      "community": 3,
+      "norm_label": "ollamaclient.js"
+    },
+    {
+      "label": "fetchWithTimeout()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_fetchwithtimeout",
+      "community": 3,
+      "norm_label": "fetchwithtimeout()"
+    },
+    {
+      "label": "checkOllamaHealth()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_checkollamahealth",
+      "community": 3,
+      "norm_label": "checkollamahealth()"
+    },
+    {
+      "label": "callOllama()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_callollama",
+      "community": 3,
+      "norm_label": "callollama()"
+    },
+    {
+      "label": "parseJsonObject()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_parsejsonobject",
+      "community": 3,
+      "norm_label": "parsejsonobject()"
+    },
+    {
+      "label": "orchestrator.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_orchestrator",
+      "community": 3,
+      "norm_label": "orchestrator.js"
+    },
+    {
+      "label": "parseIntent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "agents_orchestrator_parseintent",
+      "community": 3,
+      "norm_label": "parseintent()"
+    },
+    {
+      "label": "scopeForIntent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "agents_orchestrator_scopeforintent",
+      "community": 3,
+      "norm_label": "scopeforintent()"
+    },
+    {
+      "label": "highlightedForIntent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "agents_orchestrator_highlightedforintent",
+      "community": 3,
+      "norm_label": "highlightedforintent()"
+    },
+    {
+      "label": "runMission()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "agents_orchestrator_runmission",
+      "community": 3,
+      "norm_label": "runmission()"
+    },
+    {
+      "label": "prompts.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_prompts",
+      "community": 3,
+      "norm_label": "prompts.js"
+    },
+    {
+      "label": "buildIntentPrompt()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "agents_prompts_buildintentprompt",
+      "community": 3,
+      "norm_label": "buildintentprompt()"
+    },
+    {
+      "label": "buildNarrativePrompt()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "agents_prompts_buildnarrativeprompt",
+      "community": 3,
+      "norm_label": "buildnarrativeprompt()"
+    },
+    {
+      "label": "sectorAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_sectoragent",
+      "community": 3,
+      "norm_label": "sectoragent.js"
+    },
+    {
+      "label": "runSectorAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "agents_sectoragent_runsectoragent",
+      "community": 3,
+      "norm_label": "runsectoragent()"
+    },
+    {
+      "label": "similarityAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_similarityagent",
+      "community": 3,
+      "norm_label": "similarityagent.js"
+    },
+    {
+      "label": "closeness()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agents_similarityagent_closeness",
+      "community": 3,
+      "norm_label": "closeness()"
+    },
+    {
+      "label": "runSimilarityAgent()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "agents_similarityagent_runsimilarityagent",
+      "community": 3,
+      "norm_label": "runsimilarityagent()"
     },
     {
       "label": "CameraRig.jsx",
@@ -386,7 +956,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_camerarig",
-      "community": 18,
+      "community": 1,
       "norm_label": "camerarig.jsx"
     },
     {
@@ -396,7 +966,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_camerarig_desiredpos",
-      "community": 18,
+      "community": 1,
       "norm_label": "desiredpos"
     },
     {
@@ -406,7 +976,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_camerarig_desiredlook",
-      "community": 18,
+      "community": 1,
       "norm_label": "desiredlook"
     },
     {
@@ -416,17 +986,37 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "components_camerarig_nodepos",
-      "community": 18,
+      "community": 1,
       "norm_label": "nodepos"
+    },
+    {
+      "label": "followPos",
+      "file_type": "code",
+      "source_file": "portal/src/components/CameraRig.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_camerarig_followpos",
+      "community": 1,
+      "norm_label": "followpos"
+    },
+    {
+      "label": "FOLLOW_OFFSET",
+      "file_type": "code",
+      "source_file": "portal/src/components/CameraRig.jsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "components_camerarig_follow_offset",
+      "community": 1,
+      "norm_label": "follow_offset"
     },
     {
       "label": "CameraRig()",
       "file_type": "code",
       "source_file": "portal/src/components/CameraRig.jsx",
-      "source_location": "L16",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "components_camerarig_camerarig",
-      "community": 18,
+      "community": 1,
       "norm_label": "camerarig()"
     },
     {
@@ -450,10 +1040,20 @@
       "norm_label": "node_geometry"
     },
     {
+      "label": "HIT_GEOMETRY",
+      "file_type": "code",
+      "source_file": "portal/src/components/CompanyNodes.jsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "components_companynodes_hit_geometry",
+      "community": 1,
+      "norm_label": "hit_geometry"
+    },
+    {
       "label": "tmpColor",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "components_companynodes_tmpcolor",
       "community": 1,
@@ -463,7 +1063,7 @@
       "label": "LogoNode()",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "components_companynodes_logonode",
       "community": 1,
@@ -473,7 +1073,7 @@
       "label": "CompanyNodes()",
       "file_type": "code",
       "source_file": "portal/src/components/CompanyNodes.jsx",
-      "source_location": "L69",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "components_companynodes_companynodes",
       "community": 1,
@@ -546,7 +1146,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_constellationlinks",
-      "community": 18,
+      "community": 1,
       "norm_label": "constellationlinks.jsx"
     },
     {
@@ -556,7 +1156,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_constellationlinks_constellationlinks",
-      "community": 18,
+      "community": 1,
       "norm_label": "constellationlinks()"
     },
     {
@@ -566,7 +1166,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_cosmoscanvas",
-      "community": 18,
+      "community": 1,
       "norm_label": "cosmoscanvas.jsx"
     },
     {
@@ -576,7 +1176,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_cosmoscanvas_animatedgalaxy",
-      "community": 18,
+      "community": 1,
       "norm_label": "animatedgalaxy()"
     },
     {
@@ -586,7 +1186,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "components_cosmoscanvas_cosmoscanvas",
-      "community": 18,
+      "community": 1,
       "norm_label": "cosmoscanvas()"
     },
     {
@@ -596,7 +1196,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_nodehovercard",
-      "community": 18,
+      "community": 2,
       "norm_label": "nodehovercard.jsx"
     },
     {
@@ -606,7 +1206,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_nodehovercard_hovercard",
-      "community": 18,
+      "community": 2,
       "norm_label": "hovercard()"
     },
     {
@@ -616,7 +1216,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "components_nodehovercard_nodehovercard",
-      "community": 18,
+      "community": 2,
       "norm_label": "nodehovercard()"
     },
     {
@@ -626,7 +1226,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_nodelabels",
-      "community": 18,
+      "community": 1,
       "norm_label": "nodelabels.jsx"
     },
     {
@@ -636,7 +1236,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "components_nodelabels_nodelabel",
-      "community": 18,
+      "community": 1,
       "norm_label": "nodelabel()"
     },
     {
@@ -646,8 +1246,38 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "components_nodelabels_nodelabels",
-      "community": 18,
+      "community": 1,
       "norm_label": "nodelabels()"
+    },
+    {
+      "label": "CompanyComparison.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dashboard_companycomparison",
+      "community": 2,
+      "norm_label": "companycomparison.jsx"
+    },
+    {
+      "label": "summary()",
+      "file_type": "code",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "dashboard_companycomparison_summary",
+      "community": 2,
+      "norm_label": "summary()"
+    },
+    {
+      "label": "CompanyComparison()",
+      "file_type": "code",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "dashboard_companycomparison_companycomparison",
+      "community": 2,
+      "norm_label": "companycomparison()"
     },
     {
       "label": "CompanyLeaderboard.jsx",
@@ -673,7 +1303,7 @@
       "label": "PROFIT_CLASS",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/CompanyLeaderboard.jsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "dashboard_companyleaderboard_profit_class",
       "community": 2,
@@ -683,7 +1313,7 @@
       "label": "CompanyLeaderboard()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/CompanyLeaderboard.jsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "dashboard_companyleaderboard_companyleaderboard",
       "community": 2,
@@ -703,7 +1333,7 @@
       "label": "SECTOR_ORDER",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "dashboard_dashboardview_sector_order",
       "community": 2,
@@ -713,17 +1343,27 @@
       "label": "median()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "dashboard_dashboardview_median",
       "community": 2,
       "norm_label": "median()"
     },
     {
+      "label": "MissionSummary()",
+      "file_type": "code",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "dashboard_dashboardview_missionsummary",
+      "community": 2,
+      "norm_label": "missionsummary()"
+    },
+    {
       "label": "DashboardView()",
       "file_type": "code",
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
-      "source_location": "L23",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "dashboard_dashboardview_dashboardview",
       "community": 2,
@@ -886,7 +1526,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_commandpalette",
-      "community": 10,
+      "community": 8,
       "norm_label": "commandpalette.jsx"
     },
     {
@@ -896,7 +1536,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hud_commandpalette_commandpalette",
-      "community": 10,
+      "community": 8,
       "norm_label": "commandpalette()"
     },
     {
@@ -906,7 +1546,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_companypanel",
-      "community": 10,
+      "community": 7,
       "norm_label": "companypanel.jsx"
     },
     {
@@ -916,7 +1556,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hud_companypanel_field_groups",
-      "community": 10,
+      "community": 7,
       "norm_label": "field_groups"
     },
     {
@@ -926,7 +1566,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "hud_companypanel_fieldvalue",
-      "community": 10,
+      "community": 7,
       "norm_label": "fieldvalue()"
     },
     {
@@ -936,7 +1576,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "hud_companypanel_companypanel",
-      "community": 10,
+      "community": 7,
       "norm_label": "companypanel()"
     },
     {
@@ -946,37 +1586,37 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_hudoverlay",
-      "community": 10,
+      "community": 8,
       "norm_label": "hudoverlay.jsx"
     },
     {
       "label": "GridIcon()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "hud_hudoverlay_gridicon",
-      "community": 10,
+      "community": 8,
       "norm_label": "gridicon()"
     },
     {
       "label": "GlobeIcon()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "hud_hudoverlay_globeicon",
-      "community": 10,
+      "community": 8,
       "norm_label": "globeicon()"
     },
     {
       "label": "HudOverlay()",
       "file_type": "code",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "hud_hudoverlay_hudoverlay",
-      "community": 10,
+      "community": 8,
       "norm_label": "hudoverlay()"
     },
     {
@@ -986,7 +1626,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hud_icon",
-      "community": 10,
+      "community": 7,
       "norm_label": "icon.jsx"
     },
     {
@@ -996,7 +1636,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hud_icon_base",
-      "community": 10,
+      "community": 7,
       "norm_label": "base"
     },
     {
@@ -1006,7 +1646,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "hud_icon_xicon",
-      "community": 10,
+      "community": 7,
       "norm_label": "xicon()"
     },
     {
@@ -1016,7 +1656,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "hud_icon_arrowupright",
-      "community": 10,
+      "community": 7,
       "norm_label": "arrowupright()"
     },
     {
@@ -1060,63 +1700,213 @@
       "norm_label": "searchspotlight()"
     },
     {
+      "label": "BodyTransitionComposition.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_bodytransitioncomposition",
+      "community": 6,
+      "norm_label": "bodytransitioncomposition.jsx"
+    },
+    {
+      "label": "CLAMP",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "intro_bodytransitioncomposition_clamp",
+      "community": 6,
+      "norm_label": "clamp"
+    },
+    {
+      "label": "BodyTransitionComposition()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "intro_bodytransitioncomposition_bodytransitioncomposition",
+      "community": 6,
+      "norm_label": "bodytransitioncomposition()"
+    },
+    {
+      "label": "BodyTransitionPlayer.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_bodytransitionplayer",
+      "community": 6,
+      "norm_label": "bodytransitionplayer.jsx"
+    },
+    {
+      "label": "BodyTransitionPlayer()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "intro_bodytransitionplayer_bodytransitionplayer",
+      "community": 6,
+      "norm_label": "bodytransitionplayer()"
+    },
+    {
+      "label": "ComparisonComposition.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_comparisoncomposition",
+      "community": 2,
+      "norm_label": "comparisoncomposition.jsx"
+    },
+    {
+      "label": "CLAMP",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "intro_comparisoncomposition_clamp",
+      "community": 2,
+      "norm_label": "clamp"
+    },
+    {
+      "label": "CompanySide()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "intro_comparisoncomposition_companyside",
+      "community": 2,
+      "norm_label": "companyside()"
+    },
+    {
+      "label": "ComparisonComposition()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "intro_comparisoncomposition_comparisoncomposition",
+      "community": 2,
+      "norm_label": "comparisoncomposition()"
+    },
+    {
+      "label": "DashboardStoryComposition.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_dashboardstorycomposition",
+      "community": 6,
+      "norm_label": "dashboardstorycomposition.jsx"
+    },
+    {
+      "label": "CLAMP",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "intro_dashboardstorycomposition_clamp",
+      "community": 6,
+      "norm_label": "clamp"
+    },
+    {
+      "label": "STEPS",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "intro_dashboardstorycomposition_steps",
+      "community": 6,
+      "norm_label": "steps"
+    },
+    {
+      "label": "StoryCard()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "intro_dashboardstorycomposition_storycard",
+      "community": 6,
+      "norm_label": "storycard()"
+    },
+    {
+      "label": "DashboardStoryComposition()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "intro_dashboardstorycomposition_dashboardstorycomposition",
+      "community": 6,
+      "norm_label": "dashboardstorycomposition()"
+    },
+    {
+      "label": "DashboardStoryPlayer.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_dashboardstoryplayer",
+      "community": 6,
+      "norm_label": "dashboardstoryplayer.jsx"
+    },
+    {
+      "label": "DashboardStoryPlayer()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "intro_dashboardstoryplayer_dashboardstoryplayer",
+      "community": 6,
+      "norm_label": "dashboardstoryplayer()"
+    },
+    {
       "label": "IntroComposition.jsx",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L1",
       "_origin": "ast",
       "id": "intro_introcomposition",
-      "community": 3,
+      "community": 2,
       "norm_label": "introcomposition.jsx"
     },
     {
       "label": "CLAMP",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L14",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "intro_introcomposition_clamp",
-      "community": 3,
+      "community": 2,
       "norm_label": "clamp"
-    },
-    {
-      "label": "COLORS",
-      "file_type": "code",
-      "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "intro_introcomposition_colors",
-      "community": 3,
-      "norm_label": "colors"
     },
     {
       "label": "rng()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L21",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "intro_introcomposition_rng",
-      "community": 3,
+      "community": 2,
       "norm_label": "rng()"
     },
     {
       "label": "buildParticles()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L31",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "intro_introcomposition_buildparticles",
-      "community": 3,
+      "community": 2,
       "norm_label": "buildparticles()"
     },
     {
       "label": "IntroComposition()",
       "file_type": "code",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L53",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "intro_introcomposition_introcomposition",
-      "community": 3,
+      "community": 2,
       "norm_label": "introcomposition()"
     },
     {
@@ -1126,7 +1916,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "intro_introplayer",
-      "community": 3,
+      "community": 2,
       "norm_label": "introplayer.jsx"
     },
     {
@@ -1136,8 +1926,308 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "intro_introplayer_introplayer",
-      "community": 3,
+      "community": 2,
       "norm_label": "introplayer()"
+    },
+    {
+      "label": "PhaseTransitionComposition.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_phasetransitioncomposition",
+      "community": 6,
+      "norm_label": "phasetransitioncomposition.jsx"
+    },
+    {
+      "label": "CLAMP",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "intro_phasetransitioncomposition_clamp",
+      "community": 6,
+      "norm_label": "clamp"
+    },
+    {
+      "label": "PhaseTransitionComposition()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "intro_phasetransitioncomposition_phasetransitioncomposition",
+      "community": 6,
+      "norm_label": "phasetransitioncomposition()"
+    },
+    {
+      "label": "PhaseTransitionPlayer.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_phasetransitionplayer",
+      "community": 6,
+      "norm_label": "phasetransitionplayer.jsx"
+    },
+    {
+      "label": "PhaseTransitionPlayer()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "intro_phasetransitionplayer_phasetransitionplayer",
+      "community": 6,
+      "norm_label": "phasetransitionplayer()"
+    },
+    {
+      "label": "PortalTransitionComposition.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_portaltransitioncomposition",
+      "community": 6,
+      "norm_label": "portaltransitioncomposition.jsx"
+    },
+    {
+      "label": "CLAMP",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "intro_portaltransitioncomposition_clamp",
+      "community": 6,
+      "norm_label": "clamp"
+    },
+    {
+      "label": "PortalTransitionComposition()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "intro_portaltransitioncomposition_portaltransitioncomposition",
+      "community": 6,
+      "norm_label": "portaltransitioncomposition()"
+    },
+    {
+      "label": "PortalTransitionPlayer.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_portaltransitionplayer",
+      "community": 6,
+      "norm_label": "portaltransitionplayer.jsx"
+    },
+    {
+      "label": "PortalTransitionPlayer()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "intro_portaltransitionplayer_portaltransitionplayer",
+      "community": 6,
+      "norm_label": "portaltransitionplayer()"
+    },
+    {
+      "label": "RemotionOverlayPlayer.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "intro_remotionoverlayplayer",
+      "community": 6,
+      "norm_label": "remotionoverlayplayer.jsx"
+    },
+    {
+      "label": "RemotionOverlayPlayer()",
+      "file_type": "code",
+      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "intro_remotionoverlayplayer_remotionoverlayplayer",
+      "community": 6,
+      "norm_label": "remotionoverlayplayer()"
+    },
+    {
+      "label": "AgentActivityRow.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_agentactivityrow",
+      "community": 10,
+      "norm_label": "agentactivityrow.jsx"
+    },
+    {
+      "label": "StatusDot()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_agentactivityrow_statusdot",
+      "community": 10,
+      "norm_label": "statusdot()"
+    },
+    {
+      "label": "AgentActivityRow()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "mission_agentactivityrow_agentactivityrow",
+      "community": 10,
+      "norm_label": "agentactivityrow()"
+    },
+    {
+      "label": "MissionBrief.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionBrief.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionbrief",
+      "community": 10,
+      "norm_label": "missionbrief.jsx"
+    },
+    {
+      "label": "MissionBrief()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionBrief.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionbrief_missionbrief",
+      "community": 10,
+      "norm_label": "missionbrief()"
+    },
+    {
+      "label": "MissionControl.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missioncontrol",
+      "community": 10,
+      "norm_label": "missioncontrol.jsx"
+    },
+    {
+      "label": "SparkIcon()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "mission_missioncontrol_sparkicon",
+      "community": 10,
+      "norm_label": "sparkicon()"
+    },
+    {
+      "label": "defaultSuggestions()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "mission_missioncontrol_defaultsuggestions",
+      "community": 10,
+      "norm_label": "defaultsuggestions()"
+    },
+    {
+      "label": "MissionControl()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "mission_missioncontrol_missioncontrol",
+      "community": 8,
+      "norm_label": "missioncontrol()"
+    },
+    {
+      "label": "MissionHelp.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionHelp.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionhelp",
+      "community": 10,
+      "norm_label": "missionhelp.jsx"
+    },
+    {
+      "label": "COMMANDS",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionHelp.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionhelp_commands",
+      "community": 10,
+      "norm_label": "commands"
+    },
+    {
+      "label": "MissionHelp()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionHelp.jsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "mission_missionhelp_missionhelp",
+      "community": 10,
+      "norm_label": "missionhelp()"
+    },
+    {
+      "label": "MissionInput.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionInput.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missioninput",
+      "community": 10,
+      "norm_label": "missioninput.jsx"
+    },
+    {
+      "label": "MissionInput()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionInput.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missioninput_missioninput",
+      "community": 10,
+      "norm_label": "missioninput()"
+    },
+    {
+      "label": "MissionSuggestions.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionSuggestions.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionsuggestions",
+      "community": 10,
+      "norm_label": "missionsuggestions.jsx"
+    },
+    {
+      "label": "MissionSuggestions()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionSuggestions.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missionsuggestions_missionsuggestions",
+      "community": 10,
+      "norm_label": "missionsuggestions()"
+    },
+    {
+      "label": "MissionTimeline.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionTimeline.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "mission_missiontimeline",
+      "community": 10,
+      "norm_label": "missiontimeline.jsx"
+    },
+    {
+      "label": "MissionTimeline()",
+      "file_type": "code",
+      "source_file": "portal/src/components/mission/MissionTimeline.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "mission_missiontimeline_missiontimeline",
+      "community": 10,
+      "norm_label": "missiontimeline()"
     },
     {
       "label": "AlignedStars.jsx",
@@ -1146,7 +2236,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "resume_alignedstars",
-      "community": 10,
+      "community": 8,
       "norm_label": "alignedstars.jsx"
     },
     {
@@ -1156,7 +2246,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "resume_alignedstars_alignedstars",
-      "community": 10,
+      "community": 8,
       "norm_label": "alignedstars()"
     },
     {
@@ -1166,7 +2256,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "resume_flightcontrols",
-      "community": 10,
+      "community": 2,
       "norm_label": "flightcontrols.jsx"
     },
     {
@@ -1176,7 +2266,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "resume_flightcontrols_flightcontrols",
-      "community": 10,
+      "community": 2,
       "norm_label": "flightcontrols()"
     },
     {
@@ -1186,7 +2276,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "resume_uploaddock",
-      "community": 4,
+      "community": 8,
       "norm_label": "uploaddock.jsx"
     },
     {
@@ -1196,7 +2286,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "resume_uploaddock_trajectoryicon",
-      "community": 4,
+      "community": 8,
       "norm_label": "trajectoryicon()"
     },
     {
@@ -1206,7 +2296,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "resume_uploaddock_stage_label",
-      "community": 4,
+      "community": 8,
       "norm_label": "stage_label"
     },
     {
@@ -1216,7 +2306,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "resume_uploaddock_uploaddock",
-      "community": 4,
+      "community": 8,
       "norm_label": "uploaddock()"
     },
     {
@@ -1266,97 +2356,147 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_currency",
-      "community": 7,
+      "community": 5,
       "norm_label": "currency.js"
+    },
+    {
+      "label": "RULES",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_currency_rules",
+      "community": 5,
+      "norm_label": "rules"
+    },
+    {
+      "label": "explicitCurrencyCode()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "lib_currency_explicitcurrencycode",
+      "community": 5,
+      "norm_label": "explicitcurrencycode()"
+    },
+    {
+      "label": "currencyCode()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "lib_currency_currencycode",
+      "community": 5,
+      "norm_label": "currencycode()"
+    },
+    {
+      "label": "formatCurrencyCompact()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "lib_currency_formatcurrencycompact",
+      "community": 5,
+      "norm_label": "formatcurrencycompact()"
+    },
+    {
+      "label": "rankWithinCurrency()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "lib_currency_rankwithincurrency",
+      "community": 5,
+      "norm_label": "rankwithincurrency()"
     },
     {
       "label": "USD_PER",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L12",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "lib_currency_usd_per",
-      "community": 7,
+      "community": 5,
       "norm_label": "usd_per"
     },
     {
       "label": "detectCurrency()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L24",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "lib_currency_detectcurrency",
-      "community": 7,
+      "community": 5,
       "norm_label": "detectcurrency()"
     },
     {
       "label": "WORD_SCALE",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L35",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "lib_currency_word_scale",
-      "community": 7,
+      "community": 5,
       "norm_label": "word_scale"
     },
     {
       "label": "SUFFIX",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L43",
+      "source_location": "L110",
       "_origin": "ast",
       "id": "lib_currency_suffix",
-      "community": 7,
+      "community": 5,
       "norm_label": "suffix"
     },
     {
       "label": "isNonValue()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L45",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "lib_currency_isnonvalue",
-      "community": 7,
+      "community": 5,
       "norm_label": "isnonvalue()"
     },
     {
       "label": "usdValue()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L52",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "lib_currency_usdvalue",
-      "community": 7,
+      "community": 5,
       "norm_label": "usdvalue()"
     },
     {
       "label": "trim()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L83",
+      "source_location": "L150",
       "_origin": "ast",
       "id": "lib_currency_trim",
-      "community": 7,
+      "community": 5,
       "norm_label": "trim()"
     },
     {
       "label": "formatUsd()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L89",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "lib_currency_formatusd",
-      "community": 7,
+      "community": 5,
       "norm_label": "formatusd()"
     },
     {
       "label": "formatMoney()",
       "file_type": "code",
       "source_file": "portal/src/lib/currency.js",
-      "source_location": "L102",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "lib_currency_formatmoney",
-      "community": 7,
+      "community": 5,
       "norm_label": "formatmoney()"
     },
     {
@@ -1370,20 +2510,130 @@
       "norm_label": "formatcompanydata.js"
     },
     {
+      "label": "MONEY_FIELDS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_money_fields",
+      "community": 5,
+      "norm_label": "money_fields"
+    },
+    {
+      "label": "compact",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_compact",
+      "community": 5,
+      "norm_label": "compact"
+    },
+    {
+      "label": "METRIC_SPECS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_metric_specs",
+      "community": 5,
+      "norm_label": "metric_specs"
+    },
+    {
+      "label": "isMissing()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_ismissing",
+      "community": 5,
+      "norm_label": "ismissing()"
+    },
+    {
       "label": "ratioMetric()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L18",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "lib_formatcompanydata_ratiometric",
       "community": 5,
       "norm_label": "ratiometric()"
     },
     {
+      "label": "median()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_median",
+      "community": 5,
+      "norm_label": "median()"
+    },
+    {
+      "label": "locationCurrency()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_locationcurrency",
+      "community": 5,
+      "norm_label": "locationcurrency()"
+    },
+    {
+      "label": "inferCompanyCurrency()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_infercompanycurrency",
+      "community": 5,
+      "norm_label": "infercompanycurrency()"
+    },
+    {
+      "label": "formatKnownMoney()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_formatknownmoney",
+      "community": 5,
+      "norm_label": "formatknownmoney()"
+    },
+    {
+      "label": "estimatedDisplay()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_estimateddisplay",
+      "community": 5,
+      "norm_label": "estimateddisplay()"
+    },
+    {
+      "label": "fallbackEstimate()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_fallbackestimate",
+      "community": 5,
+      "norm_label": "fallbackestimate()"
+    },
+    {
+      "label": "peerEstimate()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "lib_formatcompanydata_peerestimate",
+      "community": 5,
+      "norm_label": "peerestimate()"
+    },
+    {
       "label": "formatCompanyData()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatCompanyData.js",
-      "source_location": "L24",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "lib_formatcompanydata_formatcompanydata",
       "community": 5,
@@ -1430,20 +2680,30 @@
       "norm_label": "count_fields"
     },
     {
-      "label": "DISPLAY_FIELDS",
+      "label": "GENERIC_NUMBER_FIELDS",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L38",
       "_origin": "ast",
+      "id": "lib_formatdisplay_generic_number_fields",
+      "community": 7,
+      "norm_label": "generic_number_fields"
+    },
+    {
+      "label": "DISPLAY_FIELDS",
+      "file_type": "code",
+      "source_file": "portal/src/lib/formatDisplay.js",
+      "source_location": "L40",
+      "_origin": "ast",
       "id": "lib_formatdisplay_display_fields",
-      "community": 5,
+      "community": 7,
       "norm_label": "display_fields"
     },
     {
       "label": "compact",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L41",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "lib_formatdisplay_compact",
       "community": 7,
@@ -1453,7 +2713,7 @@
       "label": "isNil()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L43",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "lib_formatdisplay_isnil",
       "community": 7,
@@ -1463,7 +2723,7 @@
       "label": "isNA()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L44",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "lib_formatdisplay_isna",
       "community": 7,
@@ -1473,7 +2733,7 @@
       "label": "isPureNumber()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L45",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "lib_formatdisplay_ispurenumber",
       "community": 7,
@@ -1483,7 +2743,7 @@
       "label": "round1()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L46",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "lib_formatdisplay_round1",
       "community": 7,
@@ -1493,7 +2753,7 @@
       "label": "formatPercent()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L49",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatpercent",
       "community": 7,
@@ -1503,7 +2763,7 @@
       "label": "formatCount()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L66",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatcount",
       "community": 7,
@@ -1513,7 +2773,7 @@
       "label": "formatValue()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L76",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "lib_formatdisplay_formatvalue",
       "community": 7,
@@ -1523,10 +2783,10 @@
       "label": "toTags()",
       "file_type": "code",
       "source_file": "portal/src/lib/formatDisplay.js",
-      "source_location": "L85",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "lib_formatdisplay_totags",
-      "community": 10,
+      "community": 7,
       "norm_label": "totags()"
     },
     {
@@ -1536,57 +2796,57 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_layouts",
-      "community": 6,
+      "community": 5,
       "norm_label": "layouts.js"
     },
     {
       "label": "REGION_KEYWORDS",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "lib_layouts_region_keywords",
-      "community": 6,
+      "community": 5,
       "norm_label": "region_keywords"
     },
     {
       "label": "REGION_ORDER",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "lib_layouts_region_order",
-      "community": 6,
+      "community": 5,
       "norm_label": "region_order"
     },
     {
       "label": "regionOf()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "lib_layouts_regionof",
-      "community": 6,
+      "community": 5,
       "norm_label": "regionof()"
     },
     {
       "label": "mulberry()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "lib_layouts_mulberry",
-      "community": 6,
+      "community": 5,
       "norm_label": "mulberry()"
     },
     {
       "label": "buildLayouts()",
       "file_type": "code",
       "source_file": "portal/src/lib/layouts.js",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "lib_layouts_buildlayouts",
-      "community": 6,
+      "community": 5,
       "norm_label": "buildlayouts()"
     },
     {
@@ -1646,7 +2906,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_motion",
-      "community": 18,
+      "community": 1,
       "norm_label": "motion.js"
     },
     {
@@ -1716,7 +2976,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "lib_parsemetric_normalize",
-      "community": 6,
+      "community": 5,
       "norm_label": "normalize()"
     },
     {
@@ -1776,7 +3036,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_profitability",
-      "community": 2,
+      "community": 3,
       "norm_label": "profitability.js"
     },
     {
@@ -1786,7 +3046,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "lib_profitability_profitstate",
-      "community": 2,
+      "community": 3,
       "norm_label": "profitstate()"
     },
     {
@@ -2026,7 +3286,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_sectors",
-      "community": 3,
+      "community": 2,
       "norm_label": "sectors.js"
     },
     {
@@ -2036,7 +3296,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "lib_sectors_sector_colors",
-      "community": 3,
+      "community": 2,
       "norm_label": "sector_colors"
     },
     {
@@ -2046,7 +3306,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "lib_sectors_rules",
-      "community": 3,
+      "community": 2,
       "norm_label": "rules"
     },
     {
@@ -2056,7 +3316,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "lib_sectors_derivesector",
-      "community": 3,
+      "community": 2,
       "norm_label": "derivesector()"
     },
     {
@@ -2066,7 +3326,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "lib_sectors_sectorcolor",
-      "community": 10,
+      "community": 2,
       "norm_label": "sectorcolor()"
     },
     {
@@ -2140,13 +3400,33 @@
       "norm_label": "vite.config.js"
     },
     {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents",
+      "community": 13,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_graphify",
+      "community": 13,
+      "norm_label": "graphify"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude",
-      "community": 13,
+      "id": "d_placement_claude_worktrees_zealous_blackburn_690eaf_claude_md",
+      "community": 18,
       "norm_label": "claude.md"
     },
     {
@@ -2155,8 +3435,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_graphify",
-      "community": 13,
+      "id": "zealous_blackburn_690eaf_claude_graphify",
+      "community": 18,
       "norm_label": "graphify"
     },
     {
@@ -2388,7 +3668,7 @@
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_dependencies"
     },
     {
@@ -2398,7 +3678,7 @@
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_devdependencies"
     },
     {
@@ -2408,7 +3688,7 @@
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_name"
     },
     {
@@ -2418,7 +3698,7 @@
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_private"
     },
     {
@@ -2428,7 +3708,7 @@
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_scripts"
     },
     {
@@ -2438,7 +3718,7 @@
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_type"
     },
     {
@@ -2448,7 +3728,7 @@
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portal_package",
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_portal_package_json",
       "target": "portal_package_version"
     },
     {
@@ -2786,6 +4066,50 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_bodytransitionplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_bodytransitionplayer_bodytransitionplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_dashboardstoryplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_dashboardstoryplayer_dashboardstoryplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2802,6 +4126,50 @@
       "confidence_score": 1.0,
       "source": "src_app",
       "target": "intro_introplayer_introplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_phasetransitionplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_phasetransitionplayer_phasetransitionplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_portaltransitionplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "intro_portaltransitionplayer_portaltransitionplayer"
     },
     {
       "relation": "imports_from",
@@ -2830,11 +4198,66 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "lib_phases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "lib_phases_phaseindexfor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "lib_phases_phases"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
       "target": "lib_resumematch"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "lib_sectors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "lib_sectors_sectorcolor"
     },
     {
       "relation": "imports_from",
@@ -2927,6 +4350,28 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "portal/src/App.jsx",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "lib_phases_phaseindexfor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/App.jsx",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "lib_sectors_sectorcolor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/App.jsx",
       "source_location": "L17",
       "weight": 1.0,
       "source": "src_app_app",
@@ -2942,6 +4387,2085 @@
       "confidence_score": 1.0,
       "source": "src_main",
       "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_animationdirectoragent",
+      "target": "agents_animationdirectoragent_runanimationdirectoragent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_animationdirectoragent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_animationdirectoragent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_animationdirectoragent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/animationDirectorAgent.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "agents_animationdirectoragent_runanimationdirectoragent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_animationdirectoragent_runanimationdirectoragent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_animationdirectoragent_runanimationdirectoragent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_dataintegrityagent",
+      "target": "agents_dataintegrityagent_field_labels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_dataintegrityagent",
+      "target": "agents_dataintegrityagent_rundataintegrityagent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_dataintegrityagent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_dataintegrityagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_dataintegrityagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/dataIntegrityAgent.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "agents_dataintegrityagent_rundataintegrityagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_dataintegrityagent_rundataintegrityagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_dataintegrityagent_rundataintegrityagent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_financialagent_currencyfor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_financialagent_findoutliers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_financialagent_metricvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_financialagent_rankcandidates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_financialagent_runfinancialagent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missionactions_formatmetric"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missionactions_metricdisplay"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_financialagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent_rankcandidates",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent_rankcandidates",
+      "target": "agents_missionactions_formatmetric"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent_rankcandidates",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_financialagent_runfinancialagent",
+      "target": "agents_financialagent_rankcandidates"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "agents_financialagent_runfinancialagent",
+      "target": "agents_missionactions_metricdisplay"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/financialAgent.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "agents_financialagent_runfinancialagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_financialagent_runfinancialagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_financialagent_runfinancialagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_financialagent_findoutliers"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_highlightedforintent",
+      "target": "agents_financialagent_findoutliers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_geographicagent_rungeographicagent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_missionactions_countryof"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_geographicagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_geographicagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/geographicAgent.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "agents_geographicagent_rungeographicagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_geographicagent_rungeographicagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_geographicagent_rungeographicagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_scopeforintent",
+      "target": "agents_geographicagent_rungeographicagent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_intentschema_emptyintent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_intentschema_normalizeintent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_intentschema_parseintentlocally"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_findcompaniesincommand"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_findcompanyindices"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_infermetric"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_inferregionfilter"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_infersectorfilter"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema",
+      "target": "agents_missiontypes_intents"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_intentschema"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema_normalizeintent",
+      "target": "agents_intentschema_emptyintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_intentschema_emptyintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "agents_intentschema_normalizeintent",
+      "target": "agents_missionactions_findcompaniesincommand"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "agents_intentschema_normalizeintent",
+      "target": "agents_missionactions_findcompanyindices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "agents_intentschema_normalizeintent",
+      "target": "agents_missionactions_infermetric"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "agents_intentschema_normalizeintent",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_intentschema_normalizeintent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_intentschema_normalizeintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_intentschema_normalizeintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_missionactions_findcompaniesincommand"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_missionactions_infermetric"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_missionactions_inferregionfilter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_missionactions_infersectorfilter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/intentSchema.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "agents_intentschema_parseintentlocally",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_intentschema_parseintentlocally"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_intentschema_parseintentlocally"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_compacttext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_companysearchtext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_countryof"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_findcompaniesincommand"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_findcompanyindices"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_formatmetric"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_infermetric"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_inferregionfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_infersectorfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_metricdisplay"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_selectedorfirst"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_missionactions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent_fallbackbrief",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "agents_similarityagent_runsimilarityagent",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol_defaultsuggestions",
+      "target": "agents_missionactions_companyname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_compacttext",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_companysearchtext",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_countryof",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_findcompaniesincommand",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_findcompanyindices",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_infermetric",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_inferregionfilter",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_infersectorfilter",
+      "target": "agents_missionactions_normalizetext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_findcompaniesincommand",
+      "target": "agents_missionactions_compacttext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionActions.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missionactions_findcompanyindices",
+      "target": "agents_missionactions_compacttext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_missionactions_countryof"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "agents_similarityagent_runsimilarityagent",
+      "target": "agents_missionactions_countryof"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_missionactions_selectedorfirst"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_missionactions_selectedorfirst"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_highlightedforintent",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_scopeforintent",
+      "target": "agents_missionactions_uniqueindices"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missiontypes",
+      "target": "agents_missiontypes_agent_labels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missiontypes",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/missionTypes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_missiontypes",
+      "target": "agents_missiontypes_intents"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_sectoragent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_missiontypes_intents"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_sectoragent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "agents_sectoragent_runsectoragent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "agents_similarityagent_runsimilarityagent",
+      "target": "agents_missiontypes_createagentresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_narrativeagent_fallbackbrief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_narrativeagent_generatemissionbrief"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_prompts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_prompts_buildnarrativeprompt"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_narrativeagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_narrativeagent_fallbackbrief"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_prompts_buildnarrativeprompt"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_narrativeagent_generatemissionbrief"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_narrativeagent_generatemissionbrief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient_callollama",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient_checkollamahealth",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_orchestrator_highlightedforintent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_orchestrator_parseintent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_orchestrator_runmission"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_orchestrator_scopeforintent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_prompts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_prompts_buildintentprompt"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_sectoragent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_sectoragent_runsectoragent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_similarityagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_similarityagent_runsimilarityagent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_orchestrator"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_prompts_buildintentprompt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_orchestrator_parseintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_orchestrator_scopeforintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_orchestrator_highlightedforintent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_sectoragent_runsectoragent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_similarityagent_runsimilarityagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_orchestrator_runmission"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_prompts_buildintentprompt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/prompts.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_prompts",
+      "target": "agents_prompts_buildnarrativeprompt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/sectorAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_sectoragent",
+      "target": "agents_sectoragent_runsectoragent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_similarityagent_closeness"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "agents_similarityagent_runsimilarityagent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "lib_profitability"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_similarityagent",
+      "target": "lib_profitability_profitstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/similarityAgent.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "agents_similarityagent_runsimilarityagent",
+      "target": "lib_profitability_profitstate"
     },
     {
       "relation": "contains",
@@ -2972,6 +6496,26 @@
       "confidence_score": 1.0,
       "source": "components_camerarig",
       "target": "components_camerarig_desiredpos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CameraRig.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_camerarig",
+      "target": "components_camerarig_follow_offset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CameraRig.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_camerarig",
+      "target": "components_camerarig_followpos"
     },
     {
       "relation": "contains",
@@ -3025,6 +6569,16 @@
       "confidence_score": 1.0,
       "source": "components_companynodes",
       "target": "components_companynodes_companynodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/CompanyNodes.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_companynodes",
+      "target": "components_companynodes_hit_geometry"
     },
     {
       "relation": "contains",
@@ -3509,6 +7063,125 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "dashboard_companycomparison_companycomparison"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "dashboard_companycomparison_summary"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "intro_comparisoncomposition"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "intro_comparisoncomposition_comparisoncomposition"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "intro_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "lib_sectors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison",
+      "target": "lib_sectors_sectorcolor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardview",
+      "target": "dashboard_companycomparison"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/CompanyComparison.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_companycomparison_summary",
+      "target": "lib_sectors_sectorcolor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardview",
+      "target": "dashboard_companycomparison_companycomparison"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/dashboard/CompanyLeaderboard.jsx",
       "source_location": "L6",
       "weight": 1.0,
@@ -3577,6 +7250,16 @@
       "confidence_score": 1.0,
       "source": "dashboard_dashboardview",
       "target": "dashboard_dashboardview_median"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardview",
+      "target": "dashboard_dashboardview_missionsummary"
     },
     {
       "relation": "contains",
@@ -3683,9 +7366,9 @@
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboard_dashboardview",
-      "target": "lib_currency",
-      "confidence_score": 1.0
+      "target": "lib_currency"
     },
     {
       "relation": "imports",
@@ -3694,9 +7377,31 @@
       "source_file": "portal/src/components/dashboard/DashboardView.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboard_dashboardview",
-      "target": "lib_currency_formatusd",
-      "confidence_score": 1.0
+      "target": "lib_currency_currencycode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardview",
+      "target": "lib_currency_formatcurrencycompact"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/dashboard/DashboardView.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardview",
+      "target": "lib_currency_formatusd"
     },
     {
       "relation": "imports_from",
@@ -4126,6 +7831,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "mission_missioncontrol"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "mission_missioncontrol_missioncontrol"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4306,6 +8033,204 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitioncomposition",
+      "target": "intro_bodytransitioncomposition_bodytransitioncomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionComposition.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitioncomposition",
+      "target": "intro_bodytransitioncomposition_clamp"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitionplayer",
+      "target": "intro_bodytransitioncomposition"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitionplayer",
+      "target": "intro_bodytransitioncomposition_bodytransitioncomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitionplayer",
+      "target": "intro_bodytransitionplayer_bodytransitionplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitionplayer",
+      "target": "intro_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/BodyTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_bodytransitionplayer",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_comparisoncomposition",
+      "target": "intro_comparisoncomposition_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_comparisoncomposition",
+      "target": "intro_comparisoncomposition_companyside"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/ComparisonComposition.jsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_comparisoncomposition",
+      "target": "intro_comparisoncomposition_comparisoncomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstorycomposition",
+      "target": "intro_dashboardstorycomposition_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstorycomposition",
+      "target": "intro_dashboardstorycomposition_dashboardstorycomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstorycomposition",
+      "target": "intro_dashboardstorycomposition_steps"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryComposition.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstorycomposition",
+      "target": "intro_dashboardstorycomposition_storycard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstoryplayer",
+      "target": "intro_dashboardstorycomposition"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstoryplayer",
+      "target": "intro_dashboardstorycomposition_dashboardstorycomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstoryplayer",
+      "target": "intro_dashboardstoryplayer_dashboardstoryplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstoryplayer",
+      "target": "intro_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/DashboardStoryPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_dashboardstoryplayer",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L31",
       "weight": 1.0,
@@ -4322,16 +8247,6 @@
       "confidence_score": 1.0,
       "source": "intro_introcomposition",
       "target": "intro_introcomposition_clamp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/intro/IntroComposition.jsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "intro_introcomposition",
-      "target": "intro_introcomposition_colors"
     },
     {
       "relation": "contains",
@@ -4428,6 +8343,406 @@
       "confidence_score": 1.0,
       "source": "intro_introplayer",
       "target": "intro_introplayer_introplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitioncomposition",
+      "target": "intro_phasetransitioncomposition_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionComposition.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitioncomposition",
+      "target": "intro_phasetransitioncomposition_phasetransitioncomposition"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitionplayer",
+      "target": "intro_phasetransitioncomposition"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitionplayer",
+      "target": "intro_phasetransitioncomposition_phasetransitioncomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitionplayer",
+      "target": "intro_phasetransitionplayer_phasetransitionplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitionplayer",
+      "target": "intro_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PhaseTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_phasetransitionplayer",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitioncomposition",
+      "target": "intro_portaltransitioncomposition_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionComposition.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitioncomposition",
+      "target": "intro_portaltransitioncomposition_portaltransitioncomposition"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitionplayer",
+      "target": "intro_portaltransitioncomposition"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitionplayer",
+      "target": "intro_portaltransitioncomposition_portaltransitioncomposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitionplayer",
+      "target": "intro_portaltransitionplayer_portaltransitionplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitionplayer",
+      "target": "intro_remotionoverlayplayer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/PortalTransitionPlayer.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_portaltransitionplayer",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/intro/RemotionOverlayPlayer.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "intro_remotionoverlayplayer",
+      "target": "intro_remotionoverlayplayer_remotionoverlayplayer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_agentactivityrow",
+      "target": "mission_agentactivityrow_agentactivityrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_agentactivityrow",
+      "target": "mission_agentactivityrow_statusdot"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionTimeline.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missiontimeline",
+      "target": "mission_agentactivityrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionTimeline.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missiontimeline",
+      "target": "mission_agentactivityrow_agentactivityrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionBrief.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missionbrief",
+      "target": "mission_missionbrief_missionbrief"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionbrief"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionbrief_missionbrief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missioncontrol_defaultsuggestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missioncontrol_missioncontrol"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missioncontrol_sparkicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionhelp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionhelp_missionhelp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missioninput"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missioninput_missioninput"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionsuggestions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missionsuggestions_missionsuggestions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missiontimeline"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "mission_missiontimeline_missiontimeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionHelp.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "mission_missionhelp",
+      "target": "mission_missionhelp_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionHelp.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "mission_missionhelp",
+      "target": "mission_missionhelp_missionhelp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionInput.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioninput",
+      "target": "mission_missioninput_missioninput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionSuggestions.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missionsuggestions",
+      "target": "mission_missionsuggestions_missionsuggestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionTimeline.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missiontimeline",
+      "target": "mission_missiontimeline_missiontimeline"
     },
     {
       "relation": "imports_from",
@@ -4580,11 +8895,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/currency.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_currencycode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_detectcurrency",
-      "confidence_score": 1.0
+      "target": "lib_currency_detectcurrency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_explicitcurrencycode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_formatcurrencycompact"
     },
     {
       "relation": "contains",
@@ -4592,9 +8937,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_formatmoney",
-      "confidence_score": 1.0
+      "target": "lib_currency_formatmoney"
     },
     {
       "relation": "contains",
@@ -4602,9 +8947,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_formatusd",
-      "confidence_score": 1.0
+      "target": "lib_currency_formatusd"
     },
     {
       "relation": "contains",
@@ -4612,9 +8957,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_isnonvalue",
-      "confidence_score": 1.0
+      "target": "lib_currency_isnonvalue"
     },
     {
       "relation": "contains",
@@ -4622,9 +8967,29 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_suffix",
-      "confidence_score": 1.0
+      "target": "lib_currency_rankwithincurrency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency",
+      "target": "lib_currency_suffix"
     },
     {
       "relation": "contains",
@@ -4632,9 +8997,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_trim",
-      "confidence_score": 1.0
+      "target": "lib_currency_trim"
     },
     {
       "relation": "contains",
@@ -4642,9 +9007,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_usd_per",
-      "confidence_score": 1.0
+      "target": "lib_currency_usd_per"
     },
     {
       "relation": "contains",
@@ -4652,9 +9017,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_usdvalue",
-      "confidence_score": 1.0
+      "target": "lib_currency_usdvalue"
     },
     {
       "relation": "contains",
@@ -4662,9 +9027,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency",
-      "target": "lib_currency_word_scale",
-      "confidence_score": 1.0
+      "target": "lib_currency_word_scale"
     },
     {
       "relation": "imports_from",
@@ -4673,9 +9038,9 @@
       "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
-      "target": "lib_currency",
-      "confidence_score": 1.0
+      "target": "lib_currency"
     },
     {
       "relation": "imports_from",
@@ -4684,9 +9049,141 @@
       "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_formatdisplay",
-      "target": "lib_currency",
-      "confidence_score": 1.0
+      "target": "lib_currency"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/layouts.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_layouts",
+      "target": "lib_currency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency_currencycode",
+      "target": "lib_currency_explicitcurrencycode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency_explicitcurrencycode",
+      "target": "lib_currency_trim"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_currency_explicitcurrencycode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_infercompanycurrency",
+      "target": "lib_currency_explicitcurrencycode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/currency.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_currency_currencycode",
+      "target": "lib_currency_trim"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/layouts.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_layouts",
+      "target": "lib_currency_currencycode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_currency_formatcurrencycompact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_estimateddisplay",
+      "target": "lib_currency_formatcurrencycompact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_formatknownmoney",
+      "target": "lib_currency_formatcurrencycompact"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/layouts.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_layouts",
+      "target": "lib_currency_rankwithincurrency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/lib/layouts.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "lib_layouts_buildlayouts",
+      "target": "lib_currency_rankwithincurrency"
     },
     {
       "relation": "calls",
@@ -4695,9 +9192,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_usdvalue",
-      "target": "lib_currency_detectcurrency",
-      "confidence_score": 1.0
+      "target": "lib_currency_detectcurrency"
     },
     {
       "relation": "calls",
@@ -4706,9 +9203,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_usdvalue",
-      "target": "lib_currency_isnonvalue",
-      "confidence_score": 1.0
+      "target": "lib_currency_isnonvalue"
     },
     {
       "relation": "calls",
@@ -4717,9 +9214,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_formatmoney",
-      "target": "lib_currency_usdvalue",
-      "confidence_score": 1.0
+      "target": "lib_currency_usdvalue"
     },
     {
       "relation": "calls",
@@ -4728,9 +9225,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_usdvalue",
-      "target": "lib_currency_trim",
-      "confidence_score": 1.0
+      "target": "lib_currency_trim"
     },
     {
       "relation": "imports",
@@ -4739,9 +9236,9 @@
       "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
-      "target": "lib_currency_usdvalue",
-      "confidence_score": 1.0
+      "target": "lib_currency_usdvalue"
     },
     {
       "relation": "calls",
@@ -4750,9 +9247,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_formatusd",
-      "target": "lib_currency_trim",
-      "confidence_score": 1.0
+      "target": "lib_currency_trim"
     },
     {
       "relation": "calls",
@@ -4761,9 +9258,9 @@
       "source_file": "portal/src/lib/currency.js",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_currency_formatmoney",
-      "target": "lib_currency_formatusd",
-      "confidence_score": 1.0
+      "target": "lib_currency_formatusd"
     },
     {
       "relation": "imports",
@@ -4772,9 +9269,9 @@
       "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_formatdisplay",
-      "target": "lib_currency_formatmoney",
-      "confidence_score": 1.0
+      "target": "lib_currency_formatmoney"
     },
     {
       "relation": "calls",
@@ -4791,11 +9288,121 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_compact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_estimateddisplay"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_fallbackestimate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_formatcompanydata",
       "target": "lib_formatcompanydata_formatcompanydata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_formatknownmoney"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_infercompanycurrency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_ismissing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_locationcurrency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_median"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_metric_specs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_money_fields"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_formatcompanydata_peerestimate"
     },
     {
       "relation": "contains",
@@ -4867,6 +9474,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_profitability"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata",
+      "target": "lib_profitability_profitstate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4900,11 +9529,99 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_formatcompanydata",
+      "target": "lib_formatcompanydata_ismissing"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
       "source_location": "L18",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_formatcompanydata_ratiometric",
       "target": "lib_parsemetric_parseformattedmetric"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_peerestimate",
+      "target": "lib_formatcompanydata_median"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_infercompanycurrency",
+      "target": "lib_formatcompanydata_locationcurrency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_formatknownmoney",
+      "target": "lib_formatdisplay_formatvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L144",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_formatcompanydata",
+      "target": "lib_formatcompanydata_estimateddisplay"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_peerestimate",
+      "target": "lib_formatcompanydata_fallbackestimate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatcompanydata_formatcompanydata",
+      "target": "lib_formatcompanydata_peerestimate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/lib/formatCompanyData.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "lib_formatcompanydata_formatcompanydata",
+      "target": "lib_profitability_profitstate"
     },
     {
       "relation": "imports",
@@ -4986,6 +9703,16 @@
       "confidence_score": 1.0,
       "source": "lib_formatdisplay",
       "target": "lib_formatdisplay_formatvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/formatDisplay.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_formatdisplay",
+      "target": "lib_formatdisplay_generic_number_fields"
     },
     {
       "relation": "contains",
@@ -5873,12 +10600,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents",
+      "target": "agents_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "claude",
-      "target": "claude_graphify"
+      "source": "d_placement_claude_worktrees_zealous_blackburn_690eaf_claude_md",
+      "target": "zealous_blackburn_690eaf_claude_graphify"
     },
     {
       "relation": "contains",
@@ -6072,5 +10809,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ef46c7ae8c7fd6c62c601090c3508f286bbb036e"
+  "built_at_commit": "19953f9a3905a5251ae29962560b4454394dcbbc"
 }

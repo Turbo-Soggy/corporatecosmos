@@ -6,6 +6,7 @@ import SearchSpotlight from './SearchSpotlight';
 import UploadDock from '../resume/UploadDock';
 import AlignedStars from '../resume/AlignedStars';
 import FlightControls from '../resume/FlightControls';
+import MissionControl from '../mission/MissionControl';
 
 function GridIcon() {
   return (
@@ -48,6 +49,9 @@ export default function HudOverlay({
   onResume,
   onClearResume,
   tour,
+  mission,
+  onMissionComplete,
+  onMissionClear,
 }) {
   const selectedCompany = selected != null ? companies[selected] : null;
   const inCosmos = view === 'cosmos';
@@ -74,7 +78,7 @@ export default function HudOverlay({
           <ClusterCard progress={progress} layouts={layouts} />
 
           {!resumeActive && (
-            <div className="label-mono pointer-events-none absolute bottom-6 left-6">
+            <div className="label-mono pointer-events-none absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
               {selected != null
                 ? 'Esc to exit focus · Click another body to switch'
                 : 'Scroll to traverse · ⌘K to search · Click a node to inspect'}
@@ -102,6 +106,17 @@ export default function HudOverlay({
           <CompanyPanel company={selectedCompany} onClose={onCloseSelected} />
         </>
       )}
+
+      <MissionControl
+        companies={companies}
+        layouts={layouts}
+        selected={selected}
+        view={view}
+        phase={progress < 0.35 ? 'galaxy' : progress < 0.65 ? 'financial' : 'geographic'}
+        currentMission={mission}
+        onMissionComplete={onMissionComplete}
+        onMissionClear={onMissionClear}
+      />
     </div>
   );
 }

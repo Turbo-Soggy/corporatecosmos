@@ -18,10 +18,37 @@ function median(values) {
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 }
 
+function MissionSummary({ mission }) {
+  if (!mission) return null;
+  return (
+    <section className="mb-4 rounded-lg border border-accent/20 bg-accent/[0.06] p-4">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0">
+          <div className="label-mono text-accent/80">MISSION BRIEF</div>
+          <h2 className="mt-1 text-lg font-semibold text-ink">{mission.title}</h2>
+          <p className="mt-1 max-w-3xl text-sm leading-relaxed text-ink-muted">{mission.summary}</p>
+        </div>
+        <div className="label-mono rounded-full border border-white/10 px-2.5 py-1 text-ink-faint">
+          {Math.round((mission.confidence?.overall || 0) * 100)}% confidence
+        </div>
+      </div>
+      {mission.bullets?.length > 0 && (
+        <div className="mt-3 grid gap-2 md:grid-cols-3">
+          {mission.bullets.slice(0, 3).map((bullet, index) => (
+            <div key={index} className="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-xs leading-relaxed text-ink-muted">
+              {bullet}
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
 // Full-screen analytics view. All derivations happen here (once, memoized); the
 // chart/table children are presentational. Reads the same formatted `companies`
 // shape + `layouts` the 3D scene uses, so numbers and colors never drift.
-export default function DashboardView({ companies, layouts, onSelectCompany, onReplayStory }) {
+export default function DashboardView({ companies, layouts, mission, onSelectCompany, onReplayStory }) {
   const data = useMemo(() => {
     const total = companies.length;
 
@@ -133,6 +160,8 @@ export default function DashboardView({ companies, layouts, onSelectCompany, onR
             Replay data story
           </button>
         </header>
+
+        <MissionSummary mission={mission} />
 
         <KpiBar items={data.kpis} />
 
