@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 import { analyzeResume } from '../../lib/resumeMatch';
+import { extractResumeText } from '../../lib/resumeParse';
 
 // The résumé entry point, themed as a "docking bay": a launcher pill (bottom-left)
 // opens a drop modal. Files are parsed and scored entirely on-device — the bytes
@@ -32,8 +33,6 @@ export default function UploadDock({ open, setOpen, hasResult, companies, onResu
       setError('');
       try {
         setStage('reading');
-        // Lazy-load the heavy parser (pdf.js + mammoth) only on first upload.
-        const { extractResumeText } = await import('../../lib/resumeParse');
         const text = await extractResumeText(file);
         setStage('scoring');
         // Yield a frame so the "scoring" state paints before the sync scoring pass.

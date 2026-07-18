@@ -1,0 +1,17 @@
+{
+  "_note": "PLACEHOLDER — expected 12-RADIX-skillset bars (1-10) for the 3 Talent Check companies. The real RADIX snapshot (talent_check_company_skillsets.json from the facilitator) has the same shape; drop it in under `companies` with no code change. Codes: COD DSA OOD APTI COMM AI CLOUD SQL SWE SYSD NETW OS.",
+  "companies": {
+    "Google": {
+      "COD": 8, "DSA": 9, "OOD": 7, "APTI": 8, "COMM": 7, "AI": 8,
+      "CLOUD": 6, "SQL": 6, "SWE": 8, "SYSD": 8, "NETW": 5, "OS": 6
+    },
+    "Microsoft": {
+      "COD": 8, "DSA": 7, "OOD": 8, "APTI": 7, "COMM": 7, "AI": 7,
+      "CLOUD": 8, "SQL": 7, "SWE": 9, "SYSD": 8, "NETW": 6, "OS": 7
+    },
+    "OFSS": {
+      "COD": 7, "DSA": 6, "OOD": 7, "APTI": 6, "COMM": 7, "AI": 4,
+      "CLOUD": 6, "SQL": 9, "SWE": 8, "SYSD": 6, "NETW": 6, "OS": 7
+    }
+  }
+}

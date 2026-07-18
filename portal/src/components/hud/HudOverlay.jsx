@@ -7,6 +7,7 @@ import UploadDock from '../resume/UploadDock';
 import AlignedStars from '../resume/AlignedStars';
 import FlightControls from '../resume/FlightControls';
 import MissionControl from '../mission/MissionControl';
+import TalentScanner from '../spectrum/TalentScanner';
 
 function GridIcon() {
   return (
@@ -52,10 +53,16 @@ export default function HudOverlay({
   mission,
   onMissionComplete,
   onMissionClear,
+  scannerOpen,
+  scannerResult,
+  onScannerOpen,
+  onScannerResult,
+  onScannerClear,
 }) {
   const selectedCompany = selected != null ? companies[selected] : null;
   const inCosmos = view === 'cosmos';
   const resumeActive = Boolean(resume);
+  const scannerActive = Boolean(scannerOpen);
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10">
@@ -71,6 +78,8 @@ export default function HudOverlay({
 
       {inCosmos && (
         <>
+          {!scannerActive && (
+            <>
           {/* The phase title + scroll hint step aside while the résumé drawer is open. */}
           {!resumeActive && <PhaseIndicator progress={progress} />}
           <SearchSpotlight query={query} onQuery={onQuery} layouts={layouts} onSelect={onSelect} />
@@ -104,19 +113,34 @@ export default function HudOverlay({
           <FlightControls tour={tour} resume={resume} />
 
           <CompanyPanel company={selectedCompany} onClose={onCloseSelected} />
+            </>
+          )}
+
+          <TalentScanner
+            open={scannerOpen}
+            canLaunch={!resumeActive && !uploadOpen}
+            companies={companies}
+            selected={selected}
+            result={scannerResult}
+            onOpenChange={onScannerOpen}
+            onResult={onScannerResult}
+            onClear={onScannerClear}
+          />
         </>
       )}
 
-      <MissionControl
-        companies={companies}
-        layouts={layouts}
-        selected={selected}
-        view={view}
-        phase={progress < 0.35 ? 'galaxy' : progress < 0.65 ? 'financial' : 'geographic'}
-        currentMission={mission}
-        onMissionComplete={onMissionComplete}
-        onMissionClear={onMissionClear}
-      />
+      {(!inCosmos || !scannerActive) && (
+        <MissionControl
+          companies={companies}
+          layouts={layouts}
+          selected={selected}
+          view={view}
+          phase={progress < 0.35 ? 'galaxy' : progress < 0.65 ? 'financial' : 'geographic'}
+          currentMission={mission}
+          onMissionComplete={onMissionComplete}
+          onMissionClear={onMissionClear}
+        />
+      )}
     </div>
   );
 }

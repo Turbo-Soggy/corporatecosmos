@@ -5,7 +5,7 @@ import { useScrollProgress } from './hooks/useScrollProgress';
 import { PHASES, phaseIndexFor } from './lib/phases';
 import { sectorColor } from './lib/sectors';
 import { useFlightTour } from './hooks/useFlightTour';
-import { TOUR_N } from './lib/resumeMatch';
+import { analyzeResume, TOUR_N } from './lib/resumeMatch';
 import CosmosCanvas from './components/CosmosCanvas';
 import HudOverlay from './components/hud/HudOverlay';
 import IntroPlayer from './components/intro/IntroPlayer';
@@ -19,6 +19,41 @@ const RESUME_BLAZE = '#5eead4'; // teal tint for the personal constellation
 
 const SCROLL_VH = 400; // height of the scroll driver -> length of the journey
 
+function appendScannerText(lines, value) {
+  if (typeof value !== 'string' && (typeof value !== 'number' || !Number.isFinite(value))) return;
+  const text = String(value).trim();
+  if (text) lines.push(text);
+}
+
+function scannerResultText(result) {
+  if (!result || typeof result !== 'object' || Array.isArray(result)) return '';
+  if (result.source_type !== 'jd' && result.source_type !== 'resume') return '';
+  if (!Array.isArray(result.skills)) return '';
+
+  const lines = [];
+  appendScannerText(lines, result.role);
+  appendScannerText(lines, result.company);
+  if (Array.isArray(result.skills)) {
+    result.skills.forEach((skill) => {
+      if (!skill || typeof skill !== 'object' || Array.isArray(skill)) return;
+      appendScannerText(lines, skill.skill_name);
+      appendScannerText(lines, skill.evidence);
+    });
+  }
+  for (const [items, fields] of [
+    [result.education, ['qualification', 'institution', 'dates']],
+    [result.projects, ['name', 'summary']],
+    [result.experience, ['role', 'organization', 'dates']],
+  ]) {
+    if (!Array.isArray(items)) continue;
+    items.forEach((item) => {
+      if (!item || typeof item !== 'object' || Array.isArray(item)) return;
+      fields.forEach((field) => appendScannerText(lines, item[field]));
+    });
+  }
+  return lines.join('\n').trim();
+}
+
 export default function App() {
   const { companies, loading, error } = useCompanies();
   const [hover, setHover] = useState({ index: null, x: 0, y: 0 });
@@ -31,6 +66,9 @@ export default function App() {
   const [portalTransition, setPortalTransition] = useState(null);
   const [dashboardStory, setDashboardStory] = useState(null);
   const [missionResult, setMissionResult] = useState(null);
+  const [scannerOpen, setScannerOpen] = useState(false);
+  const [scannerResult, setScannerResult] = useState(null);
+  const [scannerProjection, setScannerProjection] = useState(null);
 
   const selectedRef = useRef(null);
   const transitionIdRef = useRef(0);
@@ -45,20 +83,22 @@ export default function App() {
   const [resume, setResume] = useState(null);
   const [uploadOpen, setUploadOpen] = useState(false);
 
-  const matchSet = useMemo(
-    () => (resume ? new Set(resume.ranked.filter((r) => r.compatible).map((r) => r.index)) : null),
-    [resume]
-  );
+  const matchSet = useMemo(() => {
+    const source = resume || scannerProjection;
+    return source ? new Set(source.ranked.filter((r) => r.compatible).map((r) => r.index)) : null;
+  }, [resume, scannerProjection]);
   const missionMatchSet = useMemo(() => {
     const highlighted = missionResult?.companies?.highlightedIndices || [];
     return highlighted.length ? new Set(highlighted) : null;
   }, [missionResult]);
   const linkOrder = useMemo(
-    () =>
-      resume
-        ? resume.ranked.filter((r) => r.compatible).slice(0, TOUR_N).map((r) => r.index)
-        : [],
-    [resume]
+    () => {
+      const source = resume || scannerProjection;
+      return source
+        ? source.ranked.filter((r) => r.compatible).slice(0, TOUR_N).map((r) => r.index)
+        : [];
+    },
+    [resume, scannerProjection]
   );
   const missionLinkOrder = useMemo(
     () => missionResult?.cosmos?.linkOrder?.slice(0, 12) || [],
@@ -166,6 +206,30 @@ export default function App() {
     setMissionResult(null);
   }, []);
 
+  const clearScanner = useCallback(() => {
+    setScannerResult(null);
+    setScannerProjection(null);
+  }, []);
+
+  const onScannerResult = useCallback((nextResult, action) => {
+    if (action?.type === 'reset-project') {
+      setScannerProjection(null);
+      setScannerResult(nextResult ? { ...nextResult, projected: false } : null);
+      return;
+    }
+
+    if (action?.type === 'project') {
+      const text = scannerResultText(nextResult);
+      if (!text || !Array.isArray(companies) || companies.length === 0) return;
+      setScannerProjection(analyzeResume(text, companies));
+      setScannerResult({ ...nextResult, projected: true });
+      return;
+    }
+
+    setScannerProjection(null);
+    setScannerResult(nextResult);
+  }, [companies]);
+
   const onPortalMidpoint = useCallback(() => {
     const transition = portalTransitionRef.current;
     if (!transition) return;
@@ -253,8 +317,8 @@ export default function App() {
               selected={selected}
               query={query}
               matchSet={matchSet || missionMatchSet}
-              blazeHex={resume ? RESUME_BLAZE : missionMatchSet ? '#fbbf24' : null}
-              linkOrder={resume ? linkOrder : missionLinkOrder}
+              blazeHex={resume || scannerProjection ? RESUME_BLAZE : missionMatchSet ? '#fbbf24' : null}
+              linkOrder={resume || scannerProjection ? linkOrder : missionLinkOrder}
               onHover={onHover}
               onSelect={onSelect}
               introActive={introState !== 'done'}
@@ -294,6 +358,11 @@ export default function App() {
           mission={missionResult}
           onMissionComplete={onMissionComplete}
           onMissionClear={onMissionClear}
+          scannerOpen={scannerOpen}
+          scannerResult={scannerResult}
+          onScannerOpen={setScannerOpen}
+          onScannerResult={onScannerResult}
+          onScannerClear={clearScanner}
         />
       </>
     );
