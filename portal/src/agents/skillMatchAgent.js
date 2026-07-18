@@ -78,8 +78,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     }
     const match_score = totalWeight > 0 ? Math.round((matchedWeight / totalWeight) * 100) : 0;
 
-    return {
-      ...normalizeSkillMatch({
+    const normalized = normalizeSkillMatch({
         jd_source_file: (jdSkillList && jdSkillList.source_file) || '',
         match_score,
         matched_skills,
@@ -87,7 +86,14 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
         strengths: raw.strengths,
         development_areas: raw.development_areas,
         summary: raw.summary,
-      }),
+      });
+    return {
+      ...normalized,
+      strengths: normalized.strengths.length ? normalized.strengths : deterministic.strengths,
+      development_areas: normalized.development_areas.length
+        ? normalized.development_areas
+        : deterministic.development_areas,
+      summary: normalized.summary || deterministic.summary,
       source: 'gemma',
     };
   } catch {
