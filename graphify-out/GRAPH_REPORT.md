@@ -1,7 +1,7 @@
 # Graph Report - placementdash  (2026-07-18)
 
 ## Corpus Check
-- 108 files · ~41,822 words
+- 108 files · ~42,326 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a147ea03`
+- Built from commit: `82679f75`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,13 +45,13 @@
 1. `createAgentResult()` - 15 edges
 2. `runMission()` - 15 edges
 3. `sectorColor()` - 12 edges
-4. `companyName()` - 11 edges
-5. `normalizeText()` - 11 edges
-6. `extractSkills()` - 11 edges
-7. `RADIX_CATEGORIES` - 11 edges
-8. `confidenceWeight()` - 11 edges
-9. `normalizeProfile()` - 11 edges
-10. `parseIntentLocally()` - 10 edges
+4. `normalizeProfile()` - 11 edges
+5. `companyName()` - 11 edges
+6. `normalizeText()` - 11 edges
+7. `extractSkills()` - 11 edges
+8. `RADIX_CATEGORIES` - 11 edges
+9. `confidenceWeight()` - 11 edges
+10. `matchSkillsSmart()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `defaultSuggestions()` --calls--> `companyName()`  [EXTRACTED]
@@ -167,7 +167,7 @@ Cohesion: 0.50
 Nodes (3): BodyTransitionComposition(), CLAMP, BodyTransitionPlayer()
 
 ## Knowledge Gaps
-- **151 isolated node(s):** `supabase`, `name`, `private`, `version`, `type` (+146 more)
+- **151 isolated node(s):** `ALIASES`, `BROAD_CATEGORIES`, `supabase`, `name`, `private` (+146 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -180,7 +180,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `RADIX_CATEGORIES` connect `Community 21` to `Community 24`, `Community 3`, `Community 12`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `supabase`, `name`, `private` to the rest of the system?**
+- **What connects `ALIASES`, `BROAD_CATEGORIES`, `supabase` to the rest of the system?**
   _151 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
