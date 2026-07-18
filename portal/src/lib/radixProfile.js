@@ -159,6 +159,21 @@ export function normalizeSkillMatch(raw) {
     match_score: clamp(int(r.match_score), 0, 100),
     matched_skills: names(r.matched_skills),
     missing_skills: names(r.missing_skills),
+    strengths: Array.isArray(r.strengths)
+      ? r.strengths.map((item) => ({
+          skill: text(item?.skill || item?.skill_name),
+          evidence: text(item?.evidence),
+          why: text(item?.why),
+        })).filter((item) => item.skill)
+      : [],
+    development_areas: Array.isArray(r.development_areas)
+      ? r.development_areas.map((item) => ({
+          skill: text(item?.skill || item?.skill_name),
+          evidence: text(item?.evidence),
+          action: text(item?.action),
+        })).filter((item) => item.skill)
+      : [],
+    summary: text(r.summary),
   };
 }
 

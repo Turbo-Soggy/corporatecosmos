@@ -16,18 +16,25 @@ function skillsOf(input) {
 }
 
 function buildSkillMatchPrompt(candidateSkills, jdSkills) {
-  return `You compare a candidate's skills against ONE job's required skills.
-Return only valid JSON. Do not explain.
+  return `You are a constructive career coach comparing ONE resume against ONE job description.
+Return only valid JSON. Do not include markdown or claims not supported by the supplied evidence.
 Two skills match if they mean the same thing, even when worded differently.
+Only call a skill matched when the resume evidence supports it. Do not penalize a missing skill as a character flaw.
 
 Job required skills:
 ${jdSkills.map((s) => `- ${s.skill_name} [${s.category_code}]`).join('\n')}
 
 Candidate skills:
-${candidateSkills.map((s) => `- ${s.skill_name} [${s.category_code}]`).join('\n')}
+${candidateSkills.map((s) => `- ${s.skill_name} [${s.category_code}] evidence: ${s.evidence || 'not provided'}`).join('\n')}
 
-Return only the job's skill names, each in exactly one list:
-{ "matched_skills": ["<job skill name>"], "missing_skills": ["<job skill name>"] }`;
+Return this shape:
+{
+  "matched_skills": ["<exact job skill name>"],
+  "missing_skills": ["<exact job skill name>"],
+  "strengths": [{ "skill": "<exact job skill name>", "why": "<one constructive sentence grounded in the resume>" }],
+  "development_areas": [{ "skill": "<exact job skill name>", "action": "<one specific, constructive next step>" }],
+  "summary": "<one or two sentences explaining the overall fit and the most useful next step>"
+}`;
 }
 
 /**
@@ -77,6 +84,9 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
         match_score,
         matched_skills,
         missing_skills,
+        strengths: raw.strengths,
+        development_areas: raw.development_areas,
+        summary: raw.summary,
       }),
       source: 'gemma',
     };

@@ -75,5 +75,16 @@ export function matchSkills(candidate, jdSkillList) {
     match_score,
     matched_skills,
     missing_skills,
+    strengths: matched_skills.map((skill) => ({
+      skill,
+      why: 'This resume skill covers a requirement identified in the job description.',
+    })),
+    development_areas: missing_skills.map((skill) => ({
+      skill,
+      action: `Build or demonstrate ${skill} through a project, course, certification, or measurable work example.`,
+    })),
+    summary: matched_skills.length
+      ? `The resume covers ${matched_skills.length} of ${jdSkills.length} weighted requirements. Review the development areas before applying.`
+      : 'No overlapping RADIX skills were found. Add more resume evidence or review the job description requirements.',
   });
 }

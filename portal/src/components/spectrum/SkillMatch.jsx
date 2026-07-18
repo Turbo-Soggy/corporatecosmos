@@ -18,22 +18,25 @@ function jdDemandLevels(jd) {
 
 export default function SkillMatch({ profile, jd, setJd }) {
   const jdRef = useRef(null);
+  const resumeRef = useRef(null);
   const [busy, setBusy] = useState('');
   const [result, setResult] = useState(null);
+  const [resume, setResume] = useState(null);
 
   const candLevels = useMemo(() => categoryLevels(profile), [profile]);
   const demand = useMemo(() => jdDemandLevels(jd), [jd]);
+  const candidate = resume || profile;
 
   // Recompute the match whenever the JD or the candidate changes.
   useEffect(() => {
     if (!jd) { setResult(null); return; }
     let cancelled = false;
     setBusy('Matching…');
-    matchSkillsSmart(profile.skills, jd).then((r) => {
+    matchSkillsSmart(candidate.skills, jd).then((r) => {
       if (!cancelled) { setResult(r); setBusy(''); }
     });
     return () => { cancelled = true; };
-  }, [jd, profile]);
+  }, [candidate, jd]);
 
   const onJd = async (file) => {
     if (!file) return;
@@ -48,6 +51,19 @@ export default function SkillMatch({ profile, jd, setJd }) {
     }
   };
 
+  const onResume = async (file) => {
+    if (!file) return;
+    setBusy('Reading resume…');
+    try {
+      const text = await extractResumeText(file);
+      setBusy('Extracting resume skills with Gemma…');
+      setResume(await extractSkills({ text, sourceType: 'resume', sourceFile: file.name }));
+      setBusy('');
+    } catch (err) {
+      setBusy(err?.message || 'Could not read that resume.');
+    }
+  };
+
   const series = [
     { key: 'jd', levels: demand, color: '#FBBF24', fillOpacity: 0.08 },
     { key: 'me', levels: candLevels, color: '#5EEAD4', fillOpacity: 0.16 },
@@ -59,10 +75,20 @@ export default function SkillMatch({ profile, jd, setJd }) {
         <div className="min-w-0 text-sm text-ink-muted">
           {jd ? <>JD: <span className="text-ink">{jd.source_file || 'uploaded posting'}</span></> : 'Upload a job posting to match against.'}
         </div>
-        <button onClick={() => jdRef.current?.click()} className="shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm text-ink-muted transition hover:text-ink">
-          {jd ? 'Change JD' : 'Upload JD'}
-        </button>
+        <div className="flex shrink-0 gap-2">
+          <button onClick={() => jdRef.current?.click()} className="rounded-lg border border-amber-300/25 px-3 py-1.5 text-sm text-amber-200 transition hover:bg-amber-300/10">
+            {jd ? 'Change JD' : 'Upload JD'}
+          </button>
+          <button onClick={() => resumeRef.current?.click()} className="rounded-lg border border-accent/25 px-3 py-1.5 text-sm text-accent transition hover:bg-accent/10">
+            {resume ? 'Change resume' : 'Upload resume'}
+          </button>
+        </div>
         <input ref={jdRef} type="file" accept=".pdf,.docx" className="hidden" onChange={(e) => onJd(e.target.files?.[0])} />
+        <input ref={resumeRef} type="file" accept=".pdf,.docx" className="hidden" onChange={(e) => onResume(e.target.files?.[0])} />
+      </div>
+
+      <div className="rounded-md border border-white/10 bg-white/[0.02] px-3 py-2 text-xs leading-relaxed text-ink-muted">
+        Comparing <span className="text-ink">{resume?.source_file || 'saved profile'}</span> against <span className="text-ink">{jd?.source_file || 'no JD uploaded'}</span>. The score is weighted JD-skill coverage; it is a coaching signal, not a hiring decision.
       </div>
 
       {busy && <div className="label-mono animate-pulse text-accent/80">{busy}</div>}
@@ -78,6 +104,26 @@ export default function SkillMatch({ profile, jd, setJd }) {
             </div>
           </div>
 
+          <section className="rounded-lg border border-accent/15 bg-accent/[0.04] px-3 py-3" aria-labelledby="match-summary-title">
+            <h3 id="match-summary-title" className="label-mono text-accent/90">What this means</h3>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">{result.summary || 'The score reflects overlap between extracted resume skills and extracted JD requirements.'}</p>
+            <p className="mt-2 text-[11px] text-ink-faint">{result.source === 'gemma' ? 'Gemma reviewed aliases and produced the coaching notes.' : 'Local matching produced this report because Gemma was unavailable or returned an unusable response.'}</p>
+          </section>
+
+          {result.strengths?.length > 0 && (
+            <section aria-labelledby="match-strengths-title">
+              <h3 id="match-strengths-title" className="label-mono mb-2 text-accent/80">Strengths to lead with ({result.strengths.length})</h3>
+              <div className="space-y-2">
+                {result.strengths.map((item, i) => (
+                  <div key={`${item.skill}-${i}`} className="rounded-md border border-accent/15 bg-accent/[0.04] px-3 py-2">
+                    <div className="text-sm font-medium text-ink">{item.skill}</div>
+                    <p className="mt-1 text-xs leading-relaxed text-ink-muted">{item.why || item.evidence || 'This requirement is supported by the uploaded resume.'}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Gap list first — the point of the tool, per the brief. */}
           <div>
             <div className="label-mono mb-2 text-neg/90">Missing ({result.missing_skills.length})</div>
@@ -88,6 +134,19 @@ export default function SkillMatch({ profile, jd, setJd }) {
               ))}
             </div>
           </div>
+          {result.development_areas?.length > 0 && (
+            <section aria-labelledby="match-development-title">
+              <h3 id="match-development-title" className="label-mono mb-2 text-amber-200/90">Development areas ({result.development_areas.length})</h3>
+              <div className="space-y-2">
+                {result.development_areas.map((item, i) => (
+                  <div key={`${item.skill}-${i}`} className="rounded-md border border-amber-300/15 bg-amber-300/[0.04] px-3 py-2">
+                    <div className="text-sm font-medium text-ink">{item.skill}</div>
+                    <p className="mt-1 text-xs leading-relaxed text-ink-muted">{item.action || 'Add truthful evidence of this requirement through a project, course, or measurable work example.'}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
           <div>
             <div className="label-mono mb-2 text-accent/80">Matched ({result.matched_skills.length})</div>
             <div className="flex flex-wrap gap-1.5">
