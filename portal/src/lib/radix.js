@@ -25,6 +25,14 @@ export const CATEGORY_CODES = new Set([
 
 export const CONFIDENCE = ['high', 'medium', 'low'];
 
+const SOURCE_TYPES = new Set(['jd', 'resume']);
+
+export function assertSourceType(sourceType) {
+  if (!SOURCE_TYPES.has(sourceType)) {
+    throw new TypeError('sourceType must be exactly "jd" or "resume"');
+  }
+}
+
 const CONFIDENCE_WEIGHTS = {
   high: 1,
   medium: 0.66,
@@ -58,19 +66,33 @@ export function normalizeSkill(raw) {
 
 function optionalText(value) {
   if (value == null) return null;
+  if (typeof value !== 'string' && (typeof value !== 'number' || !Number.isFinite(value))) {
+    return null;
+  }
   const text = String(value).trim();
   return text || null;
 }
 
+function normalizeStructuredItems(value, fields) {
+  if (!Array.isArray(value)) return [];
+
+  return value.flatMap((item) => {
+    if (!item || Array.isArray(item) || typeof item !== 'object') return [];
+
+    const normalized = Object.fromEntries(
+      fields.map((field) => [field, optionalText(item[field]) || ''])
+    );
+    return Object.values(normalized).some(Boolean) ? [normalized] : [];
+  });
+}
+
 export function normalizeSkillList(raw, { sourceType, sourceFile } = {}) {
-  const validSourceTypes = ['jd', 'resume'];
+  assertSourceType(sourceType);
   if (
     !raw
     || Array.isArray(raw)
     || typeof raw !== 'object'
     || !Array.isArray(raw.skills)
-    || !validSourceTypes.includes(sourceType)
-    || (raw.source_type != null && !validSourceTypes.includes(raw.source_type))
   ) {
     throw new TypeError('Expected a skill payload with a skills array and a valid sourceType');
   }
@@ -97,9 +119,17 @@ export function normalizeSkillList(raw, { sourceType, sourceFile } = {}) {
   };
 
   if (sourceType === 'resume') {
-    for (const field of ['education', 'projects', 'experience']) {
-      if (Object.prototype.hasOwnProperty.call(raw, field)) normalized[field] = raw[field];
-    }
+    normalized.education = normalizeStructuredItems(raw.education, [
+      'qualification',
+      'institution',
+      'dates',
+    ]);
+    normalized.projects = normalizeStructuredItems(raw.projects, ['name', 'summary']);
+    normalized.experience = normalizeStructuredItems(raw.experience, [
+      'role',
+      'organization',
+      'dates',
+    ]);
   }
 
   return normalized;
