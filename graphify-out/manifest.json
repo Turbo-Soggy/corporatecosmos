@@ -500,8 +500,8 @@
     "semantic_hash": ""
   },
   "portal/src/components/spectrum/SkillMatch.jsx": {
-    "mtime": 1784522592.867479,
-    "ast_hash": "a37fe1c0b6e753e535e824101aa1ae2d",
+    "mtime": 1784524041.5929618,
+    "ast_hash": "aa1f07ec8586c753aac80a0a938fbb32",
     "semantic_hash": ""
   },
   "portal/src/components/spectrum/SpectrumRadar.jsx": {
@@ -542,6 +542,16 @@
   "portal/src/lib/talentCheck.js": {
     "mtime": 1784522947.8365378,
     "ast_hash": "29e43bdddf1acefe84a5d3250e49fb42",
+    "semantic_hash": ""
+  },
+  "portal/src/agents/cvGenerationAgent.js": {
+    "mtime": 1784524036.8382983,
+    "ast_hash": "473eaf1c6b796452df2b5e541143296e",
+    "semantic_hash": ""
+  },
+  "portal/src/lib/cvExport.js": {
+    "mtime": 1784524039.1800587,
+    "ast_hash": "9b8cd97eab85d150f16f0324ed58ccf6",
     "semantic_hash": ""
   }
 }

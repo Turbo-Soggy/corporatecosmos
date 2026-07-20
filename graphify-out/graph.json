@@ -4,14 +4,164 @@
   "graph": {},
   "nodes": [
     {
+      "label": "cvGenerationAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent",
+      "community": 8,
+      "norm_label": "cvgenerationagent.js"
+    },
+    {
+      "label": "list()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_list",
+      "community": 8,
+      "norm_label": "list()"
+    },
+    {
+      "label": "text()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_text",
+      "community": 8,
+      "norm_label": "text()"
+    },
+    {
+      "label": "fallbackCv()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_fallbackcv",
+      "community": 8,
+      "norm_label": "fallbackcv()"
+    },
+    {
+      "label": "buildPrompt()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_buildprompt",
+      "community": 8,
+      "norm_label": "buildprompt()"
+    },
+    {
+      "label": "normalizeDraft()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_normalizedraft",
+      "community": 8,
+      "norm_label": "normalizedraft()"
+    },
+    {
+      "label": "generateTargetedCv()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "agents_cvgenerationagent_generatetargetedcv",
+      "community": 8,
+      "norm_label": "generatetargetedcv()"
+    },
+    {
+      "label": "SkillMatch.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "spectrum_skillmatch",
+      "community": 21,
+      "norm_label": "skillmatch.jsx"
+    },
+    {
+      "label": "jdDemandLevels()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "spectrum_skillmatch_jddemandlevels",
+      "community": 21,
+      "norm_label": "jddemandlevels()"
+    },
+    {
+      "label": "SkillMatch()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "spectrum_skillmatch_skillmatch",
+      "community": 12,
+      "norm_label": "skillmatch()"
+    },
+    {
+      "label": "cvExport.js",
+      "file_type": "code",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_cvexport",
+      "community": 21,
+      "norm_label": "cvexport.js"
+    },
+    {
+      "label": "escapeHtml()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_cvexport_escapehtml",
+      "community": 21,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "slug()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "lib_cvexport_slug",
+      "community": 21,
+      "norm_label": "slug()"
+    },
+    {
+      "label": "lines()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "lib_cvexport_lines",
+      "community": 21,
+      "norm_label": "lines()"
+    },
+    {
+      "label": "downloadTargetedCv()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "lib_cvexport_downloadtargetedcv",
+      "community": 21,
+      "norm_label": "downloadtargetedcv()"
+    },
+    {
       "label": "prompts.js",
       "file_type": "code",
       "source_file": "portal/src/agents/prompts.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_prompts",
       "community": 21,
-      "norm_label": "prompts.js"
+      "norm_label": "prompts.js",
+      "id": "agents_prompts"
     },
     {
       "label": "buildIntentPrompt()",
@@ -19,9 +169,9 @@
       "source_file": "portal/src/agents/prompts.js",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "agents_prompts_buildintentprompt",
-      "community": 21,
-      "norm_label": "buildintentprompt()"
+      "community": 3,
+      "norm_label": "buildintentprompt()",
+      "id": "agents_prompts_buildintentprompt"
     },
     {
       "label": "buildNarrativePrompt()",
@@ -29,9 +179,9 @@
       "source_file": "portal/src/agents/prompts.js",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "agents_prompts_buildnarrativeprompt",
-      "community": 21,
-      "norm_label": "buildnarrativeprompt()"
+      "community": 3,
+      "norm_label": "buildnarrativeprompt()",
+      "id": "agents_prompts_buildnarrativeprompt"
     },
     {
       "label": "buildSkillExtractionPrompt()",
@@ -39,9 +189,9 @@
       "source_file": "portal/src/agents/prompts.js",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "agents_prompts_buildskillextractionprompt",
       "community": 21,
-      "norm_label": "buildskillextractionprompt()"
+      "norm_label": "buildskillextractionprompt()",
+      "id": "agents_prompts_buildskillextractionprompt"
     },
     {
       "label": "skillExtractionAgent.js",
@@ -49,9 +199,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_skillextractionagent",
       "community": 21,
-      "norm_label": "skillextractionagent.js"
+      "norm_label": "skillextractionagent.js",
+      "id": "agents_skillextractionagent"
     },
     {
       "label": "literalPattern()",
@@ -59,9 +209,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_literalpattern",
       "community": 21,
-      "norm_label": "literalpattern()"
+      "norm_label": "literalpattern()",
+      "id": "agents_skillextractionagent_literalpattern"
     },
     {
       "label": "findLiteral()",
@@ -69,9 +219,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_findliteral",
       "community": 21,
-      "norm_label": "findliteral()"
+      "norm_label": "findliteral()",
+      "id": "agents_skillextractionagent_findliteral"
     },
     {
       "label": "evidenceSnippet()",
@@ -79,9 +229,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_evidencesnippet",
       "community": 21,
-      "norm_label": "evidencesnippet()"
+      "norm_label": "evidencesnippet()",
+      "id": "agents_skillextractionagent_evidencesnippet"
     },
     {
       "label": "localSkills()",
@@ -89,9 +239,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_localskills",
       "community": 21,
-      "norm_label": "localskills()"
+      "norm_label": "localskills()",
+      "id": "agents_skillextractionagent_localskills"
     },
     {
       "label": "localResumeFields()",
@@ -99,9 +249,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_localresumefields",
       "community": 21,
-      "norm_label": "localresumefields()"
+      "norm_label": "localresumefields()",
+      "id": "agents_skillextractionagent_localresumefields"
     },
     {
       "label": "extractSkillsLocally()",
@@ -109,9 +259,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L87",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_extractskillslocally",
       "community": 21,
-      "norm_label": "extractskillslocally()"
+      "norm_label": "extractskillslocally()",
+      "id": "agents_skillextractionagent_extractskillslocally"
     },
     {
       "label": "extractSkills()",
@@ -119,9 +269,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L109",
       "_origin": "ast",
-      "id": "agents_skillextractionagent_extractskills",
       "community": 21,
-      "norm_label": "extractskills()"
+      "norm_label": "extractskills()",
+      "id": "agents_skillextractionagent_extractskills"
     },
     {
       "label": "ProfileBuilder.jsx",
@@ -129,9 +279,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder",
-      "community": 12,
-      "norm_label": "profilebuilder.jsx"
+      "community": 21,
+      "norm_label": "profilebuilder.jsx",
+      "id": "spectrum_profilebuilder"
     },
     {
       "label": "CODE_COLOR",
@@ -139,9 +289,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder_code_color",
-      "community": 12,
-      "norm_label": "code_color"
+      "community": 21,
+      "norm_label": "code_color",
+      "id": "spectrum_profilebuilder_code_color"
     },
     {
       "label": "CODES",
@@ -149,9 +299,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder_codes",
-      "community": 12,
-      "norm_label": "codes"
+      "community": 21,
+      "norm_label": "codes",
+      "id": "spectrum_profilebuilder_codes"
     },
     {
       "label": "guessCategory()",
@@ -159,9 +309,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder_guesscategory",
-      "community": 12,
-      "norm_label": "guesscategory()"
+      "community": 21,
+      "norm_label": "guesscategory()",
+      "id": "spectrum_profilebuilder_guesscategory"
     },
     {
       "label": "Field()",
@@ -169,9 +319,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder_field",
-      "community": 12,
-      "norm_label": "field()"
+      "community": 21,
+      "norm_label": "field()",
+      "id": "spectrum_profilebuilder_field"
     },
     {
       "label": "ProfileBuilder()",
@@ -179,9 +329,9 @@
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "spectrum_profilebuilder_profilebuilder",
-      "community": 12,
-      "norm_label": "profilebuilder()"
+      "community": 21,
+      "norm_label": "profilebuilder()",
+      "id": "spectrum_profilebuilder_profilebuilder"
     },
     {
       "label": "radix.js",
@@ -189,9 +339,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "lib_radix",
       "community": 21,
-      "norm_label": "radix.js"
+      "norm_label": "radix.js",
+      "id": "lib_radix"
     },
     {
       "label": "RADIX_CATEGORIES",
@@ -199,9 +349,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "lib_radix_radix_categories",
       "community": 21,
-      "norm_label": "radix_categories"
+      "norm_label": "radix_categories",
+      "id": "lib_radix_radix_categories"
     },
     {
       "label": "CATEGORY_CODES",
@@ -209,9 +359,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "lib_radix_category_codes",
       "community": 21,
-      "norm_label": "category_codes"
+      "norm_label": "category_codes",
+      "id": "lib_radix_category_codes"
     },
     {
       "label": "CONFIDENCE",
@@ -219,9 +369,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "lib_radix_confidence",
       "community": 21,
-      "norm_label": "confidence"
+      "norm_label": "confidence",
+      "id": "lib_radix_confidence"
     },
     {
       "label": "SOURCE_TYPES",
@@ -229,9 +379,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "lib_radix_source_types",
       "community": 21,
-      "norm_label": "source_types"
+      "norm_label": "source_types",
+      "id": "lib_radix_source_types"
     },
     {
       "label": "assertSourceType()",
@@ -239,9 +389,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "lib_radix_assertsourcetype",
       "community": 21,
-      "norm_label": "assertsourcetype()"
+      "norm_label": "assertsourcetype()",
+      "id": "lib_radix_assertsourcetype"
     },
     {
       "label": "CONFIDENCE_WEIGHTS",
@@ -249,9 +399,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "lib_radix_confidence_weights",
       "community": 21,
-      "norm_label": "confidence_weights"
+      "norm_label": "confidence_weights",
+      "id": "lib_radix_confidence_weights"
     },
     {
       "label": "confidenceWeight()",
@@ -259,9 +409,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "lib_radix_confidenceweight",
       "community": 21,
-      "norm_label": "confidenceweight()"
+      "norm_label": "confidenceweight()",
+      "id": "lib_radix_confidenceweight"
     },
     {
       "label": "normalizeSkill()",
@@ -269,9 +419,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L46",
       "_origin": "ast",
-      "id": "lib_radix_normalizeskill",
       "community": 21,
-      "norm_label": "normalizeskill()"
+      "norm_label": "normalizeskill()",
+      "id": "lib_radix_normalizeskill"
     },
     {
       "label": "optionalText()",
@@ -279,9 +429,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L67",
       "_origin": "ast",
-      "id": "lib_radix_optionaltext",
       "community": 21,
-      "norm_label": "optionaltext()"
+      "norm_label": "optionaltext()",
+      "id": "lib_radix_optionaltext"
     },
     {
       "label": "normalizeStructuredItems()",
@@ -289,9 +439,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "lib_radix_normalizestructureditems",
       "community": 21,
-      "norm_label": "normalizestructureditems()"
+      "norm_label": "normalizestructureditems()",
+      "id": "lib_radix_normalizestructureditems"
     },
     {
       "label": "normalizeStringList()",
@@ -299,9 +449,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "lib_radix_normalizestringlist",
       "community": 21,
-      "norm_label": "normalizestringlist()"
+      "norm_label": "normalizestringlist()",
+      "id": "lib_radix_normalizestringlist"
     },
     {
       "label": "normalizeSkillList()",
@@ -309,9 +459,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L94",
       "_origin": "ast",
-      "id": "lib_radix_normalizeskilllist",
       "community": 21,
-      "norm_label": "normalizeskilllist()"
+      "norm_label": "normalizeskilllist()",
+      "id": "lib_radix_normalizeskilllist"
     },
     {
       "label": "RADIX_LEXICON",
@@ -319,9 +469,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L151",
       "_origin": "ast",
-      "id": "lib_radix_radix_lexicon",
       "community": 21,
-      "norm_label": "radix_lexicon"
+      "norm_label": "radix_lexicon",
+      "id": "lib_radix_radix_lexicon"
     },
     {
       "label": "radixProfile.js",
@@ -329,9 +479,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "lib_radixprofile",
       "community": 21,
-      "norm_label": "radixprofile.js"
+      "norm_label": "radixprofile.js",
+      "id": "lib_radixprofile"
     },
     {
       "label": "clamp()",
@@ -339,9 +489,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "lib_radixprofile_clamp",
       "community": 21,
-      "norm_label": "clamp()"
+      "norm_label": "clamp()",
+      "id": "lib_radixprofile_clamp"
     },
     {
       "label": "int()",
@@ -349,9 +499,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "lib_radixprofile_int",
       "community": 21,
-      "norm_label": "int()"
+      "norm_label": "int()",
+      "id": "lib_radixprofile_int"
     },
     {
       "label": "text()",
@@ -359,9 +509,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "lib_radixprofile_text",
       "community": 21,
-      "norm_label": "text()"
+      "norm_label": "text()",
+      "id": "lib_radixprofile_text"
     },
     {
       "label": "stringList()",
@@ -369,9 +519,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "lib_radixprofile_stringlist",
       "community": 21,
-      "norm_label": "stringlist()"
+      "norm_label": "stringlist()",
+      "id": "lib_radixprofile_stringlist"
     },
     {
       "label": "dedupeSkills()",
@@ -379,9 +529,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "lib_radixprofile_dedupeskills",
       "community": 21,
-      "norm_label": "dedupeskills()"
+      "norm_label": "dedupeskills()",
+      "id": "lib_radixprofile_dedupeskills"
     },
     {
       "label": "normalizeProfile()",
@@ -389,9 +539,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "lib_radixprofile_normalizeprofile",
-      "community": 12,
-      "norm_label": "normalizeprofile()"
+      "community": 21,
+      "norm_label": "normalizeprofile()",
+      "id": "lib_radixprofile_normalizeprofile"
     },
     {
       "label": "emptyProfile()",
@@ -399,9 +549,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "lib_radixprofile_emptyprofile",
-      "community": 12,
-      "norm_label": "emptyprofile()"
+      "community": 21,
+      "norm_label": "emptyprofile()",
+      "id": "lib_radixprofile_emptyprofile"
     },
     {
       "label": "lexiconHits()",
@@ -409,9 +559,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L79",
       "_origin": "ast",
-      "id": "lib_radixprofile_lexiconhits",
       "community": 21,
-      "norm_label": "lexiconhits()"
+      "norm_label": "lexiconhits()",
+      "id": "lib_radixprofile_lexiconhits"
     },
     {
       "label": "categoryLevels()",
@@ -419,9 +569,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L103",
       "_origin": "ast",
-      "id": "lib_radixprofile_categorylevels",
       "community": 21,
-      "norm_label": "categorylevels()"
+      "norm_label": "categorylevels()",
+      "id": "lib_radixprofile_categorylevels"
     },
     {
       "label": "normalizeTalentCheck()",
@@ -429,9 +579,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "lib_radixprofile_normalizetalentcheck",
       "community": 21,
-      "norm_label": "normalizetalentcheck()"
+      "norm_label": "normalizetalentcheck()",
+      "id": "lib_radixprofile_normalizetalentcheck"
     },
     {
       "label": "normalizeSkillMatch()",
@@ -439,9 +589,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L151",
       "_origin": "ast",
-      "id": "lib_radixprofile_normalizeskillmatch",
       "community": 21,
-      "norm_label": "normalizeskillmatch()"
+      "norm_label": "normalizeskillmatch()",
+      "id": "lib_radixprofile_normalizeskillmatch"
     },
     {
       "label": "toProfileDraft()",
@@ -449,9 +599,9 @@
       "source_file": "portal/src/lib/radixProfile.js",
       "source_location": "L184",
       "_origin": "ast",
-      "id": "lib_radixprofile_toprofiledraft",
       "community": 21,
-      "norm_label": "toprofiledraft()"
+      "norm_label": "toprofiledraft()",
+      "id": "lib_radixprofile_toprofiledraft"
     },
     {
       "label": "ReadinessScan.jsx",
@@ -712,36 +862,6 @@
       "community": 21,
       "norm_label": "matchskillssmart()",
       "id": "agents_skillmatchagent_matchskillssmart"
-    },
-    {
-      "label": "SkillMatch.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "skillmatch.jsx",
-      "id": "spectrum_skillmatch"
-    },
-    {
-      "label": "jdDemandLevels()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "jddemandlevels()",
-      "id": "spectrum_skillmatch_jddemandlevels"
-    },
-    {
-      "label": "SkillMatch()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "skillmatch()",
-      "id": "spectrum_skillmatch_skillmatch"
     },
     {
       "label": "skillMatch.js",
@@ -1565,7 +1685,7 @@
       "source_file": "portal/src/agents/narrativeAgent.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "narrativeagent.js",
       "id": "agents_narrativeagent"
     },
@@ -1575,7 +1695,7 @@
       "source_file": "portal/src/agents/narrativeAgent.js",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "fallbackbrief()",
       "id": "agents_narrativeagent_fallbackbrief"
     },
@@ -1585,7 +1705,7 @@
       "source_file": "portal/src/agents/narrativeAgent.js",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "generatemissionbrief()",
       "id": "agents_narrativeagent_generatemissionbrief"
     },
@@ -1595,7 +1715,7 @@
       "source_file": "portal/src/agents/ollamaClient.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "ollamaclient.js",
       "id": "agents_ollamaclient"
     },
@@ -1605,7 +1725,7 @@
       "source_file": "portal/src/agents/ollamaClient.js",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "fetchwithtimeout()",
       "id": "agents_ollamaclient_fetchwithtimeout"
     },
@@ -1615,7 +1735,7 @@
       "source_file": "portal/src/agents/ollamaClient.js",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "checkollamahealth()",
       "id": "agents_ollamaclient_checkollamahealth"
     },
@@ -1625,7 +1745,7 @@
       "source_file": "portal/src/agents/ollamaClient.js",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "callollama()",
       "id": "agents_ollamaclient_callollama"
     },
@@ -1635,7 +1755,7 @@
       "source_file": "portal/src/agents/ollamaClient.js",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "parsejsonobject()",
       "id": "agents_ollamaclient_parsejsonobject"
     },
@@ -1655,7 +1775,7 @@
       "source_file": "portal/src/agents/orchestrator.js",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 21,
+      "community": 3,
       "norm_label": "parseintent()",
       "id": "agents_orchestrator_parseintent"
     },
@@ -2335,7 +2455,7 @@
       "source_file": "portal/src/components/hud/CompanyPanel.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 5,
       "norm_label": "companypanel.jsx",
       "id": "hud_companypanel"
     },
@@ -2345,7 +2465,7 @@
       "source_file": "portal/src/components/hud/CompanyPanel.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 12,
+      "community": 5,
       "norm_label": "field_groups",
       "id": "hud_companypanel_field_groups"
     },
@@ -2355,7 +2475,7 @@
       "source_file": "portal/src/components/hud/CompanyPanel.jsx",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 12,
+      "community": 5,
       "norm_label": "fieldvalue()",
       "id": "hud_companypanel_fieldvalue"
     },
@@ -2365,7 +2485,7 @@
       "source_file": "portal/src/components/hud/CompanyPanel.jsx",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 12,
+      "community": 5,
       "norm_label": "companypanel()",
       "id": "hud_companypanel_companypanel"
     },
@@ -2845,7 +2965,7 @@
       "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 10,
       "norm_label": "agentactivityrow.jsx",
       "id": "mission_agentactivityrow"
     },
@@ -2855,7 +2975,7 @@
       "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 10,
       "norm_label": "statusdot()",
       "id": "mission_agentactivityrow_statusdot"
     },
@@ -2865,7 +2985,7 @@
       "source_file": "portal/src/components/mission/AgentActivityRow.jsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
+      "community": 10,
       "norm_label": "agentactivityrow()",
       "id": "mission_agentactivityrow_agentactivityrow"
     },
@@ -2925,7 +3045,7 @@
       "source_file": "portal/src/components/mission/MissionControl.jsx",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "missioncontrol()",
       "id": "mission_missioncontrol_missioncontrol"
     },
@@ -3005,7 +3125,7 @@
       "source_file": "portal/src/components/mission/MissionTimeline.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 10,
       "norm_label": "missiontimeline.jsx",
       "id": "mission_missiontimeline"
     },
@@ -3015,7 +3135,7 @@
       "source_file": "portal/src/components/mission/MissionTimeline.jsx",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 10,
       "norm_label": "missiontimeline()",
       "id": "mission_missiontimeline_missiontimeline"
     },
@@ -3095,7 +3215,7 @@
       "source_file": "portal/src/components/resume/UploadDock.jsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 4,
+      "community": 1,
       "norm_label": "uploaddock()",
       "id": "resume_uploaddock_uploaddock"
     },
@@ -3325,7 +3445,7 @@
       "source_file": "portal/src/hooks/useTalentSession.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "usetalentsession.js",
       "id": "hooks_usetalentsession"
     },
@@ -3845,7 +3965,7 @@
       "source_file": "portal/src/lib/formatDisplay.js",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 12,
+      "community": 5,
       "norm_label": "totags()",
       "id": "lib_formatdisplay_totags"
     },
@@ -4095,7 +4215,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "profilestore.js",
       "id": "lib_profilestore"
     },
@@ -4105,7 +4225,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "loadprofile()",
       "id": "lib_profilestore_loadprofile"
     },
@@ -4115,7 +4235,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "saveprofile()",
       "id": "lib_profilestore_saveprofile"
     },
@@ -4125,7 +4245,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "clearprofile()",
       "id": "lib_profilestore_clearprofile"
     },
@@ -4135,7 +4255,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "exportprofile()",
       "id": "lib_profilestore_exportprofile"
     },
@@ -4145,7 +4265,7 @@
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 12,
+      "community": 21,
       "norm_label": "importprofile()",
       "id": "lib_profilestore_importprofile"
     },
@@ -4325,7 +4445,7 @@
       "source_file": "portal/src/lib/resumeParse.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 4,
       "norm_label": "resumeparse.js",
       "id": "lib_resumeparse"
     },
@@ -4335,7 +4455,7 @@
       "source_file": "portal/src/lib/resumeParse.js",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 12,
+      "community": 4,
       "norm_label": "extractpdf()",
       "id": "lib_resumeparse_extractpdf"
     },
@@ -4345,7 +4465,7 @@
       "source_file": "portal/src/lib/resumeParse.js",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 12,
+      "community": 4,
       "norm_label": "extractdocx()",
       "id": "lib_resumeparse_extractdocx"
     },
@@ -4355,7 +4475,7 @@
       "source_file": "portal/src/lib/resumeParse.js",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 12,
+      "community": 4,
       "norm_label": "kindof()",
       "id": "lib_resumeparse_kindof"
     },
@@ -4365,7 +4485,7 @@
       "source_file": "portal/src/lib/resumeParse.js",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 12,
+      "community": 4,
       "norm_label": "extractresumetext()",
       "id": "lib_resumeparse_extractresumetext"
     },
@@ -5262,6 +5382,434 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_buildprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_fallbackcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_generatetargetedcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_normalizedraft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_cvgenerationagent_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_callollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_checkollamahealth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_parsejsonobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_cvgenerationagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_fallbackcv",
+      "target": "agents_cvgenerationagent_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_cvgenerationagent_fallbackcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_cvgenerationagent_buildprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_cvgenerationagent_normalizedraft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_cvgenerationagent_generatetargetedcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_skillextractionagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_skillextractionagent_extractskills"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_skillmatchagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "agents_skillmatchagent_matchskillssmart"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_cvexport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_cvexport_downloadtargetedcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_radix"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_radix_radix_categories"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_radixprofile"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_radixprofile_categorylevels"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_resumeparse"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "lib_resumeparse_extractresumetext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "spectrum_skillmatch_jddemandlevels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "spectrum_skillmatch_skillmatch"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "spectrum_spectrumradar"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_skillmatch",
+      "target": "spectrum_spectrumradar_spectrumradar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_skillmatch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_skillmatch_skillmatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "lib_cvexport",
+      "target": "lib_cvexport_downloadtargetedcv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_cvexport",
+      "target": "lib_cvexport_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_cvexport",
+      "target": "lib_cvexport_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "lib_cvexport",
+      "target": "lib_cvexport_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "lib_cvexport_downloadtargetedcv",
+      "target": "lib_cvexport_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "lib_cvexport_downloadtargetedcv",
+      "target": "lib_cvexport_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/cvExport.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "lib_cvexport_downloadtargetedcv",
+      "target": "lib_cvexport_lines",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5578,9 +6126,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillextractionagent",
-      "target": "agents_skillextractionagent_localresumefields",
-      "confidence_score": 1.0
+      "target": "agents_skillextractionagent_localresumefields"
     },
     {
       "relation": "contains",
@@ -5651,17 +6199,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "agents_skillextractionagent"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -5709,9 +6246,9 @@
       "source_file": "portal/src/agents/skillExtractionAgent.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillextractionagent_extractskillslocally",
-      "target": "agents_skillextractionagent_localresumefields",
-      "confidence_score": 1.0
+      "target": "agents_skillextractionagent_localresumefields"
     },
     {
       "relation": "calls",
@@ -5810,17 +6347,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "spectrum_profilebuilder",
-      "target": "agents_skillextractionagent_extractskills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
       "target": "agents_skillextractionagent_extractskills"
     },
     {
@@ -6158,9 +6684,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_radix",
-      "target": "lib_radix_normalizestringlist",
-      "confidence_score": 1.0
+      "target": "lib_radix_normalizestringlist"
     },
     {
       "relation": "contains",
@@ -6271,17 +6797,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "lib_radix"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/spectrum/SpectrumRadar.jsx",
       "source_location": "L1",
       "weight": 1.0,
@@ -6353,17 +6868,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "spectrum_skillconstellation",
-      "target": "lib_radix_radix_categories"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
       "target": "lib_radix_radix_categories"
     },
     {
@@ -6604,9 +7108,9 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_radix_normalizeskilllist",
-      "target": "lib_radix_normalizestringlist",
-      "confidence_score": 1.0
+      "target": "lib_radix_normalizestringlist"
     },
     {
       "relation": "imports",
@@ -6781,17 +7285,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_talentcheck",
-      "target": "lib_radixprofile"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
       "target": "lib_radixprofile"
     },
     {
@@ -7034,17 +7527,6 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "lib_talentcheck_runtalentcheck",
-      "target": "lib_radixprofile_categorylevels"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
       "target": "lib_radixprofile_categorylevels"
     },
     {
@@ -7406,28 +7888,6 @@
       "target": "spectrum_skillconstellation"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_skillmatch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_skillmatch_skillmatch"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
@@ -7774,17 +8234,6 @@
       "target": "lib_skillmatch_matchskills"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "agents_skillmatchagent"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -7860,81 +8309,6 @@
       "weight": 1.0,
       "source": "agents_skillmatchagent_matchskillssmart",
       "target": "lib_skillmatch_matchskills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "agents_skillmatchagent_matchskillssmart"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "lib_resumeparse"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "lib_resumeparse_extractresumetext"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "spectrum_skillmatch_jddemandlevels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "spectrum_skillmatch_skillmatch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "spectrum_spectrumradar"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_skillmatch",
-      "target": "spectrum_spectrumradar_spectrumradar"
     },
     {
       "relation": "contains",
@@ -15939,5 +16313,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cf415ad0c6602592bbfc5c05e3dd8bd30c1ddc65"
+  "built_at_commit": "2f1c412c726c902438a8c7c8e26a9c6b72d93a86"
 }
