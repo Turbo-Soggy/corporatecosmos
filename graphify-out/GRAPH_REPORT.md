@@ -1,7 +1,7 @@
 # Graph Report - placementdash  (2026-07-20)
 
 ## Corpus Check
-- 110 files · ~44,636 words
+- 110 files · ~44,666 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `538d04b3`
+- Built from commit: `2b51f38c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,22 +43,22 @@
 4. `callOllama()` - 12 edges
 5. `confidenceWeight()` - 12 edges
 6. `sectorColor()` - 12 edges
-7. `matchSkillsSmart()` - 11 edges
-8. `parseJsonObject()` - 11 edges
+7. `parseJsonObject()` - 11 edges
+8. `matchSkillsSmart()` - 11 edges
 9. `extractSkills()` - 11 edges
 10. `normalizeProfile()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `defaultSuggestions()` --calls--> `companyName()`  [EXTRACTED]
   portal/src/components/mission/MissionControl.jsx → portal/src/agents/missionActions.js
-- `matchSkillsSmart()` --calls--> `callOllama()`  [EXTRACTED]
-  portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
+- `runMission()` --calls--> `checkOllamaHealth()`  [EXTRACTED]
+  portal/src/agents/orchestrator.js → portal/src/agents/ollamaClient.js
 - `matchSkillsSmart()` --calls--> `checkOllamaHealth()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
-- `matchSkillsSmart()` --calls--> `parseJsonObject()`  [EXTRACTED]
+- `parseIntent()` --calls--> `callOllama()`  [EXTRACTED]
+  portal/src/agents/orchestrator.js → portal/src/agents/ollamaClient.js
+- `matchSkillsSmart()` --calls--> `callOllama()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
-- `fallbackBrief()` --calls--> `companyName()`  [EXTRACTED]
-  portal/src/agents/narrativeAgent.js → portal/src/agents/missionActions.js
 
 ## Import Cycles
 - None detected.

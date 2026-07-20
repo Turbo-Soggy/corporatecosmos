@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "portal/src/agents/ollamaClient.js": {
-    "mtime": 1784525088.8167355,
-    "ast_hash": "ad91e8186b2b391aaef0427943982abc",
+    "mtime": 1784526572.9947875,
+    "ast_hash": "804263d41a9fb22f2b4c9c87157d3c02",
     "semantic_hash": ""
   },
   "portal/src/agents/orchestrator.js": {
@@ -485,8 +485,8 @@
     "semantic_hash": ""
   },
   "portal/src/agents/skillMatchAgent.js": {
-    "mtime": 1784526123.868268,
-    "ast_hash": "c9466e85185ea94101ea8b042343aebd",
+    "mtime": 1784526575.4189477,
+    "ast_hash": "1ac98145d38a2f6bc7111a5c9499d56d",
     "semantic_hash": ""
   },
   "portal/src/components/spectrum/ProfileBuilder.jsx": {

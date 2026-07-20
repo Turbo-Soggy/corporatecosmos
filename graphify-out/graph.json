@@ -4,6 +4,56 @@
   "graph": {},
   "nodes": [
     {
+      "label": "ollamaClient.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_ollamaclient",
+      "community": 8,
+      "norm_label": "ollamaclient.js"
+    },
+    {
+      "label": "fetchWithTimeout()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_fetchwithtimeout",
+      "community": 8,
+      "norm_label": "fetchwithtimeout()"
+    },
+    {
+      "label": "checkOllamaHealth()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_checkollamahealth",
+      "community": 8,
+      "norm_label": "checkollamahealth()"
+    },
+    {
+      "label": "callOllama()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_callollama",
+      "community": 8,
+      "norm_label": "callollama()"
+    },
+    {
+      "label": "parseJsonObject()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "agents_ollamaclient_parsejsonobject",
+      "community": 8,
+      "norm_label": "parsejsonobject()"
+    },
+    {
       "label": "skillMatchAgent.js",
       "file_type": "code",
       "source_file": "portal/src/agents/skillMatchAgent.js",
@@ -47,7 +97,7 @@
       "label": "matchSkillsSmart()",
       "file_type": "code",
       "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L68",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "agents_skillmatchagent_matchskillssmart",
       "community": 21,
@@ -59,9 +109,9 @@
       "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "spectrum_skillmatch",
       "community": 21,
-      "norm_label": "skillmatch.jsx"
+      "norm_label": "skillmatch.jsx",
+      "id": "spectrum_skillmatch"
     },
     {
       "label": "jdDemandLevels()",
@@ -69,9 +119,9 @@
       "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "spectrum_skillmatch_jddemandlevels",
       "community": 21,
-      "norm_label": "jddemandlevels()"
+      "norm_label": "jddemandlevels()",
+      "id": "spectrum_skillmatch_jddemandlevels"
     },
     {
       "label": "SkillMatch()",
@@ -79,9 +129,9 @@
       "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "spectrum_skillmatch_skillmatch",
       "community": 12,
-      "norm_label": "skillmatch()"
+      "norm_label": "skillmatch()",
+      "id": "spectrum_skillmatch_skillmatch"
     },
     {
       "label": "cvGenerationAgent.js",
@@ -192,56 +242,6 @@
       "community": 8,
       "norm_label": "generatemissionbrief()",
       "id": "agents_narrativeagent_generatemissionbrief"
-    },
-    {
-      "label": "ollamaClient.js",
-      "file_type": "code",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "ollamaclient.js",
-      "id": "agents_ollamaclient"
-    },
-    {
-      "label": "fetchWithTimeout()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "fetchwithtimeout()",
-      "id": "agents_ollamaclient_fetchwithtimeout"
-    },
-    {
-      "label": "checkOllamaHealth()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "checkollamahealth()",
-      "id": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "label": "callOllama()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "callollama()",
-      "id": "agents_ollamaclient_callollama"
-    },
-    {
-      "label": "parseJsonObject()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 8,
-      "norm_label": "parsejsonobject()",
-      "id": "agents_ollamaclient_parsejsonobject"
     },
     {
       "label": "skillExtractionAgent.js",
@@ -5405,6 +5405,101 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skillextractionagent",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L7",
       "weight": 1.0,
@@ -5413,15 +5508,114 @@
       "target": "agents_ollamaclient"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient_callollama",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/ollamaClient.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_ollamaclient_checkollamahealth",
+      "target": "agents_ollamaclient_fetchwithtimeout"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L7",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "agents_skillmatchagent",
-      "target": "agents_ollamaclient_callollama"
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "agents_orchestrator_runmission",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skillextractionagent",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "agents_skillextractionagent_extractskills",
+      "target": "agents_ollamaclient_checkollamahealth"
     },
     {
       "relation": "imports",
@@ -5435,6 +5629,127 @@
       "target": "agents_ollamaclient_checkollamahealth"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "agents_skillmatchagent_matchskillssmart",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/mission/MissionControl.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "mission_missioncontrol",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skillextractionagent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "agents_skillextractionagent_extractskills",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5443,6 +5758,127 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "agents_skillmatchagent",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "agents_skillmatchagent_matchskillssmart",
+      "target": "agents_ollamaclient_callollama"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_cvgenerationagent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/cvGenerationAgent.js",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "agents_cvgenerationagent_generatetargetedcv",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_narrativeagent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/narrativeAgent.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "agents_narrativeagent_generatemissionbrief",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/orchestrator.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_orchestrator_parseintent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skillextractionagent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillExtractionAgent.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "agents_skillextractionagent_extractskills",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skillmatchagent",
+      "target": "agents_ollamaclient_parsejsonobject"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "agents_skillmatchagent_matchskillssmart",
       "target": "agents_ollamaclient_parsejsonobject"
     },
     {
@@ -5471,9 +5907,9 @@
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillmatchagent",
-      "target": "agents_skillmatchagent_excerpt",
-      "confidence_score": 1.0
+      "target": "agents_skillmatchagent_excerpt"
     },
     {
       "relation": "contains",
@@ -5602,9 +6038,9 @@
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillmatchagent_buildskillmatchprompt",
-      "target": "agents_skillmatchagent_excerpt",
-      "confidence_score": 1.0
+      "target": "agents_skillmatchagent_excerpt"
     },
     {
       "relation": "calls",
@@ -5616,39 +6052,6 @@
       "confidence_score": 1.0,
       "source": "agents_skillmatchagent_matchskillssmart",
       "target": "agents_skillmatchagent_buildskillmatchprompt"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "agents_skillmatchagent_matchskillssmart",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "agents_skillmatchagent_matchskillssmart",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L53",
-      "weight": 1.0,
-      "source": "agents_skillmatchagent_matchskillssmart",
-      "target": "agents_ollamaclient_parsejsonobject"
     },
     {
       "relation": "calls",
@@ -5983,50 +6386,6 @@
       "target": "agents_cvgenerationagent_text"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_cvgenerationagent",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_cvgenerationagent",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_cvgenerationagent",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_cvgenerationagent",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -6115,39 +6474,6 @@
       "target": "agents_cvgenerationagent_normalizedraft"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L136",
-      "weight": 1.0,
-      "source": "agents_cvgenerationagent_generatetargetedcv",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L134",
-      "weight": 1.0,
-      "source": "agents_cvgenerationagent_generatetargetedcv",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/cvGenerationAgent.js",
-      "source_location": "L142",
-      "weight": 1.0,
-      "source": "agents_cvgenerationagent_generatetargetedcv",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6188,39 +6514,6 @@
       "confidence_score": 1.0,
       "source": "agents_narrativeagent",
       "target": "agents_narrativeagent_generatemissionbrief"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/narrativeAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_narrativeagent",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/narrativeAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_narrativeagent",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/narrativeAgent.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_narrativeagent",
-      "target": "agents_ollamaclient_parsejsonobject"
     },
     {
       "relation": "imports_from",
@@ -6283,28 +6576,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "portal/src/agents/narrativeAgent.js",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "agents_narrativeagent_generatemissionbrief",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/narrativeAgent.js",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "agents_narrativeagent_generatemissionbrief",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/narrativeAgent.js",
       "source_location": "L37",
       "weight": 1.0,
       "source": "agents_narrativeagent_generatemissionbrief",
@@ -6331,277 +6602,6 @@
       "weight": 1.0,
       "source": "agents_orchestrator_runmission",
       "target": "agents_narrativeagent_generatemissionbrief"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient",
-      "target": "agents_missiontypes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient",
-      "target": "agents_ollamaclient_fetchwithtimeout"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_skillextractionagent",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/mission/MissionControl.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "mission_missioncontrol",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient_callollama",
-      "target": "agents_ollamaclient_fetchwithtimeout"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/ollamaClient.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_ollamaclient_checkollamahealth",
-      "target": "agents_ollamaclient_fetchwithtimeout"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "agents_orchestrator_runmission",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_skillextractionagent",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "agents_skillextractionagent_extractskills",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/mission/MissionControl.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "mission_missioncontrol",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator_parseintent",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_skillextractionagent",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L97",
-      "weight": 1.0,
-      "source": "agents_skillextractionagent_extractskills",
-      "target": "agents_ollamaclient_callollama"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/orchestrator.js",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_orchestrator_parseintent",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "agents_skillextractionagent",
-      "target": "agents_ollamaclient_parsejsonobject"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/agents/skillExtractionAgent.js",
-      "source_location": "L103",
-      "weight": 1.0,
-      "source": "agents_skillextractionagent_extractskills",
-      "target": "agents_ollamaclient_parsejsonobject"
     },
     {
       "relation": "imports_from",
@@ -16518,5 +16518,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "538d04b3591ab3852df96614919e33f7d6ecc8d9"
+  "built_at_commit": "2b51f38c04b4ee52ab24cd1c4096bd666389f800"
 }
