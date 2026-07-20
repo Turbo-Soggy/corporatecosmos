@@ -116,7 +116,7 @@ export async function extractSkills({ text, sourceType, sourceFile, model }) {
       model: ollama.model,
       temperature: 0.1,
       numPredict: 900,
-      timeoutMs: 12000,
+      timeoutMs: 30000,
     });
     const raw = parseJsonObject(response);
     assertSourceType(raw?.source_type);

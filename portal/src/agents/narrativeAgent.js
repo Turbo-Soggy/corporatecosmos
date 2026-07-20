@@ -39,7 +39,7 @@ export async function generateMissionBrief({ command, intent, facts, companies, 
       model: ollama.model,
       temperature: 0.35,
       numPredict: 600,
-      timeoutMs: 12000,
+      timeoutMs: 30000,
     });
     const parsed = parseJsonObject(text);
     return {

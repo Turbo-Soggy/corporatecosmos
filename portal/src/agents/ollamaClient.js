@@ -35,13 +35,17 @@ export async function callOllama(prompt, options = {}) {
         model: options.model || DEFAULT_OLLAMA_MODEL,
         prompt,
         stream: false,
+        // The UI consumes the final answer, not Gemma's private reasoning trace.
+        // Without this, small num_predict budgets can be spent entirely thinking.
+        think: options.think ?? false,
+        keep_alive: options.keepAlive ?? '5m',
         options: {
           temperature: options.temperature ?? 0.2,
           num_predict: options.numPredict ?? 700,
         },
       }),
     },
-    options.timeoutMs ?? 12000
+    options.timeoutMs ?? 30000
   );
 
   if (!response.ok) throw new Error('Ollama request failed');

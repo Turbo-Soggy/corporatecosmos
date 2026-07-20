@@ -137,7 +137,7 @@ export async function generateTargetedCv({ resume, profile, jd, match, model } =
       model: ollama.model,
       temperature: 0.2,
       numPredict: 1400,
-      timeoutMs: 18000,
+      timeoutMs: 45000,
     });
     return normalizeDraft(parseJsonObject(response), fallback);
   } catch {

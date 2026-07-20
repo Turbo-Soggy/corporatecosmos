@@ -72,7 +72,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
       model: ollama.model,
       temperature: 0.1,
       numPredict: 500,
-      timeoutMs: 10000,
+      timeoutMs: 30000,
     });
     const raw = parseJsonObject(text);
     const matchedNames = new Set((raw.matched_skills || []).map(canonicalSkillName));
