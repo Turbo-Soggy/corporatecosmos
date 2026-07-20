@@ -75,7 +75,7 @@ export function buildSkillExtractionPrompt({ text, sourceType }) {
     .map(({ code, label, blurb }) => `- ${code} (${label}): ${blurb}`)
     .join('\n');
   const sourceInstructions = isResume
-    ? 'Also extract education, projects (name + one-line summary), and experience (role @ organization, with dates if present). Tolerate messy layouts.'
+    ? 'Also extract the candidate name, email, education, projects, experience, certifications, hackathons, and preferred roles. Tolerate messy layouts and leave a field empty when it is not present.'
     : "Focus on Key Responsibilities and What We're Looking For.";
   const structuredFields = isResume
     ? `,
@@ -87,7 +87,10 @@ export function buildSkillExtractionPrompt({ text, sourceType }) {
   ],
   "experience": [
     { "role": "...", "organization": "...", "dates": "..." }
-  ]`
+  ],
+  "certifications": [],
+  "hackathons": [],
+  "preferred_roles": []`
     : '';
 
   return `You are the skill extraction agent for a talent matching dashboard.
@@ -112,6 +115,7 @@ Return:
   "source_file": "",
   "company": null,
   "role": null,
+  ${isResume ? '"name": "",\n  "email": "",' : ''}
   "skills": [
     {
       "skill_name": "...",

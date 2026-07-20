@@ -202,10 +202,14 @@ export function toProfileDraft(resumeResult) {
     : [];
 
   return normalizeProfile({
+    name: text(r.name),
+    email: text(r.email),
     education,
     skills: Array.isArray(r.skills) ? r.skills : [],
     internships,
     preferred_roles: text(r.role) ? [text(r.role)] : [],
+    certifications: Array.isArray(r.certifications) ? r.certifications : [],
+    hackathons: Array.isArray(r.hackathons) ? r.hackathons : [],
     cv_file: text(r.source_file),
   });
 }

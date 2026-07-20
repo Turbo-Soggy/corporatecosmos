@@ -86,6 +86,11 @@ function normalizeStructuredItems(value, fields) {
   });
 }
 
+function normalizeStringList(value) {
+  if (!Array.isArray(value)) return [];
+  return value.map((item) => optionalText(item)).filter(Boolean);
+}
+
 export function normalizeSkillList(raw, { sourceType, sourceFile } = {}) {
   assertSourceType(sourceType);
   if (
@@ -119,6 +124,8 @@ export function normalizeSkillList(raw, { sourceType, sourceFile } = {}) {
   };
 
   if (sourceType === 'resume') {
+    normalized.name = optionalText(raw.name) || '';
+    normalized.email = optionalText(raw.email) || '';
     normalized.education = normalizeStructuredItems(raw.education, [
       'qualification',
       'institution',
@@ -130,6 +137,9 @@ export function normalizeSkillList(raw, { sourceType, sourceFile } = {}) {
       'organization',
       'dates',
     ]);
+    normalized.certifications = normalizeStringList(raw.certifications);
+    normalized.hackathons = normalizeStringList(raw.hackathons);
+    normalized.preferred_roles = normalizeStringList(raw.preferred_roles);
   }
 
   return normalized;

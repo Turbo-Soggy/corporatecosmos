@@ -65,10 +65,14 @@ export default function ProfileBuilder({ profile, setProfile, persistProfile, re
       setProfile(
         normalizeProfile({
           ...profile,
+          name: profile.name || draft.name,
+          email: profile.email || draft.email,
           education: draft.education || profile.education,
           skills: [...profile.skills, ...draft.skills],
           internships: [...profile.internships, ...draft.internships],
           preferred_roles: [...profile.preferred_roles, ...draft.preferred_roles],
+          certifications: [...profile.certifications, ...draft.certifications],
+          hackathons: [...profile.hackathons, ...draft.hackathons],
           cv_file: draft.cv_file || profile.cv_file,
         })
       );

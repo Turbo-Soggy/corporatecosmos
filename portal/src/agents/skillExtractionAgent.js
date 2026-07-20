@@ -66,6 +66,24 @@ function localSkills(text) {
   return skills;
 }
 
+function localResumeFields(text) {
+  const lines = String(text || '')
+    .split(/\r?\n/)
+    .map((line) => line.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  const email = String(text || '').match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i)?.[0] || '';
+  const name = lines.find((line) =>
+    line.length >= 2 && line.length <= 70 && !/@/.test(line) && !/^https?:/i.test(line)
+      && !/resume|curriculum vitae|education|experience|skills|projects|contact/i.test(line)
+  ) || '';
+  const education = lines.filter((line) =>
+    /\b(university|college|institute|bachelor|master|ph\.?d|b\.?s\.?c?\.?|m\.?s\.?c?\.?|b\.?tech|m\.?tech|degree|diploma)\b/i.test(line)
+  ).slice(0, 5).map((line) => ({ qualification: line, institution: '', dates: '' }));
+  const certifications = lines.filter((line) => /certif|credential|aws certified|microsoft certified|google certified/i.test(line)).slice(0, 8);
+  const hackathons = lines.filter((line) => /hackathon/i.test(line)).slice(0, 8);
+  return { name, email, education, certifications, hackathons };
+}
+
 export function extractSkillsLocally(text, { sourceType, sourceFile } = {}) {
   assertSourceType(sourceType);
   const raw = {
@@ -77,7 +95,7 @@ export function extractSkillsLocally(text, { sourceType, sourceFile } = {}) {
   };
 
   if (sourceType === 'resume') {
-    raw.education = [];
+    Object.assign(raw, localResumeFields(text));
     raw.projects = [];
     raw.experience = [];
   }
