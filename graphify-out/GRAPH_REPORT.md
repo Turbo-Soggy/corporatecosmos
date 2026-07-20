@@ -1,16 +1,16 @@
 # Graph Report - placementdash  (2026-07-20)
 
 ## Corpus Check
-- 110 files · ~44,191 words
+- 110 files · ~44,534 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 537 nodes · 1037 edges · 23 communities (22 shown, 1 thin omitted)
+- 538 nodes · 1044 edges · 22 communities (21 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `252770b3`
+- Built from commit: `fa6d53a6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,7 +25,6 @@
 - [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
@@ -41,41 +40,41 @@
 2. `runMission()` - 15 edges
 3. `confidenceWeight()` - 12 edges
 4. `sectorColor()` - 12 edges
-5. `extractSkills()` - 11 edges
-6. `RADIX_CATEGORIES` - 11 edges
-7. `normalizeProfile()` - 11 edges
-8. `companyName()` - 11 edges
-9. `normalizeText()` - 11 edges
-10. `checkOllamaHealth()` - 11 edges
+5. `matchSkillsSmart()` - 11 edges
+6. `normalizeProfile()` - 11 edges
+7. `extractSkills()` - 11 edges
+8. `RADIX_CATEGORIES` - 11 edges
+9. `companyName()` - 11 edges
+10. `normalizeText()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `summary()` --calls--> `sectorColor()`  [EXTRACTED]
-  portal/src/components/dashboard/CompanyComparison.jsx → portal/src/lib/sectors.js
-- `buildSpectrum()` --calls--> `confidenceWeight()`  [EXTRACTED]
-  portal/src/components/spectrum/SkillConstellation.jsx → portal/src/lib/radix.js
 - `matchSkillsSmart()` --calls--> `callOllama()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
 - `matchSkillsSmart()` --calls--> `checkOllamaHealth()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
 - `matchSkillsSmart()` --calls--> `parseJsonObject()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
+- `extractSkillsLocally()` --calls--> `normalizeSkillList()`  [EXTRACTED]
+  portal/src/agents/skillExtractionAgent.js → portal/src/lib/radix.js
+- `extractSkills()` --calls--> `normalizeSkillList()`  [EXTRACTED]
+  portal/src/agents/skillExtractionAgent.js → portal/src/lib/radix.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (23 total, 1 thin omitted)
+## Communities (22 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
 Nodes (29): dependencies, gsap, mammoth, pdfjs-dist, postprocessing, react, react-dom, @react-three/drei (+21 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.05
-Nodes (40): CameraRig(), desiredLook, desiredPos, FOLLOW_OFFSET, followPos, nodePos, CompanyNodes(), HIT_GEOMETRY (+32 more)
+Cohesion: 0.06
+Nodes (34): CameraRig(), desiredLook, desiredPos, FOLLOW_OFFSET, followPos, nodePos, CompanyNodes(), HIT_GEOMETRY (+26 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.11
-Nodes (13): CompanyComparison(), COLUMNS, CompanyLeaderboard(), PROFIT_CLASS, DashboardView(), SECTOR_ORDER, compact, FinancialScatter() (+5 more)
+Cohesion: 0.07
+Nodes (24): HoverCard(), NodeHoverCard(), CompanyComparison(), summary(), COLUMNS, CompanyLeaderboard(), PROFIT_CLASS, DashboardView() (+16 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.08
@@ -87,35 +86,31 @@ Nodes (19): analyzeResume(), buildCorpus(), buildProfile(), CORPUS_FIELDS, hasTe
 
 ### Community 5 - "Community 5"
 Cohesion: 0.06
-Nodes (56): CompanyPanel(), FIELD_GROUPS, FieldValue(), currencyCode(), detectCurrency(), explicitCurrencyCode(), formatCurrencyCompact(), formatMoney() (+48 more)
+Nodes (55): CompanyPanel(), FIELD_GROUPS, FieldValue(), currencyCode(), detectCurrency(), explicitCurrencyCode(), formatCurrencyCompact(), formatMoney() (+47 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.06
-Nodes (29): summary(), useFlightTour(), useScrollProgress(), BodyTransitionComposition(), CLAMP, BodyTransitionPlayer(), CLAMP, ComparisonComposition() (+21 more)
+Cohesion: 0.08
+Nodes (25): useFlightTour(), useScrollProgress(), BodyTransitionComposition(), CLAMP, BodyTransitionPlayer(), CLAMP, DashboardStoryComposition(), STEPS (+17 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.11
 Nodes (17): Anti-pattern guards (apply in every phase), Deterministic fallback material (adapt — do NOT reuse as-is), Gemma / Ollama (reuse verbatim — do NOT write a new client), On-device document text extraction (reuse verbatim), On-theme UI + wiring patterns to copy, Out of scope (later hackathon roles, but designed-for), Phase 0 — Documentation Discovery (Allowed APIs) — DONE, evidence below, Phase 1 — RADIX contract module (`src/lib/radix.js`) (+9 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.14
-Nodes (26): buildPrompt(), fallbackCv(), generateTargetedCv(), mergeProfile(), normalizeDraft(), text(), fallbackBrief(), generateMissionBrief() (+18 more)
+Cohesion: 0.17
+Nodes (22): buildPrompt(), fallbackCv(), generateTargetedCv(), mergeProfile(), normalizeDraft(), text(), fallbackBrief(), generateMissionBrief() (+14 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.13
 Nodes (14): Allowed APIs (verified present — `package.json`), Anti-patterns to AVOID (will break this refactor), Confirmed facts (checked against Supabase `company_json` + current source), Decisions locked (by user, this session), Known trade-offs (accepted), Performance budget (the user explicitly asked for this), Phase 0 — Discovery (CONFIRMED, do not re-derive), Phase 1 — Thread `logo_url` + derived `domain` into node metadata (+6 more)
-
-### Community 10 - "Community 10"
-Cohesion: 0.70
-Nodes (4): downloadTargetedCv(), escapeHtml(), lines(), slug()
 
 ### Community 11 - "Community 11"
 Cohesion: 0.33
 Nodes (5): Architecture in one breath, File map, Run, Scroll journey, The Corporate Cosmos
 
 ### Community 12 - "Community 12"
-Cohesion: 0.16
-Nodes (15): useTalentSession(), ArrowUpRight(), base, XIcon(), ProfileBuilder(), ReadinessScan(), DOSSIER_SECTIONS, OTHER_CATEGORY (+7 more)
+Cohesion: 0.17
+Nodes (14): useTalentSession(), ArrowUpRight(), base, XIcon(), SkillMatch(), DOSSIER_SECTIONS, OTHER_CATEGORY, safeItems() (+6 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.29
@@ -134,15 +129,15 @@ Cohesion: 0.40
 Nodes (4): graphify First, Keeping The Map Current, Local Checks, Runtime Toolkit
 
 ### Community 21 - "Community 21"
-Cohesion: 0.07
-Nodes (50): buildSkillMatchPrompt(), contextOf(), matchSkillsSmart(), skillsOf(), ALIASES, clamp(), companiesWithBar(), hasCompanyBar() (+42 more)
+Cohesion: 0.06
+Nodes (59): buildSkillMatchPrompt(), contextOf(), matchSkillsSmart(), ALIASES, clamp(), companiesWithBar(), hasCompanyBar(), loadCompanyBar() (+51 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.21
 Nodes (6): axisLabelPosition(), buildSpectrum(), MODE_STYLES, orbitChipPosition(), pointAt(), skillsFrom()
 
 ## Knowledge Gaps
-- **150 isolated node(s):** `CODE_COLOR`, `CODES`, `TABS`, `STAGE_COPY`, `OTHER_CATEGORY` (+145 more)
+- **150 isolated node(s):** `ALIASES`, `BROAD_CATEGORIES`, `CODE_COLOR`, `CODES`, `TABS` (+145 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -150,16 +145,16 @@ Nodes (6): axisLabelPosition(), buildSpectrum(), MODE_STYLES, orbitChipPosition(
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `profitState()` connect `Community 3` to `Community 2`, `Community 5`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **Why does `checkOllamaHealth()` connect `Community 8` to `Community 3`, `Community 12`, `Community 21`?**
   _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **Why does `sectorColor()` connect `Community 1` to `Community 2`, `Community 6`?**
+- **Why does `sectorColor()` connect `Community 2` to `Community 1`, `Community 6`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `CODE_COLOR`, `CODES`, `TABS` to the rest of the system?**
+- **What connects `ALIASES`, `BROAD_CATEGORIES`, `CODE_COLOR` to the rest of the system?**
   _150 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.05257936507936508 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05870020964360587 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.1067193675889328 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06951219512195123 - nodes in this community are weakly interconnected._
