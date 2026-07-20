@@ -22,11 +22,6 @@ const STAGE_COPY = {
   reading: 'Reading document',
   extracting: 'Extracting RADIX skills',
 };
-const CONFIDENCE_STYLES = {
-  high: 'border-pos/25 bg-pos/10 text-pos',
-  medium: 'border-amber-300/25 bg-amber-300/10 text-amber-200',
-  low: 'border-white/10 bg-white/[0.04] text-ink-muted',
-};
 const OTHER_CATEGORY = { code: 'OTHER', label: 'Named Technologies', color: '#94A3B8' };
 const DOSSIER_SECTIONS = [
   {
@@ -451,9 +446,6 @@ export default function TalentScanner({
                           <li key={`${skill.skill_name}-${index}`} className="py-2.5">
                             <div className="flex items-start justify-between gap-3">
                               <span className="min-w-0 text-sm font-medium text-ink">{skill.skill_name}</span>
-                              <span className={`shrink-0 rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase ${CONFIDENCE_STYLES[skill.confidence] || CONFIDENCE_STYLES.low}`}>
-                                {skill.confidence || 'low'}
-                              </span>
                             </div>
                             <p className="mt-1 break-words text-xs leading-relaxed text-ink-faint">{skill.evidence || 'No evidence returned.'}</p>
                           </li>
