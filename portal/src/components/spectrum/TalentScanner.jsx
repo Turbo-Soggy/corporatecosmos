@@ -186,12 +186,13 @@ export default function TalentScanner({
       setStage('reading');
       const text = await extractResumeText(file);
       setStage('extracting');
-      const nextResult = await extractSkills({
+      const extractedResult = await extractSkills({
         text,
         sourceType,
         sourceFile: file.name,
         model: health.model || DEFAULT_OLLAMA_MODEL,
       });
+      const nextResult = { ...extractedResult, source_text: text };
       setStage('done');
       publishResult(nextResult);
       setTab('match');

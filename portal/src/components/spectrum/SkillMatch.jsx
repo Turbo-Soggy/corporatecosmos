@@ -48,7 +48,7 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
   const generateCv = async () => {
     if (!jd || !candidate || !result || cvBusy) return;
     setCvBusy(true);
-    const draft = await generateTargetedCv({ resume: candidate, jd, match: result });
+    const draft = await generateTargetedCv({ resume: candidate, profile, jd, match: result });
     setCvDraft(draft);
     setCvBusy(false);
   };
@@ -59,7 +59,8 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
     try {
       const text = await extractResumeText(file);
       setBusy('Extracting JD skills with Gemma…');
-      setJd(await extractSkills({ text, sourceType: 'jd', sourceFile: file.name }));
+      const extracted = await extractSkills({ text, sourceType: 'jd', sourceFile: file.name });
+      setJd({ ...extracted, source_text: text });
       setBusy('');
     } catch (err) {
       setBusy(err?.message || 'Could not read that JD.');
@@ -72,7 +73,8 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
     try {
       const text = await extractResumeText(file);
       setBusy('Extracting resume skills with Gemma…');
-      setResume(await extractSkills({ text, sourceType: 'resume', sourceFile: file.name }));
+      const extracted = await extractSkills({ text, sourceType: 'resume', sourceFile: file.name });
+      setResume({ ...extracted, source_text: text });
       setBusy('');
     } catch (err) {
       setBusy(err?.message || 'Could not read that resume.');
@@ -194,6 +196,7 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
                   <span className="shrink-0 font-mono text-[9px] uppercase text-ink-faint">{cvDraft.source === 'gemma' ? 'Gemma4 draft' : 'Local draft'}</span>
                 </div>
                 <p className="mt-2 text-xs leading-relaxed text-ink-muted">{cvDraft.summary}</p>
+                {cvDraft.source === 'local' && <p className="mt-2 text-[11px] text-amber-200/80">Gemma4 was unavailable for this draft, so only locally extracted evidence was used. Reconnect Gemma4 for fuller tailoring.</p>}
                 <div className="mt-3 flex flex-wrap gap-2">
                   <button type="button" onClick={() => downloadTargetedCv(cvDraft, 'doc')} className="rounded-md border border-accent/30 px-2.5 py-1.5 text-xs text-accent transition hover:bg-accent/10">Download Word CV</button>
                   <button type="button" onClick={() => downloadTargetedCv(cvDraft, 'txt')} className="rounded-md border border-white/10 px-2.5 py-1.5 text-xs text-ink-muted transition hover:text-ink">Download text</button>

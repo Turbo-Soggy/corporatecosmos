@@ -8,34 +8,50 @@ function text(value) {
   return value == null ? '' : String(value).trim();
 }
 
-function fallbackCv(resume, jd, match) {
-  const role = text(jd?.role) || text(resume?.role) || 'Target role';
+function mergeProfile(resume, profile) {
   return {
-    name: text(resume?.name),
-    email: text(resume?.email),
+    ...(profile || {}),
+    ...(resume || {}),
+    name: text(resume?.name) || text(profile?.name),
+    email: text(resume?.email) || text(profile?.email),
+    education: list(resume?.education).length ? resume.education : profile?.education,
+    experience: list(resume?.experience).length ? resume.experience : profile?.internships,
+    certifications: list(resume?.certifications).length ? resume.certifications : profile?.certifications,
+    hackathons: list(resume?.hackathons).length ? resume.hackathons : profile?.hackathons,
+    preferred_roles: list(resume?.preferred_roles).length ? resume.preferred_roles : profile?.preferred_roles,
+  };
+}
+
+function fallbackCv(resume, profile, jd, match) {
+  const candidate = mergeProfile(resume, profile);
+  const role = text(jd?.role) || text(candidate?.role) || 'Target role';
+  return {
+    name: text(candidate?.name),
+    email: text(candidate?.email),
     target_company: text(jd?.company),
     target_role: role,
     summary: `Resume tailored for the ${role} position${jd?.company ? ` at ${jd.company}` : ''}, emphasizing the candidate's documented skills and experience that align with the job description.`,
-    skills: list(resume?.skills).map((skill) => ({
+    skills: list(candidate?.skills).map((skill) => ({
       name: text(skill.skill_name),
       evidence: text(skill.evidence),
     })).filter((skill) => skill.name),
-    experience: list(resume?.experience).map((item) => ({
+    experience: list(candidate?.experience).map((item) => ({
       role: text(item.role),
       organization: text(item.organization),
       dates: text(item.dates),
       bullets: [],
     })),
-    projects: list(resume?.projects).map((item) => ({ name: text(item.name), bullets: [text(item.summary)].filter(Boolean) })),
-    education: list(resume?.education),
-    certifications: list(resume?.certifications).map(text).filter(Boolean),
-    hackathons: list(resume?.hackathons).map(text).filter(Boolean),
+    projects: list(candidate?.projects).map((item) => ({ name: text(item.name), bullets: [text(item.summary)].filter(Boolean) })),
+    education: list(candidate?.education),
+    certifications: list(candidate?.certifications).map(text).filter(Boolean),
+    hackathons: list(candidate?.hackathons).map(text).filter(Boolean),
     fit_note: match?.summary || '',
     source: 'local',
   };
 }
 
-function buildPrompt(resume, jd, match) {
+function buildPrompt(resume, profile, jd, match) {
+  const candidate = mergeProfile(resume, profile);
   return `You are a professional resume editor. Create a company-specific CV draft for one candidate and one job.
 Return only valid JSON. Use only facts present in the resume evidence. Never invent employers, dates, degrees, tools, metrics, awards, or achievements.
 You may rewrite existing evidence into concise, professional bullet points, but do not add unsupported claims.
@@ -48,16 +64,22 @@ ${list(jd?.skills).map((skill) => `- ${skill.skill_name}: ${skill.evidence || 'r
 
 Resume profile:
 ${JSON.stringify({
-  name: resume?.name,
-  email: resume?.email,
-  role: resume?.role,
-  education: resume?.education,
-  experience: resume?.experience,
-  projects: resume?.projects,
-  certifications: resume?.certifications,
-  hackathons: resume?.hackathons,
-  skills: resume?.skills,
+  name: candidate?.name,
+  email: candidate?.email,
+  role: candidate?.role,
+  education: candidate?.education,
+  experience: candidate?.experience,
+  projects: candidate?.projects,
+  certifications: candidate?.certifications,
+  hackathons: candidate?.hackathons,
+  skills: candidate?.skills,
 }, null, 2)}
+
+Raw resume text (use this to recover details that were not structured above):
+${text(resume?.source_text).slice(0, 14000) || 'Not available.'}
+
+Raw job description text:
+${text(jd?.source_text).slice(0, 10000) || 'Not available.'}
 
 Fit analysis:
 ${JSON.stringify({ matched_skills: match?.matched_skills, missing_skills: match?.missing_skills, summary: match?.summary }, null, 2)}
@@ -106,12 +128,12 @@ function normalizeDraft(raw, fallback) {
   };
 }
 
-export async function generateTargetedCv({ resume, jd, match, model } = {}) {
-  const fallback = fallbackCv(resume, jd, match);
+export async function generateTargetedCv({ resume, profile, jd, match, model } = {}) {
+  const fallback = fallbackCv(resume, profile, jd, match);
   try {
     const ollama = await checkOllamaHealth(model);
     if (!ollama.online) return fallback;
-    const response = await callOllama(buildPrompt(resume, jd, match), {
+    const response = await callOllama(buildPrompt(resume, profile, jd, match), {
       model: ollama.model,
       temperature: 0.2,
       numPredict: 1400,

@@ -59,7 +59,7 @@ export default function ProfileBuilder({ profile, setProfile, persistProfile, re
       const text = await extractResumeText(file);
       setStatus('Extracting skills with Gemma…');
       const result = await extractSkills({ text, sourceType: 'resume', sourceFile: file.name });
-      setResumeExtract(result);
+      setResumeExtract({ ...result, source_text: text });
       const draft = toProfileDraft(result);
       // Merge: keep manual name/email, prefer résumé's richer skills/education.
       setProfile(
