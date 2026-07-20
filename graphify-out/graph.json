@@ -4,84 +4,64 @@
   "graph": {},
   "nodes": [
     {
-      "label": "skillMatchAgent.js",
+      "label": "ReadinessScan.jsx",
       "file_type": "code",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_skillmatchagent",
-      "community": 8,
-      "norm_label": "skillmatchagent.js"
-    },
-    {
-      "label": "skillsOf()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "agents_skillmatchagent_skillsof",
-      "community": 8,
-      "norm_label": "skillsof()"
-    },
-    {
-      "label": "contextOf()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "agents_skillmatchagent_contextof",
-      "community": 8,
-      "norm_label": "contextof()"
-    },
-    {
-      "label": "buildSkillMatchPrompt()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L32",
-      "_origin": "ast",
-      "id": "agents_skillmatchagent_buildskillmatchprompt",
-      "community": 8,
-      "norm_label": "buildskillmatchprompt()"
-    },
-    {
-      "label": "matchSkillsSmart()",
-      "file_type": "code",
-      "source_file": "portal/src/agents/skillMatchAgent.js",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "agents_skillmatchagent_matchskillssmart",
-      "community": 8,
-      "norm_label": "matchskillssmart()"
-    },
-    {
-      "label": "SkillMatch.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "spectrum_skillmatch",
+      "id": "spectrum_readinessscan",
       "community": 21,
-      "norm_label": "skillmatch.jsx"
+      "norm_label": "readinessscan.jsx"
     },
     {
-      "label": "jdDemandLevels()",
+      "label": "LABEL",
       "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L11",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "spectrum_skillmatch_jddemandlevels",
+      "id": "spectrum_readinessscan_label",
       "community": 21,
-      "norm_label": "jddemandlevels()"
+      "norm_label": "label"
     },
     {
-      "label": "SkillMatch()",
+      "label": "COLOR",
       "file_type": "code",
-      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
-      "source_location": "L19",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "spectrum_skillmatch_skillmatch",
+      "id": "spectrum_readinessscan_color",
+      "community": 21,
+      "norm_label": "color"
+    },
+    {
+      "label": "scoreColor()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "spectrum_readinessscan_scorecolor",
+      "community": 21,
+      "norm_label": "scorecolor()"
+    },
+    {
+      "label": "Dial()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "spectrum_readinessscan_dial",
+      "community": 21,
+      "norm_label": "dial()"
+    },
+    {
+      "label": "ReadinessScan()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "spectrum_readinessscan_readinessscan",
       "community": 12,
-      "norm_label": "skillmatch()"
+      "norm_label": "readinessscan()"
     },
     {
       "label": "TalentScanner.jsx",
@@ -202,6 +182,116 @@
       "id": "spectrum_talentscanner_talentscanner",
       "community": 12,
       "norm_label": "talentscanner()"
+    },
+    {
+      "label": "talentCheck.js",
+      "file_type": "code",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_talentcheck",
+      "community": 21,
+      "norm_label": "talentcheck.js"
+    },
+    {
+      "label": "runTalentCheck()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "lib_talentcheck_runtalentcheck",
+      "community": 21,
+      "norm_label": "runtalentcheck()"
+    },
+    {
+      "label": "runJdReadiness()",
+      "file_type": "code",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "lib_talentcheck_runjdreadiness",
+      "community": 21,
+      "norm_label": "runjdreadiness()"
+    },
+    {
+      "label": "skillMatchAgent.js",
+      "file_type": "code",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "skillmatchagent.js",
+      "id": "agents_skillmatchagent"
+    },
+    {
+      "label": "skillsOf()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "skillsof()",
+      "id": "agents_skillmatchagent_skillsof"
+    },
+    {
+      "label": "contextOf()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "contextof()",
+      "id": "agents_skillmatchagent_contextof"
+    },
+    {
+      "label": "buildSkillMatchPrompt()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "buildskillmatchprompt()",
+      "id": "agents_skillmatchagent_buildskillmatchprompt"
+    },
+    {
+      "label": "matchSkillsSmart()",
+      "file_type": "code",
+      "source_file": "portal/src/agents/skillMatchAgent.js",
+      "source_location": "L61",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "matchskillssmart()",
+      "id": "agents_skillmatchagent_matchskillssmart"
+    },
+    {
+      "label": "SkillMatch.jsx",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "skillmatch.jsx",
+      "id": "spectrum_skillmatch"
+    },
+    {
+      "label": "jdDemandLevels()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "jddemandlevels()",
+      "id": "spectrum_skillmatch_jddemandlevels"
+    },
+    {
+      "label": "SkillMatch()",
+      "file_type": "code",
+      "source_file": "portal/src/components/spectrum/SkillMatch.jsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "skillmatch()",
+      "id": "spectrum_skillmatch_skillmatch"
     },
     {
       "label": "radixProfile.js",
@@ -2355,7 +2445,7 @@
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "introcomposition.jsx",
       "id": "intro_introcomposition"
     },
@@ -2365,7 +2455,7 @@
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "clamp",
       "id": "intro_introcomposition_clamp"
     },
@@ -2375,7 +2465,7 @@
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "rng()",
       "id": "intro_introcomposition_rng"
     },
@@ -2385,7 +2475,7 @@
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "buildparticles()",
       "id": "intro_introcomposition_buildparticles"
     },
@@ -2395,7 +2485,7 @@
       "source_file": "portal/src/components/intro/IntroComposition.jsx",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "introcomposition()",
       "id": "intro_introcomposition_introcomposition"
     },
@@ -2405,7 +2495,7 @@
       "source_file": "portal/src/components/intro/IntroPlayer.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "introplayer.jsx",
       "id": "intro_introplayer"
     },
@@ -2415,7 +2505,7 @@
       "source_file": "portal/src/components/intro/IntroPlayer.jsx",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 2,
+      "community": 6,
       "norm_label": "introplayer()",
       "id": "intro_introplayer_introplayer"
     },
@@ -2725,7 +2815,7 @@
       "source_file": "portal/src/components/resume/AlignedStars.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "alignedstars.jsx",
       "id": "resume_alignedstars"
     },
@@ -2735,7 +2825,7 @@
       "source_file": "portal/src/components/resume/AlignedStars.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "alignedstars()",
       "id": "resume_alignedstars_alignedstars"
     },
@@ -2795,7 +2885,7 @@
       "source_file": "portal/src/components/resume/UploadDock.jsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 1,
+      "community": 4,
       "norm_label": "uploaddock()",
       "id": "resume_uploaddock_uploaddock"
     },
@@ -2858,76 +2948,6 @@
       "community": 21,
       "norm_label": "profilebuilder()",
       "id": "spectrum_profilebuilder_profilebuilder"
-    },
-    {
-      "label": "ReadinessScan.jsx",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "readinessscan.jsx",
-      "id": "spectrum_readinessscan"
-    },
-    {
-      "label": "LABEL",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "label",
-      "id": "spectrum_readinessscan_label"
-    },
-    {
-      "label": "COLOR",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "color",
-      "id": "spectrum_readinessscan_color"
-    },
-    {
-      "label": "cosmosCompanyName()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "cosmoscompanyname()",
-      "id": "spectrum_readinessscan_cosmoscompanyname"
-    },
-    {
-      "label": "scoreColor()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "scorecolor()",
-      "id": "spectrum_readinessscan_scorecolor"
-    },
-    {
-      "label": "Dial()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "dial()",
-      "id": "spectrum_readinessscan_dial"
-    },
-    {
-      "label": "ReadinessScan()",
-      "file_type": "code",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "readinessscan()",
-      "id": "spectrum_readinessscan_readinessscan"
     },
     {
       "label": "SkillConstellation.jsx",
@@ -4005,7 +4025,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "radix.js",
       "id": "lib_radix"
     },
@@ -4025,7 +4045,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "category_codes",
       "id": "lib_radix_category_codes"
     },
@@ -4035,7 +4055,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "confidence",
       "id": "lib_radix_confidence"
     },
@@ -4045,7 +4065,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "source_types",
       "id": "lib_radix_source_types"
     },
@@ -4065,7 +4085,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "confidence_weights",
       "id": "lib_radix_confidence_weights"
     },
@@ -4095,7 +4115,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "optionaltext()",
       "id": "lib_radix_optionaltext"
     },
@@ -4105,7 +4125,7 @@
       "source_file": "portal/src/lib/radix.js",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 21,
+      "community": 8,
       "norm_label": "normalizestructureditems()",
       "id": "lib_radix_normalizestructureditems"
     },
@@ -4428,26 +4448,6 @@
       "community": 6,
       "norm_label": "isconfigured",
       "id": "lib_supabaseclient_isconfigured"
-    },
-    {
-      "label": "talentCheck.js",
-      "file_type": "code",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "talentcheck.js",
-      "id": "lib_talentcheck"
-    },
-    {
-      "label": "runTalentCheck()",
-      "file_type": "code",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 21,
-      "norm_label": "runtalentcheck()",
-      "id": "lib_talentcheck_runtalentcheck"
     },
     {
       "label": "useCompanies.js",
@@ -5245,6 +5245,736 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_companybar"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_companybar_companieswithbar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_radix"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_radix_radix_categories"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_talentcheck"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_talentcheck_runjdreadiness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "lib_talentcheck_runtalentcheck"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_readinessscan_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_readinessscan_dial"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_readinessscan_label"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_readinessscan_readinessscan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_readinessscan_scorecolor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_spectrumradar"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan",
+      "target": "spectrum_spectrumradar_spectrumradar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_readinessscan"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_readinessscan_dial",
+      "target": "spectrum_readinessscan_scorecolor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_readinessscan_readinessscan"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "spectrum_talentscanner"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_missiontypes"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_ollamaclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_ollamaclient_checkollamahealth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_skillextractionagent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "agents_skillextractionagent_extractskills"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "hooks_usetalentsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "hooks_usetalentsession_usetalentsession"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "hud_icon"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "hud_icon_arrowupright"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "hud_icon_xicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "lib_radix"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "lib_radix_radix_categories"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "lib_resumeparse"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "lib_resumeparse_extractresumetext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_profilebuilder"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_profilebuilder_profilebuilder"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_skillconstellation"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_skillmatch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_skillmatch_skillmatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_confidence_styles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_dossier_sections"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_groupskills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_other_category"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_safeitems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_stableitems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_stage_copy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_tabs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_talentscanner"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_textvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner",
+      "target": "spectrum_talentscanner_toprofiledraft"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner_stableitems",
+      "target": "spectrum_talentscanner_safeitems"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner_toprofiledraft",
+      "target": "spectrum_talentscanner_safeitems"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner_toprofiledraft",
+      "target": "spectrum_talentscanner_textvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "spectrum_talentscanner_toprofiledraft",
+      "target": "spectrum_talentscanner_stableitems"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/components/hud/HudOverlay.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hud_hudoverlay",
+      "target": "spectrum_talentscanner_talentscanner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "spectrum_talentscanner_talentscanner",
+      "target": "hooks_usetalentsession_usetalentsession"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_companybar"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_companybar_loadcompanybar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radix"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radix_confidenceweight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radix_radix_categories"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radixprofile"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radixprofile_categorylevels"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_radixprofile_normalizetalentcheck"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_skillmatch_matchskills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_talentcheck_runjdreadiness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_talentcheck",
+      "target": "lib_talentcheck_runtalentcheck"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "lib_talentcheck_runtalentcheck",
+      "target": "lib_companybar_loadcompanybar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "lib_talentcheck_runtalentcheck",
+      "target": "lib_radixprofile_categorylevels"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portal/src/lib/talentCheck.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "lib_talentcheck_runtalentcheck",
+      "target": "lib_radixprofile_normalizetalentcheck"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L7",
       "weight": 1.0,
@@ -5301,9 +6031,9 @@
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillmatchagent",
-      "target": "agents_skillmatchagent_contextof",
-      "confidence_score": 1.0
+      "target": "agents_skillmatchagent_contextof"
     },
     {
       "relation": "contains",
@@ -5420,9 +6150,9 @@
       "source_file": "portal/src/agents/skillMatchAgent.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skillmatchagent_buildskillmatchprompt",
-      "target": "agents_skillmatchagent_contextof",
-      "confidence_score": 1.0
+      "target": "agents_skillmatchagent_contextof"
     },
     {
       "relation": "calls",
@@ -5646,424 +6376,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_skillmatch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_skillmatch_skillmatch"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_hudoverlay",
-      "target": "spectrum_talentscanner"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_missiontypes"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_ollamaclient"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_ollamaclient_checkollamahealth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_skillextractionagent"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "agents_skillextractionagent_extractskills"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "hooks_usetalentsession"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "hooks_usetalentsession_usetalentsession"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "hud_icon"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "hud_icon_arrowupright"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "hud_icon_xicon"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "lib_radix"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "lib_radix_radix_categories"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "lib_resumeparse"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "lib_resumeparse_extractresumetext"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_profilebuilder"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_profilebuilder_profilebuilder"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_readinessscan"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_readinessscan_readinessscan"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_skillconstellation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_confidence_styles"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_dossier_sections"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L78",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_groupskills"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_other_category"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_safeitems"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L50",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_stableitems"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_stage_copy"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_tabs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L86",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_talentscanner"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_textvalue"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner",
-      "target": "spectrum_talentscanner_toprofiledraft"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner_stableitems",
-      "target": "spectrum_talentscanner_safeitems"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner_toprofiledraft",
-      "target": "spectrum_talentscanner_safeitems"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L60",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner_toprofiledraft",
-      "target": "spectrum_talentscanner_textvalue"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L72",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_talentscanner_toprofiledraft",
-      "target": "spectrum_talentscanner_stableitems"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/hud/HudOverlay.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hud_hudoverlay",
-      "target": "spectrum_talentscanner_talentscanner"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/components/spectrum/TalentScanner.jsx",
-      "source_location": "L115",
-      "weight": 1.0,
-      "source": "spectrum_talentscanner_talentscanner",
-      "target": "hooks_usetalentsession_usetalentsession"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/lib/profileStore.js",
       "source_location": "L6",
       "weight": 1.0,
@@ -6266,17 +6578,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_skillmatch",
-      "target": "lib_radixprofile"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
       "target": "lib_radixprofile"
     },
     {
@@ -6558,56 +6859,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_radixprofile_categorylevels"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "lib_talentcheck_runtalentcheck",
-      "target": "lib_radixprofile_categorylevels"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/spectrum/ProfileBuilder.jsx",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "spectrum_profilebuilder",
       "target": "lib_radixprofile_categorylevels"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_radixprofile_normalizetalentcheck"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "lib_talentcheck_runtalentcheck",
-      "target": "lib_radixprofile_normalizetalentcheck"
     },
     {
       "relation": "imports",
@@ -12584,176 +12841,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_companybar"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_companybar_companieswithbar"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_radix"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_radix_radix_categories"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_talentcheck"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "lib_talentcheck_runtalentcheck"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_color"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_cosmoscompanyname"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_dial"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_label"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_readinessscan"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_readinessscan_scorecolor"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_spectrumradar"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan",
-      "target": "spectrum_spectrumradar_spectrumradar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan_readinessscan",
-      "target": "spectrum_readinessscan_cosmoscompanyname"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/components/spectrum/ReadinessScan.jsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "spectrum_readinessscan_dial",
-      "target": "spectrum_readinessscan_scorecolor"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portal/src/components/spectrum/SkillConstellation.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -13155,17 +13242,6 @@
       "target": "lib_radix_radix_categories"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_companybar"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -13197,28 +13273,6 @@
       "confidence_score": 1.0,
       "source": "lib_companybar_loadcompanybar",
       "target": "lib_companybar_resolvekey"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_companybar_loadcompanybar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "lib_talentcheck_runtalentcheck",
-      "target": "lib_companybar_loadcompanybar"
     },
     {
       "relation": "contains",
@@ -14683,28 +14737,6 @@
       "target": "lib_radix_source_types"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_radix"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_radix_radix_categories"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -15162,16 +15194,6 @@
       "confidence_score": 1.0,
       "source": "lib_usecompanies",
       "target": "lib_supabaseclient_isconfigured"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portal/src/lib/talentCheck.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_talentcheck",
-      "target": "lib_talentcheck_runtalentcheck"
     },
     {
       "relation": "contains",
@@ -15855,5 +15877,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "34e67d2b46c3df15b3de4b13ab3409b3f189fcf7"
+  "built_at_commit": "7d755f51c4da87dc2932f4b44017ffd739fe0070"
 }

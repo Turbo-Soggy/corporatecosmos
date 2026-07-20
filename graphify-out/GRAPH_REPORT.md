@@ -1,16 +1,16 @@
 # Graph Report - placementdash  (2026-07-20)
 
 ## Corpus Check
-- 108 files · ~42,520 words
+- 108 files · ~42,900 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 523 nodes · 1003 edges · 22 communities (21 shown, 1 thin omitted)
+- 523 nodes · 1005 edges · 22 communities (21 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `34e67d2b`
+- Built from commit: `7d755f51`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,13 +38,13 @@
 ## God Nodes (most connected - your core abstractions)
 1. `createAgentResult()` - 15 edges
 2. `runMission()` - 15 edges
-3. `sectorColor()` - 12 edges
-4. `normalizeProfile()` - 11 edges
-5. `companyName()` - 11 edges
-6. `normalizeText()` - 11 edges
-7. `extractSkills()` - 11 edges
-8. `RADIX_CATEGORIES` - 11 edges
-9. `confidenceWeight()` - 11 edges
+3. `confidenceWeight()` - 12 edges
+4. `sectorColor()` - 12 edges
+5. `normalizeProfile()` - 11 edges
+6. `companyName()` - 11 edges
+7. `normalizeText()` - 11 edges
+8. `extractSkills()` - 11 edges
+9. `RADIX_CATEGORIES` - 11 edges
 10. `matchSkillsSmart()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -70,35 +70,35 @@ Nodes (29): dependencies, gsap, mammoth, pdfjs-dist, postprocessing, react, reac
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
-Nodes (36): CameraRig(), desiredLook, desiredPos, FOLLOW_OFFSET, followPos, nodePos, CompanyNodes(), HIT_GEOMETRY (+28 more)
+Nodes (34): CameraRig(), desiredLook, desiredPos, FOLLOW_OFFSET, followPos, nodePos, CompanyNodes(), HIT_GEOMETRY (+26 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.06
-Nodes (28): HoverCard(), NodeHoverCard(), CompanyComparison(), summary(), COLUMNS, CompanyLeaderboard(), PROFIT_CLASS, DashboardView() (+20 more)
+Cohesion: 0.07
+Nodes (24): HoverCard(), NodeHoverCard(), CompanyComparison(), summary(), COLUMNS, CompanyLeaderboard(), PROFIT_CLASS, DashboardView() (+16 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.09
 Nodes (40): runAnimationDirectorAgent(), FIELD_LABELS, runDataIntegrityAgent(), findOutliers(), rankCandidates(), runFinancialAgent(), runGeographicAgent(), emptyIntent() (+32 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.13
-Nodes (18): analyzeResume(), buildCorpus(), buildProfile(), CORPUS_FIELDS, hasTerm(), normalize(), scoreCompanies(), SECTOR_KEYS (+10 more)
+Cohesion: 0.12
+Nodes (19): analyzeResume(), buildCorpus(), buildProfile(), CORPUS_FIELDS, hasTerm(), normalize(), scoreCompanies(), SECTOR_KEYS (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.07
 Nodes (50): currencyCode(), detectCurrency(), explicitCurrencyCode(), formatCurrencyCompact(), formatMoney(), formatUsd(), isNonValue(), rankWithinCurrency() (+42 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.08
-Nodes (21): useFlightTour(), useScrollProgress(), BodyTransitionComposition(), CLAMP, BodyTransitionPlayer(), CLAMP, DashboardStoryComposition(), STEPS (+13 more)
+Cohesion: 0.07
+Nodes (26): useFlightTour(), useScrollProgress(), BodyTransitionComposition(), CLAMP, BodyTransitionPlayer(), CLAMP, DashboardStoryComposition(), STEPS (+18 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.11
 Nodes (17): Anti-pattern guards (apply in every phase), Deterministic fallback material (adapt — do NOT reuse as-is), Gemma / Ollama (reuse verbatim — do NOT write a new client), On-device document text extraction (reuse verbatim), On-theme UI + wiring patterns to copy, Out of scope (later hackathon roles, but designed-for), Phase 0 — Documentation Discovery (Allowed APIs) — DONE, evidence below, Phase 1 — RADIX contract module (`src/lib/radix.js`) (+9 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.18
-Nodes (23): INTENTS, fallbackBrief(), generateMissionBrief(), callOllama(), checkOllamaHealth(), fetchWithTimeout(), parseJsonObject(), parseIntent() (+15 more)
+Cohesion: 0.12
+Nodes (30): INTENTS, fallbackBrief(), generateMissionBrief(), callOllama(), checkOllamaHealth(), fetchWithTimeout(), parseJsonObject(), parseIntent() (+22 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.13
@@ -129,15 +129,15 @@ Cohesion: 0.40
 Nodes (4): graphify First, Keeping The Map Current, Local Checks, Runtime Toolkit
 
 ### Community 21 - "Community 21"
-Cohesion: 0.06
-Nodes (49): ALIASES, clamp(), companiesWithBar(), hasCompanyBar(), loadCompanyBar(), resolveKey(), exportProfile(), importProfile() (+41 more)
+Cohesion: 0.07
+Nodes (42): ALIASES, clamp(), companiesWithBar(), hasCompanyBar(), loadCompanyBar(), resolveKey(), exportProfile(), importProfile() (+34 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.21
 Nodes (6): axisLabelPosition(), buildSpectrum(), MODE_STYLES, orbitChipPosition(), pointAt(), skillsFrom()
 
 ## Knowledge Gaps
-- **151 isolated node(s):** `TABS`, `STAGE_COPY`, `CONFIDENCE_STYLES`, `OTHER_CATEGORY`, `DOSSIER_SECTIONS` (+146 more)
+- **151 isolated node(s):** `LABEL`, `COLOR`, `TABS`, `STAGE_COPY`, `CONFIDENCE_STYLES` (+146 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -150,11 +150,11 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `RADIX_CATEGORIES` connect `Community 21` to `Community 8`, `Community 24`, `Community 12`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `TABS`, `STAGE_COPY`, `CONFIDENCE_STYLES` to the rest of the system?**
+- **What connects `LABEL`, `COLOR`, `TABS` to the rest of the system?**
   _151 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.05513784461152882 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05870020964360587 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.06280193236714976 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06951219512195123 - nodes in this community are weakly interconnected._
