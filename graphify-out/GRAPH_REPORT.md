@@ -1,16 +1,16 @@
 # Graph Report - placementdash  (2026-07-20)
 
 ## Corpus Check
-- 110 files · ~44,534 words
+- 110 files · ~44,565 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 538 nodes · 1044 edges · 22 communities (21 shown, 1 thin omitted)
+- 538 nodes · 1048 edges · 22 communities (21 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fa6d53a6`
+- Built from commit: `04c5c50e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,26 +38,26 @@
 ## God Nodes (most connected - your core abstractions)
 1. `createAgentResult()` - 15 edges
 2. `runMission()` - 15 edges
-3. `confidenceWeight()` - 12 edges
-4. `sectorColor()` - 12 edges
-5. `matchSkillsSmart()` - 11 edges
-6. `normalizeProfile()` - 11 edges
-7. `extractSkills()` - 11 edges
-8. `RADIX_CATEGORIES` - 11 edges
-9. `companyName()` - 11 edges
-10. `normalizeText()` - 11 edges
+3. `checkOllamaHealth()` - 12 edges
+4. `callOllama()` - 12 edges
+5. `confidenceWeight()` - 12 edges
+6. `sectorColor()` - 12 edges
+7. `parseJsonObject()` - 11 edges
+8. `extractSkills()` - 11 edges
+9. `matchSkillsSmart()` - 11 edges
+10. `normalizeProfile()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `matchSkillsSmart()` --calls--> `callOllama()`  [EXTRACTED]
-  portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
+- `fallbackBrief()` --calls--> `companyName()`  [EXTRACTED]
+  portal/src/agents/narrativeAgent.js → portal/src/agents/missionActions.js
+- `runMission()` --calls--> `generateMissionBrief()`  [EXTRACTED]
+  portal/src/agents/orchestrator.js → portal/src/agents/narrativeAgent.js
+- `runMission()` --calls--> `checkOllamaHealth()`  [EXTRACTED]
+  portal/src/agents/orchestrator.js → portal/src/agents/ollamaClient.js
 - `matchSkillsSmart()` --calls--> `checkOllamaHealth()`  [EXTRACTED]
   portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
-- `matchSkillsSmart()` --calls--> `parseJsonObject()`  [EXTRACTED]
-  portal/src/agents/skillMatchAgent.js → portal/src/agents/ollamaClient.js
-- `extractSkillsLocally()` --calls--> `normalizeSkillList()`  [EXTRACTED]
-  portal/src/agents/skillExtractionAgent.js → portal/src/lib/radix.js
-- `extractSkills()` --calls--> `normalizeSkillList()`  [EXTRACTED]
-  portal/src/agents/skillExtractionAgent.js → portal/src/lib/radix.js
+- `parseIntent()` --calls--> `callOllama()`  [EXTRACTED]
+  portal/src/agents/orchestrator.js → portal/src/agents/ollamaClient.js
 
 ## Import Cycles
 - None detected.
@@ -97,7 +97,7 @@ Cohesion: 0.11
 Nodes (17): Anti-pattern guards (apply in every phase), Deterministic fallback material (adapt — do NOT reuse as-is), Gemma / Ollama (reuse verbatim — do NOT write a new client), On-device document text extraction (reuse verbatim), On-theme UI + wiring patterns to copy, Out of scope (later hackathon roles, but designed-for), Phase 0 — Documentation Discovery (Allowed APIs) — DONE, evidence below, Phase 1 — RADIX contract module (`src/lib/radix.js`) (+9 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (22): buildPrompt(), fallbackCv(), generateTargetedCv(), mergeProfile(), normalizeDraft(), text(), fallbackBrief(), generateMissionBrief() (+14 more)
 
 ### Community 9 - "Community 9"
@@ -147,7 +147,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `profitState()` connect `Community 3` to `Community 2`, `Community 5`?**
   _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **Why does `checkOllamaHealth()` connect `Community 8` to `Community 3`, `Community 12`, `Community 21`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **Why does `sectorColor()` connect `Community 2` to `Community 1`, `Community 6`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `ALIASES`, `BROAD_CATEGORIES`, `CODE_COLOR` to the rest of the system?**
