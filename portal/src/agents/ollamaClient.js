@@ -35,6 +35,7 @@ export async function callOllama(prompt, options = {}) {
         model: options.model || DEFAULT_OLLAMA_MODEL,
         prompt,
         stream: false,
+        format: options.format ?? 'json',
         // The UI consumes the final answer, not Gemma's private reasoning trace.
         // Without this, small num_predict budgets can be spent entirely thinking.
         think: options.think ?? false,

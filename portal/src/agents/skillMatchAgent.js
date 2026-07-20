@@ -35,6 +35,7 @@ function buildSkillMatchPrompt(candidateSkills, jdSkills, candidate, jdSkillList
 Return only valid JSON. Do not include markdown or claims not supported by the supplied evidence.
 Two skills match if they mean the same thing, even when worded differently.
 Only call a skill matched when the resume evidence supports it. Do not penalize a missing skill as a character flaw.
+Keep every sentence under 20 words. Return at most five development areas, selecting the most important missing requirements.
 
 Job required skills:
 ${jdSkills.map((s) => `- ${s.skill_name} [${s.category_code}] evidence: ${s.evidence || 'not provided'}`).join('\n')}
@@ -78,7 +79,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     const text = await callOllama(buildSkillMatchPrompt(candSkills, jdSkills, candidate, jdSkillList), {
       model: ollama.model,
       temperature: 0.1,
-      numPredict: 500,
+      numPredict: 700,
       timeoutMs: 90000,
     });
     const raw = parseJsonObject(text);
@@ -125,6 +126,8 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     }
     const development_areas = jdSkills
       .filter((skill) => missingByKey.has(canonicalSkillName(skill.skill_name)))
+      .sort((a, b) => confidenceWeight(b.confidence) - confidenceWeight(a.confidence))
+      .slice(0, 5)
       .map((skill) => modelAreas.get(canonicalSkillName(skill.skill_name))
         || deterministic.development_areas.find((area) => canonicalSkillName(area.skill) === canonicalSkillName(skill.skill_name)))
       .filter(Boolean);
