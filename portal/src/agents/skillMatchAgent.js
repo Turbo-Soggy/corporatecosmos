@@ -23,6 +23,13 @@ function contextOf(candidate) {
   return sections.join('\n') || 'No additional resume context was extracted.';
 }
 
+function excerpt(value, limit) {
+  const source = String(value || '').trim();
+  if (source.length <= limit) return source || 'Not available.';
+  const head = Math.ceil(limit * 0.7);
+  return `${source.slice(0, head)}\n[...document excerpt shortened...]\n${source.slice(-(limit - head))}`;
+}
+
 function buildSkillMatchPrompt(candidateSkills, jdSkills, candidate, jdSkillList) {
   return `You are a constructive career coach comparing ONE resume against ONE job description.
 Return only valid JSON. Do not include markdown or claims not supported by the supplied evidence.
@@ -39,10 +46,10 @@ Additional resume context:
 ${contextOf(candidate)}
 
 Raw resume text (use it to ground the coaching in the candidate's actual evidence):
-${String(candidate?.source_text || '').slice(0, 12000) || 'Not available.'}
+${excerpt(candidate?.source_text, 6000)}
 
 Raw job description text (use it to explain why each gap matters for this role):
-${String(jdSkillList?.source_text || '').slice(0, 10000) || 'Not available.'}
+${excerpt(jdSkillList?.source_text, 5000)}
 
 Return this shape:
 {
@@ -72,7 +79,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
       model: ollama.model,
       temperature: 0.1,
       numPredict: 500,
-      timeoutMs: 30000,
+      timeoutMs: 90000,
     });
     const raw = parseJsonObject(text);
     const matchedNames = new Set((raw.matched_skills || []).map(canonicalSkillName));
@@ -129,7 +136,13 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
       summary: normalized.summary || deterministic.summary,
       source: 'gemma',
     };
-  } catch {
-    return deterministic;
+  } catch (error) {
+    const timedOut = error?.name === 'AbortError';
+    return {
+      ...deterministic,
+      fallback_reason: timedOut
+        ? 'Gemma4 did not finish before the time limit, so this is the local evidence check.'
+        : 'Gemma4 returned a response the app could not use, so this is the local evidence check.',
+    };
   }
 }

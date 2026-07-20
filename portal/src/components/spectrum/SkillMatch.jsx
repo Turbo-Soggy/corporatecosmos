@@ -34,7 +34,7 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
   useEffect(() => {
     if (!jd || !candidate) { setResult(null); return; }
     let cancelled = false;
-    setBusy('Matching…');
+    setBusy('Matching with Gemma4…');
     matchSkillsSmart(candidate, jd).then((r) => {
       if (!cancelled) { setResult(r); setBusy(''); }
     });
@@ -136,7 +136,7 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
           <section className="rounded-lg border border-accent/15 bg-accent/[0.04] px-3 py-3" aria-labelledby="match-summary-title">
             <h3 id="match-summary-title" className="label-mono text-accent/90">What this means</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink-muted">{result.summary || 'The score reflects overlap between extracted resume skills and extracted JD requirements.'}</p>
-            <p className="mt-2 text-[11px] text-ink-faint">{result.source === 'gemma' ? 'Gemma reviewed aliases and produced the coaching notes.' : 'Local matching produced this report because Gemma was unavailable or returned an unusable response.'}</p>
+            <p className="mt-2 text-[11px] text-ink-faint">{result.source === 'gemma' ? 'Gemma reviewed aliases and produced the coaching notes.' : (result.fallback_reason || 'Local matching produced this report because Gemma was unavailable or returned an unusable response.')}</p>
           </section>
 
           {result.strengths?.length > 0 && (
