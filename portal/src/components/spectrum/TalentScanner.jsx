@@ -13,10 +13,10 @@ import SkillMatch from './SkillMatch';
 
 const ACCEPTED_FILES = '.pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 const TABS = [
+  { key: 'match', label: 'JD + Resume Fit' },
   { key: 'scan', label: 'Scan' },
   { key: 'profile', label: 'Profile' },
   { key: 'readiness', label: 'Readiness' },
-  { key: 'match', label: 'Skill Match' },
 ];
 const STAGE_COPY = {
   reading: 'Reading document',
@@ -113,7 +113,7 @@ export default function TalentScanner({
     resumeExtract,
     setResumeExtract,
   } = useTalentSession();
-  const [tab, setTab] = useState('scan');
+  const [tab, setTab] = useState('match');
   const [sourceType, setSourceType] = useState(result?.source_type === 'resume' ? 'resume' : 'jd');
   const [stage, setStage] = useState(result ? 'done' : 'idle');
   const [error, setError] = useState('');
@@ -199,6 +199,7 @@ export default function TalentScanner({
       });
       setStage('done');
       publishResult(nextResult);
+      setTab('match');
     } catch (nextError) {
       setStage('error');
       setError(nextError?.message || 'The document could not be scanned.');
@@ -287,7 +288,7 @@ export default function TalentScanner({
           </div>
         </div>
 
-        <nav className="mt-3 grid grid-cols-4 gap-1 rounded-lg border border-white/10 bg-canvas/35 p-1" aria-label="Talent Scanner sections">
+        <nav className="mt-3 grid grid-cols-2 gap-1 rounded-lg border border-white/10 bg-canvas/35 p-1 sm:grid-cols-4" aria-label="Talent Scanner sections">
           {TABS.map((item) => (
             <button
               key={item.key}
@@ -519,7 +520,13 @@ export default function TalentScanner({
           <ReadinessScan profile={profile} companies={companies} selected={selected} />
         )}
         {tab === 'match' && (
-          <SkillMatch profile={profile} jd={jd} setJd={setJd} />
+          <SkillMatch
+            profile={profile}
+            jd={jd}
+            setJd={setJd}
+            resume={resumeExtract}
+            setResume={setResumeExtract}
+          />
         )}
       </div>
     </aside>

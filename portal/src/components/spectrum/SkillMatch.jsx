@@ -16,23 +16,22 @@ function jdDemandLevels(jd) {
   return levels;
 }
 
-export default function SkillMatch({ profile, jd, setJd }) {
+export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
   const jdRef = useRef(null);
   const resumeRef = useRef(null);
   const [busy, setBusy] = useState('');
   const [result, setResult] = useState(null);
-  const [resume, setResume] = useState(null);
 
-  const candLevels = useMemo(() => categoryLevels(profile), [profile]);
+  const candidate = resume;
+  const candLevels = useMemo(() => categoryLevels(candidate || profile), [candidate, profile]);
   const demand = useMemo(() => jdDemandLevels(jd), [jd]);
-  const candidate = resume || profile;
 
   // Recompute the match whenever the JD or the candidate changes.
   useEffect(() => {
-    if (!jd) { setResult(null); return; }
+    if (!jd || !candidate) { setResult(null); return; }
     let cancelled = false;
     setBusy('Matching…');
-    matchSkillsSmart(candidate.skills, jd).then((r) => {
+    matchSkillsSmart(candidate, jd).then((r) => {
       if (!cancelled) { setResult(r); setBusy(''); }
     });
     return () => { cancelled = true; };
@@ -71,29 +70,41 @@ export default function SkillMatch({ profile, jd, setJd }) {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-3">
-        <div className="min-w-0 text-sm text-ink-muted">
-          {jd ? <>JD: <span className="text-ink">{jd.source_file || 'uploaded posting'}</span></> : 'Upload a job posting to match against.'}
-        </div>
-        <div className="flex shrink-0 gap-2">
-          <button onClick={() => jdRef.current?.click()} className="rounded-lg border border-amber-300/25 px-3 py-1.5 text-sm text-amber-200 transition hover:bg-amber-300/10">
-            {jd ? 'Change JD' : 'Upload JD'}
-          </button>
-          <button onClick={() => resumeRef.current?.click()} className="rounded-lg border border-accent/25 px-3 py-1.5 text-sm text-accent transition hover:bg-accent/10">
-            {resume ? 'Change resume' : 'Upload resume'}
-          </button>
-        </div>
+      <div>
+        <div className="label-mono text-accent/80">FIT ANALYSIS</div>
+        <h3 className="mt-1 text-lg font-semibold text-ink">How well does this resume fit the job?</h3>
+        <p className="mt-1 text-xs leading-relaxed text-ink-muted">Upload both documents. Gemma4 compares the job requirements with the resume evidence, then explains strengths, gaps, and practical next steps.</p>
+      </div>
+
+      <div className="grid gap-2 sm:grid-cols-2">
+        <button type="button" onClick={() => jdRef.current?.click()} className={`rounded-lg border px-3 py-3 text-left transition hover:bg-amber-300/10 ${jd ? 'border-amber-300/30 bg-amber-300/[0.05]' : 'border-white/10'}`}>
+          <span className="label-mono text-amber-200/80">1 · JOB DESCRIPTION</span>
+          <span className="mt-1 block truncate text-sm font-medium text-ink">{jd?.source_file || 'Upload JD'}</span>
+          <span className="mt-1 block text-xs text-ink-faint">PDF or DOCX</span>
+        </button>
+        <button type="button" onClick={() => resumeRef.current?.click()} className={`rounded-lg border px-3 py-3 text-left transition hover:bg-accent/10 ${resume ? 'border-accent/30 bg-accent/[0.05]' : 'border-white/10'}`}>
+          <span className="label-mono text-accent/80">2 · RESUME</span>
+          <span className="mt-1 block truncate text-sm font-medium text-ink">{resume?.source_file || 'Upload resume'}</span>
+          <span className="mt-1 block text-xs text-ink-faint">PDF or DOCX</span>
+        </button>
         <input ref={jdRef} type="file" accept=".pdf,.docx" className="hidden" onChange={(e) => onJd(e.target.files?.[0])} />
         <input ref={resumeRef} type="file" accept=".pdf,.docx" className="hidden" onChange={(e) => onResume(e.target.files?.[0])} />
       </div>
 
       <div className="rounded-md border border-white/10 bg-white/[0.02] px-3 py-2 text-xs leading-relaxed text-ink-muted">
-        Comparing <span className="text-ink">{resume?.source_file || 'saved profile'}</span> against <span className="text-ink">{jd?.source_file || 'no JD uploaded'}</span>. The score is weighted JD-skill coverage; it is a coaching signal, not a hiring decision.
+        {jd && resume
+          ? <>Comparing <span className="text-ink">{resume.source_file}</span> against <span className="text-ink">{jd.source_file}</span>. The score is weighted requirement coverage, not a hiring decision.</>
+          : 'Add both files to generate the fit analysis.'}
       </div>
 
       {busy && <div className="label-mono animate-pulse text-accent/80">{busy}</div>}
 
-      {jd && result && (
+      {!jd || !resume ? (
+        <div className="rounded-lg border border-dashed border-white/15 px-4 py-8 text-center">
+          <div className="text-sm font-medium text-ink">Waiting for both documents</div>
+          <p className="mt-1 text-xs leading-relaxed text-ink-muted">The report will appear here after the JD and resume have been extracted.</p>
+        </div>
+      ) : result && (
         <>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-around">
             <SpectrumRadar series={series} size={230} />

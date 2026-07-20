@@ -15,17 +15,34 @@ function skillsOf(input) {
   return [];
 }
 
-function buildSkillMatchPrompt(candidateSkills, jdSkills) {
+function contextOf(candidate) {
+  const sections = [];
+  if (candidate?.education) sections.push(`Education: ${candidate.education}`);
+  for (const item of candidate?.experience || []) {
+    const line = [item?.role, item?.organization, item?.dates].filter(Boolean).join(' · ');
+    if (line) sections.push(`Experience: ${line}`);
+  }
+  for (const item of candidate?.projects || []) {
+    const line = [item?.name, item?.summary].filter(Boolean).join(' — ');
+    if (line) sections.push(`Project: ${line}`);
+  }
+  return sections.join('\n') || 'No additional resume context was extracted.';
+}
+
+function buildSkillMatchPrompt(candidateSkills, jdSkills, candidate) {
   return `You are a constructive career coach comparing ONE resume against ONE job description.
 Return only valid JSON. Do not include markdown or claims not supported by the supplied evidence.
 Two skills match if they mean the same thing, even when worded differently.
 Only call a skill matched when the resume evidence supports it. Do not penalize a missing skill as a character flaw.
 
 Job required skills:
-${jdSkills.map((s) => `- ${s.skill_name} [${s.category_code}]`).join('\n')}
+${jdSkills.map((s) => `- ${s.skill_name} [${s.category_code}] evidence: ${s.evidence || 'not provided'}`).join('\n')}
 
 Candidate skills:
 ${candidateSkills.map((s) => `- ${s.skill_name} [${s.category_code}] evidence: ${s.evidence || 'not provided'}`).join('\n')}
+
+Additional resume context:
+${contextOf(candidate)}
 
 Return this shape:
 {
@@ -51,7 +68,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     const candSkills = skillsOf(candidate);
     if (!jdSkills.length) return deterministic;
 
-    const text = await callOllama(buildSkillMatchPrompt(candSkills, jdSkills), {
+    const text = await callOllama(buildSkillMatchPrompt(candSkills, jdSkills, candidate), {
       model: ollama.model,
       temperature: 0.1,
       numPredict: 500,
