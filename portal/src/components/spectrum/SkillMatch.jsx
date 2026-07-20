@@ -3,7 +3,9 @@ import { RADIX_CATEGORIES } from '../../lib/radix';
 import { categoryLevels } from '../../lib/radixProfile';
 import { extractSkills } from '../../agents/skillExtractionAgent';
 import { matchSkillsSmart } from '../../agents/skillMatchAgent';
+import { generateTargetedCv } from '../../agents/cvGenerationAgent';
 import { extractResumeText } from '../../lib/resumeParse';
+import { downloadTargetedCv } from '../../lib/cvExport';
 import SpectrumRadar from './SpectrumRadar';
 
 // Turn a JD's skill list into a rough 0..10 "demand" per category (by count) for the
@@ -21,6 +23,8 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
   const resumeRef = useRef(null);
   const [busy, setBusy] = useState('');
   const [result, setResult] = useState(null);
+  const [cvDraft, setCvDraft] = useState(null);
+  const [cvBusy, setCvBusy] = useState(false);
 
   const candidate = resume;
   const candLevels = useMemo(() => categoryLevels(candidate || profile), [candidate, profile]);
@@ -36,6 +40,18 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
     });
     return () => { cancelled = true; };
   }, [candidate, jd]);
+
+  useEffect(() => {
+    setCvDraft(null);
+  }, [candidate, jd]);
+
+  const generateCv = async () => {
+    if (!jd || !candidate || !result || cvBusy) return;
+    setCvBusy(true);
+    const draft = await generateTargetedCv({ resume: candidate, jd, match: result });
+    setCvDraft(draft);
+    setCvBusy(false);
+  };
 
   const onJd = async (file) => {
     if (!file) return;
@@ -158,6 +174,33 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
               </div>
             </section>
           )}
+          <section className="rounded-lg border border-accent/20 bg-accent/[0.04] px-3 py-3" aria-labelledby="cv-generator-title">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <h3 id="cv-generator-title" className="label-mono text-accent/90">Company-specific CV</h3>
+                <p className="mt-1 text-xs leading-relaxed text-ink-muted">Generate a truthful CV draft tailored to {jd.company || jd.role || 'this job'}. It uses resume evidence and prioritizes supported JD requirements.</p>
+              </div>
+              <button type="button" onClick={generateCv} disabled={cvBusy} className="shrink-0 rounded-md border border-accent/30 px-2.5 py-1.5 text-xs font-medium text-accent transition hover:bg-accent/10 disabled:cursor-wait disabled:opacity-50">
+                {cvBusy ? 'Generating…' : cvDraft ? 'Regenerate' : 'Generate CV'}
+              </button>
+            </div>
+            {cvDraft && (
+              <div className="mt-3 rounded-md border border-white/10 bg-canvas/35 px-3 py-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <div className="truncate text-sm font-semibold text-ink">{cvDraft.name || 'Targeted CV'}</div>
+                    <div className="mt-1 truncate text-xs text-ink-muted">{cvDraft.target_role}{cvDraft.target_company ? ` at ${cvDraft.target_company}` : ''}</div>
+                  </div>
+                  <span className="shrink-0 font-mono text-[9px] uppercase text-ink-faint">{cvDraft.source === 'gemma' ? 'Gemma4 draft' : 'Local draft'}</span>
+                </div>
+                <p className="mt-2 text-xs leading-relaxed text-ink-muted">{cvDraft.summary}</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <button type="button" onClick={() => downloadTargetedCv(cvDraft, 'doc')} className="rounded-md border border-accent/30 px-2.5 py-1.5 text-xs text-accent transition hover:bg-accent/10">Download Word CV</button>
+                  <button type="button" onClick={() => downloadTargetedCv(cvDraft, 'txt')} className="rounded-md border border-white/10 px-2.5 py-1.5 text-xs text-ink-muted transition hover:text-ink">Download text</button>
+                </div>
+              </div>
+            )}
+          </section>
           <div>
             <div className="label-mono mb-2 text-accent/80">Matched ({result.matched_skills.length})</div>
             <div className="flex flex-wrap gap-1.5">
