@@ -1,16 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { RADIX_CATEGORIES } from '../../lib/radix';
-import { runTalentCheck } from '../../lib/talentCheck';
-import { companiesWithBar } from '../../lib/companyBar';
+import { runJdReadiness } from '../../lib/talentCheck';
 import SpectrumRadar from './SpectrumRadar';
 
 const LABEL = Object.fromEntries(RADIX_CATEGORIES.map((c) => [c.code, c.label]));
 const COLOR = Object.fromEntries(RADIX_CATEGORIES.map((c) => [c.code, c.color]));
-
-function cosmosCompanyName(companies, selected) {
-  const c = selected != null ? companies?.[selected] : null;
-  return c ? c.short_name || c.name : null;
-}
 
 function scoreColor(score) {
   if (score >= 70) return '#5EEAD4';
@@ -23,7 +17,7 @@ function Dial({ score }) {
   const circ = 2 * Math.PI * R;
   const color = scoreColor(score);
   return (
-    <svg viewBox="0 0 110 110" width="120" height="120" aria-label={`Readiness ${score}%`}>
+    <svg viewBox="0 0 110 110" width="120" height="120" aria-label={`Resume readiness ${score}%`}>
       <circle cx="55" cy="55" r={R} fill="none" stroke="rgba(148,163,184,0.15)" strokeWidth="8" />
       <circle
         cx="55" cy="55" r={R} fill="none" stroke={color} strokeWidth="8" strokeLinecap="round"
@@ -36,84 +30,109 @@ function Dial({ score }) {
   );
 }
 
-export default function ReadinessScan({ profile, companies, selected }) {
-  const bars = useMemo(() => companiesWithBar(), []);
-  const cosmosName = cosmosCompanyName(companies, selected);
-  const [override, setOverride] = useState('');
-  const company = override || cosmosName || bars[0];
-
-  const result = useMemo(() => runTalentCheck(profile, company), [profile, company]);
+export default function ReadinessScan({ profile, resume, jd }) {
+  const candidate = resume || profile;
+  const result = useMemo(() => runJdReadiness(candidate, jd), [candidate, jd]);
 
   const series = useMemo(() => {
     if (!result) return [];
-    const cand = {};
-    const req = {};
-    for (const g of result.skillset_gap) {
-      cand[g.category_code] = g.candidate_level;
-      req[g.category_code] = g.required_level;
+    const candidateLevels = {};
+    const requiredLevels = {};
+    for (const gap of result.skillset_gap) {
+      candidateLevels[gap.category_code] = gap.candidate_level;
+      requiredLevels[gap.category_code] = gap.required_level;
     }
     return [
-      { key: 'required', levels: req, color: '#FBBF24', fillOpacity: 0.08 },
-      { key: 'candidate', levels: cand, color: '#5EEAD4', fillOpacity: 0.18 },
+      { key: 'required', levels: requiredLevels, color: '#FBBF24', fillOpacity: 0.08 },
+      { key: 'candidate', levels: candidateLevels, color: '#5EEAD4', fillOpacity: 0.18 },
     ];
   }, [result]);
 
+  if (!jd || !resume) {
+    return (
+      <div className="space-y-4">
+        <div>
+          <div className="label-mono text-accent/80">RESUME READINESS</div>
+          <h3 className="mt-1 text-lg font-semibold text-ink">Ready for the uploaded job?</h3>
+          <p className="mt-1 text-xs leading-relaxed text-ink-muted">This tab uses the same JD and resume from the fit analysis. Upload both there first, then return here for the per-skillset readiness view.</p>
+        </div>
+        <div className="rounded-lg border border-dashed border-white/15 px-4 py-8 text-center">
+          <div className="text-sm font-medium text-ink">Waiting for shared inputs</div>
+          <p className="mt-1 text-xs text-ink-muted">{jd ? 'Upload a resume in JD + Resume Fit.' : resume ? 'Upload a JD in JD + Resume Fit.' : 'Upload a JD and resume in JD + Resume Fit.'}</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!result) {
+    return <p className="text-sm text-ink-muted">The uploaded JD did not contain readable RADIX requirements yet. Re-upload it from JD + Resume Fit.</p>;
+  }
+
+  const belowBar = result.skillset_gap.filter((gap) => gap.gap);
+  const requested = result.skillset_gap.filter((gap) => gap.required_level > 0);
+
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-3">
-        <div className="text-sm text-ink-muted">
-          Company:{' '}
-          <select value={company} onChange={(e) => setOverride(e.target.value)} className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-1 text-sm text-ink outline-none">
-            {[...new Set([cosmosName, ...bars].filter(Boolean))].map((name) => (
-              <option key={name} value={name} className="bg-surface">{name}</option>
-            ))}
-          </select>
-        </div>
-        {cosmosName && !override && <span className="label-mono text-accent/70">from selected node</span>}
+      <div>
+        <div className="label-mono text-accent/80">RESUME READINESS</div>
+        <h3 className="mt-1 truncate text-lg font-semibold text-ink">Fit for {result.role || jd.source_file || 'uploaded job'}</h3>
+        <p className="mt-1 text-xs leading-relaxed text-ink-muted">Scores are calculated from the uploaded JD requirements and the uploaded resume evidence. No company preset is used.</p>
       </div>
 
-      {!result ? (
-        <p className="text-sm text-ink-muted">
-          No expected skillset bar for “{company}”. Pick Google, Microsoft, or OFSS (or select one of those nodes in the cosmos).
-        </p>
-      ) : (
-        <>
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-around">
-            <SpectrumRadar series={series} size={230} />
-            <div className="flex flex-col items-center">
-              <Dial score={result.readiness_score} />
-              <div className="mt-1 flex items-center gap-3 text-xs text-ink-faint">
-                <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-accent" /> you</span>
-                <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full" style={{ background: '#FBBF24' }} /> {company} bar</span>
-              </div>
-            </div>
-          </div>
+      <div className="flex items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.02] px-3 py-2 text-xs">
+        <span className="min-w-0 truncate text-ink-muted">JD: <span className="text-ink">{jd.source_file || 'uploaded posting'}</span></span>
+        <span className="shrink-0 font-mono text-ink-faint">{result.requirement_count} requirements</span>
+      </div>
 
-          <div>
-            <div className="label-mono mb-2 flex items-center justify-between text-ink-faint">
-              <span>Per-skillset gap</span>
-              <span>{result.skillset_gap.filter((g) => g.gap).length} below bar</span>
-            </div>
-            <ul className="space-y-1.5">
-              {result.skillset_gap.map((g, i) => (
-                <li key={g.category_code} className="animate-rowIn" style={{ animationDelay: `${i * 25}ms` }}>
-                  <div className="flex items-center gap-2 text-xs">
-                    <span className="w-8 shrink-0 font-mono" style={{ color: COLOR[g.category_code] }}>{g.category_code}</span>
-                    <span className="w-40 shrink-0 truncate text-ink-muted">{LABEL[g.category_code]}</span>
-                    <div className="relative h-2 flex-1 overflow-hidden rounded-full bg-white/5">
-                      {/* required marker */}
-                      <div className="absolute top-0 h-full w-0.5 bg-amber-300/80" style={{ left: `${g.required_level * 10}%` }} />
-                      {/* candidate fill */}
-                      <div className="h-full rounded-full" style={{ width: `${g.candidate_level * 10}%`, background: g.gap ? '#FB7185' : '#5EEAD4' }} />
-                    </div>
-                    <span className="w-10 shrink-0 text-right font-mono tabular-nums text-ink-faint">{g.candidate_level}/{g.required_level}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+      <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-around">
+        <SpectrumRadar series={series} size={230} />
+        <div className="flex flex-col items-center">
+          <Dial score={result.readiness_score} />
+          <div className="mt-1 flex items-center gap-3 text-xs text-ink-faint">
+            <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-accent" /> resume</span>
+            <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-amber-300" /> JD need</span>
           </div>
-        </>
-      )}
+        </div>
+      </div>
+
+      <div>
+        <div className="label-mono mb-2 flex items-center justify-between text-ink-faint">
+          <span>Per-skillset readiness</span>
+          <span>{belowBar.length} below JD need</span>
+        </div>
+        <ul className="space-y-1.5">
+          {result.skillset_gap.map((gap, i) => (
+            <li key={gap.category_code} className={`animate-rowIn ${gap.required_level === 0 ? 'opacity-45' : ''}`} style={{ animationDelay: `${i * 25}ms` }}>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="w-8 shrink-0 font-mono" style={{ color: COLOR[gap.category_code] }}>{gap.category_code}</span>
+                <span className="w-40 shrink-0 truncate text-ink-muted">{LABEL[gap.category_code]}</span>
+                <div className="relative h-2 flex-1 overflow-hidden rounded-full bg-white/5">
+                  {gap.required_level > 0 && <div className="absolute top-0 h-full w-0.5 bg-amber-300/80" style={{ left: `${gap.required_level * 10}%` }} />}
+                  <div className="h-full rounded-full" style={{ width: `${gap.candidate_level * 10}%`, background: gap.gap ? '#FB7185' : '#5EEAD4' }} />
+                </div>
+                <span className="w-12 shrink-0 text-right font-mono tabular-nums text-ink-faint">{gap.required_level ? `${gap.candidate_level}/${gap.required_level}` : '—'}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <section className="rounded-lg border border-amber-300/15 bg-amber-300/[0.04] px-3 py-3">
+        <div className="label-mono text-amber-200/90">READ THIS FIRST</div>
+        <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">
+          {belowBar.length === 0
+            ? `The resume meets the derived JD need across all ${requested.length} requested skillsets.`
+            : `${belowBar.length} of ${requested.length} requested skillsets are below the JD need. Open JD + Resume Fit for the exact missing requirements and suggested next steps.`}
+        </p>
+      </section>
+
+      <section>
+        <div className="label-mono mb-2 text-neg/90">Missing JD requirements ({result.missing_skills.length})</div>
+        <div className="flex flex-wrap gap-1.5">
+          {result.missing_skills.length === 0 && <span className="text-xs text-ink-faint">No extracted requirements are currently uncovered.</span>}
+          {result.missing_skills.map((skill, i) => <span key={`${skill}-${i}`} className="rounded-full border border-neg/25 bg-neg/10 px-2.5 py-0.5 text-xs text-neg">{skill}</span>)}
+        </div>
+      </section>
     </div>
   );
 }

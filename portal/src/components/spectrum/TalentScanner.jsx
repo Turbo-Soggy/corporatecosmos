@@ -517,7 +517,7 @@ export default function TalentScanner({
           />
         )}
         {tab === 'readiness' && (
-          <ReadinessScan profile={profile} companies={companies} selected={selected} />
+          <ReadinessScan profile={profile} resume={resumeExtract} jd={jd} />
         )}
         {tab === 'match' && (
           <SkillMatch
