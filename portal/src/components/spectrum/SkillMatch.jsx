@@ -165,12 +165,17 @@ export default function SkillMatch({ profile, jd, setJd, resume, setResume }) {
           </div>
           {result.development_areas?.length > 0 && (
             <section aria-labelledby="match-development-title">
-              <h3 id="match-development-title" className="label-mono mb-2 text-amber-200/90">Development areas ({result.development_areas.length})</h3>
+              <div className="mb-2 flex items-baseline justify-between gap-3">
+                <h3 id="match-development-title" className="label-mono text-amber-200/90">Development areas ({result.development_areas.length})</h3>
+                <span className="text-[10px] font-mono uppercase tracking-[0.12em] text-ink-faint">{result.source === 'gemma' ? 'Gemma4 coaching' : 'Evidence baseline'}</span>
+              </div>
               <div className="space-y-2">
                 {result.development_areas.map((item, i) => (
                   <div key={`${item.skill}-${i}`} className="rounded-md border border-amber-300/15 bg-amber-300/[0.04] px-3 py-2">
                     <div className="text-sm font-medium text-ink">{item.skill}</div>
-                    <p className="mt-1 text-xs leading-relaxed text-ink-muted">{item.action || 'Add truthful evidence of this requirement through a project, course, or measurable work example.'}</p>
+                    {item.why && <p className="mt-1 text-xs leading-relaxed text-ink-muted"><span className="font-medium text-ink/80">Why it matters: </span>{item.why}</p>}
+                    <p className="mt-2 text-xs leading-relaxed text-ink-muted"><span className="font-medium text-ink/80">Next evidence: </span>{item.action || 'Add truthful evidence of this requirement through a project, course, or measurable work example.'}</p>
+                    {item.proof_plan && <p className="mt-1 text-xs leading-relaxed text-ink-muted"><span className="font-medium text-ink/80">Proof idea: </span>{item.proof_plan}</p>}
                   </div>
                 ))}
               </div>

@@ -19,9 +19,12 @@ const ALIASES = {
   ml: 'machine learning', 'gen ai': 'generative ai', genai: 'generative ai',
 };
 
-function canon(name) {
-  const n = String(name || '').toLowerCase().trim().replace(/\s+/g, ' ');
-  return ALIASES[n] || n;
+export function canonicalSkillName(name) {
+  let n = String(name || '').toLowerCase().trim().replace(/\s+/g, ' ');
+  n = ALIASES[n] || n;
+  if (n.length > 4 && n.endsWith('ies')) return `${n.slice(0, -3)}y`;
+  if (n.length > 4 && n.endsWith('s')) return n.slice(0, -1);
+  return n;
 }
 
 // Broad categories where an exact tech name rarely matches across documents, so
@@ -34,19 +37,47 @@ function skillsOf(input) {
   return [];
 }
 
+// Extraction can return surface-form duplicates such as "query" and "queries".
+// Keep one requirement, preferring stronger confidence and richer JD evidence.
+export function uniqueSkills(input) {
+  const byKey = new Map();
+  for (const skill of skillsOf(input).map(normalizeSkill).filter(Boolean)) {
+    const key = `${skill.category_code}:${canonicalSkillName(skill.skill_name)}`;
+    const current = byKey.get(key);
+    if (!current || confidenceWeight(skill.confidence) > confidenceWeight(current.confidence)
+      || String(skill.evidence || '').length > String(current.evidence || '').length) {
+      byKey.set(key, skill);
+    }
+  }
+  return [...byKey.values()];
+}
+
+function fallbackDevelopmentArea(requirement) {
+  const skill = requirement.skill_name;
+  const evidence = String(requirement.evidence || '').trim();
+  const context = evidence ? ` The JD connects it to: ${evidence}.` : '';
+  return {
+    skill,
+    evidence,
+    why: `${skill} is requested by this JD but is not supported by the uploaded resume evidence.${context}`,
+    action: `Create one truthful example that demonstrates ${skill}${evidence ? ' in the context described by the JD' : ''}, then add the method, tools, and outcome to the resume.`,
+    proof_plan: 'Use a relevant project, course, certification, or work example and describe what you personally did and what changed as a result.',
+  };
+}
+
 /**
  * @param candidate  a profile, a skill list, or an array of skills
  * @param jdSkillList JD Analytics output ({ source_file, skills } or an array)
  * @returns normalized Skill Match result
  */
 export function matchSkills(candidate, jdSkillList) {
-  const candSkills = skillsOf(candidate).map(normalizeSkill).filter(Boolean);
-  const jdSkills = skillsOf(jdSkillList).map(normalizeSkill).filter(Boolean);
+  const candSkills = uniqueSkills(candidate);
+  const jdSkills = uniqueSkills(jdSkillList);
 
   const candByKey = new Set();
   const candCategories = new Set();
   for (const s of candSkills) {
-    candByKey.add(`${s.category_code}:${canon(s.skill_name)}`);
+    candByKey.add(`${s.category_code}:${canonicalSkillName(s.skill_name)}`);
     candCategories.add(s.category_code);
   }
 
@@ -58,7 +89,7 @@ export function matchSkills(candidate, jdSkillList) {
   for (const j of jdSkills) {
     const w = confidenceWeight(j.confidence);
     totalWeight += w;
-    const exact = candByKey.has(`${j.category_code}:${canon(j.skill_name)}`);
+    const exact = candByKey.has(`${j.category_code}:${canonicalSkillName(j.skill_name)}`);
     const broad = BROAD_CATEGORIES.has(j.category_code) && candCategories.has(j.category_code);
     if (exact || broad) {
       matched_skills.push(j.skill_name);
@@ -79,10 +110,9 @@ export function matchSkills(candidate, jdSkillList) {
       skill,
       why: 'This resume skill covers a requirement identified in the job description.',
     })),
-    development_areas: missing_skills.map((skill) => ({
-      skill,
-      action: `Build or demonstrate ${skill} through a project, course, certification, or measurable work example.`,
-    })),
+    development_areas: jdSkills
+      .filter((skill) => missing_skills.includes(skill.skill_name))
+      .map(fallbackDevelopmentArea),
     summary: matched_skills.length
       ? `The resume covers ${matched_skills.length} of ${jdSkills.length} weighted requirements. Review the development areas before applying.`
       : 'No overlapping RADIX skills were found. Add more resume evidence or review the job description requirements.',

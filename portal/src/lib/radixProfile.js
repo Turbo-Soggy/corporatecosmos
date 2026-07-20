@@ -170,7 +170,9 @@ export function normalizeSkillMatch(raw) {
       ? r.development_areas.map((item) => ({
           skill: text(item?.skill || item?.skill_name),
           evidence: text(item?.evidence),
+          why: text(item?.why),
           action: text(item?.action),
+          proof_plan: text(item?.proof_plan),
         })).filter((item) => item.skill)
       : [],
     summary: text(r.summary),

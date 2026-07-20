@@ -6,14 +6,8 @@
 
 import { checkOllamaHealth, callOllama, parseJsonObject } from './ollamaClient';
 import { confidenceWeight } from '../lib/radix';
-import { matchSkills } from '../lib/skillMatch';
+import { canonicalSkillName, matchSkills, uniqueSkills } from '../lib/skillMatch';
 import { normalizeSkillMatch } from '../lib/radixProfile';
-
-function skillsOf(input) {
-  if (Array.isArray(input)) return input;
-  if (input && Array.isArray(input.skills)) return input.skills;
-  return [];
-}
 
 function contextOf(candidate) {
   const sections = [];
@@ -29,7 +23,7 @@ function contextOf(candidate) {
   return sections.join('\n') || 'No additional resume context was extracted.';
 }
 
-function buildSkillMatchPrompt(candidateSkills, jdSkills, candidate) {
+function buildSkillMatchPrompt(candidateSkills, jdSkills, candidate, jdSkillList) {
   return `You are a constructive career coach comparing ONE resume against ONE job description.
 Return only valid JSON. Do not include markdown or claims not supported by the supplied evidence.
 Two skills match if they mean the same thing, even when worded differently.
@@ -44,12 +38,18 @@ ${candidateSkills.map((s) => `- ${s.skill_name} [${s.category_code}] evidence: $
 Additional resume context:
 ${contextOf(candidate)}
 
+Raw resume text (use it to ground the coaching in the candidate's actual evidence):
+${String(candidate?.source_text || '').slice(0, 12000) || 'Not available.'}
+
+Raw job description text (use it to explain why each gap matters for this role):
+${String(jdSkillList?.source_text || '').slice(0, 10000) || 'Not available.'}
+
 Return this shape:
 {
   "matched_skills": ["<exact job skill name>"],
   "missing_skills": ["<exact job skill name>"],
   "strengths": [{ "skill": "<exact job skill name>", "why": "<one constructive sentence grounded in the resume>" }],
-  "development_areas": [{ "skill": "<exact job skill name>", "action": "<one specific, constructive next step>" }],
+  "development_areas": [{ "skill": "<exact job skill name>", "why": "<what this role needs and what resume evidence is missing>", "action": "<one specific, constructive next step tailored to this role>", "proof_plan": "<one concrete project, coursework, or work artifact that could prove it>" }],
   "summary": "<one or two sentences explaining the overall fit and the most useful next step>"
 }`;
 }
@@ -64,18 +64,18 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     const ollama = await checkOllamaHealth(model);
     if (!ollama.online) return deterministic;
 
-    const jdSkills = skillsOf(jdSkillList);
-    const candSkills = skillsOf(candidate);
+    const jdSkills = uniqueSkills(jdSkillList);
+    const candSkills = uniqueSkills(candidate);
     if (!jdSkills.length) return deterministic;
 
-    const text = await callOllama(buildSkillMatchPrompt(candSkills, jdSkills, candidate), {
+    const text = await callOllama(buildSkillMatchPrompt(candSkills, jdSkills, candidate, jdSkillList), {
       model: ollama.model,
       temperature: 0.1,
       numPredict: 500,
       timeoutMs: 10000,
     });
     const raw = parseJsonObject(text);
-    const matchedNames = new Set((raw.matched_skills || []).map((s) => String(s).toLowerCase().trim()));
+    const matchedNames = new Set((raw.matched_skills || []).map(canonicalSkillName));
 
     // Reconcile the model's names against the JD list and compute a confidence-weighted
     // score, so an off-list hallucinated skill can't inflate the number.
@@ -86,7 +86,7 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
     for (const j of jdSkills) {
       const w = confidenceWeight(j.confidence);
       totalWeight += w;
-      if (matchedNames.has(String(j.skill_name).toLowerCase().trim())) {
+      if (matchedNames.has(canonicalSkillName(j.skill_name))) {
         matched_skills.push(j.skill_name);
         matchedWeight += w;
       } else {
@@ -104,12 +104,28 @@ export async function matchSkillsSmart(candidate, jdSkillList, { model } = {}) {
         development_areas: raw.development_areas,
         summary: raw.summary,
       });
+    const missingByKey = new Map(missing_skills.map((skill) => [canonicalSkillName(skill), skill]));
+    const modelAreas = new Map();
+    for (const area of normalized.development_areas) {
+      const matchedRequirement = missingByKey.get(canonicalSkillName(area.skill));
+      if (!matchedRequirement || modelAreas.has(canonicalSkillName(matchedRequirement))) continue;
+      const jdRequirement = jdSkills.find((skill) => skill.skill_name === matchedRequirement);
+      modelAreas.set(canonicalSkillName(matchedRequirement), {
+        ...area,
+        skill: matchedRequirement,
+        evidence: area.evidence || jdRequirement?.evidence || '',
+      });
+    }
+    const development_areas = jdSkills
+      .filter((skill) => missingByKey.has(canonicalSkillName(skill.skill_name)))
+      .map((skill) => modelAreas.get(canonicalSkillName(skill.skill_name))
+        || deterministic.development_areas.find((area) => canonicalSkillName(area.skill) === canonicalSkillName(skill.skill_name)))
+      .filter(Boolean);
+
     return {
       ...normalized,
       strengths: normalized.strengths.length ? normalized.strengths : deterministic.strengths,
-      development_areas: normalized.development_areas.length
-        ? normalized.development_areas
-        : deterministic.development_areas,
+      development_areas,
       summary: normalized.summary || deterministic.summary,
       source: 'gemma',
     };
